@@ -11,7 +11,7 @@
 - **Nguồn, quyền sử dụng, số trang và số chunk:**
   - Tiếp nối trực tiếp corpus từ Day 6: 2 báo cáo **World Bank Taking Stock** về kinh tế Việt Nam (`taking_stock_2023_08.pdf` — 08/2023 và `taking_stock_2025_03.pdf` — 03/2025), giấy phép World Bank Open Knowledge (`CC BY 3.0 IGO`).
   - Tổng cộng **88 trang nội dung** (40 trang từ bản 08/2023 và 48 trang từ bản 03/2025, đã loại bìa, mục lục, trang chuyển chương, tài liệu tham khảo).
-  - Sử dụng chiến lược chunking tốt nhất của Day 6 (**Strategy A**: `fixed_size=500` ký tự, `overlap=50` ký tự), tổng cộng **558 chunks** được export từ PostgreSQL sang [starter/data/converted/chunks.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/converted/chunks.json).
+  - Sử dụng chiến lược chunking tốt nhất của Day 6 (**Strategy A**: `fixed_size=500` ký tự, `overlap=50` ký tự), tổng cộng **558 chunks** được export từ PostgreSQL sang [starter/data/converted/chunks.json](../../starter/data/converted/chunks.json).
 - **Vector store, embedding model, phiên bản và số chiều:**
   - **Vector store:** PostgreSQL 16 + `pgvector 0.8.7` (`day6_lab` trên `127.0.0.1:55433`, bảng `chunks`, exact cosine distance `<=>`).
   - **Embedding model:** `gemini-embedding-001` (`3072` chiều; `RETRIEVAL_DOCUMENT` khi index ở Day 6, `RETRIEVAL_QUERY` khi truy vấn ở Day 7).
@@ -23,7 +23,7 @@
 - **Cách xác định câu có/thiếu evidence và tiêu chí chấm:**
   - Câu có đáp án có `gold` gồm `{source_id, page, evidence}` đối chiếu từ PDF gốc; `is_gold_hit` chuẩn hóa khoảng trắng (`_norm`) để không bị sai lệch do dấu xuống dòng PDF.
   - Câu thiếu bằng chứng được kiểm chứng trên toàn bộ 558 chunks (các từ khóa `gini`, `semiconductor`, `long thanh`, `south korea` đều xuất hiện **0/558** chunks).
-  - Chấm thủ công theo rubric [BENCHMARK.md](file:///c:/Users/admin/LabTeam/TH%20day%2007/BENCHMARK.md): Context (0/1/2), Grounded Answer (0/1/2), Citation Validity (citation có trong context và thực sự hỗ trợ khẳng định), Abstention (từ chối đúng khi thiếu bằng chứng, không suy đoán).
+  - Chấm thủ công theo rubric [BENCHMARK.md](../../BENCHMARK.md): Context (0/1/2), Grounded Answer (0/1/2), Citation Validity (citation có trong context và thực sự hỗ trợ khẳng định), Abstention (từ chối đúng khi thiếu bằng chứng, không suy đoán).
 
 ---
 
@@ -99,8 +99,8 @@
 ### Đường dẫn trace, nhãn, lệnh chạy, thời gian và chi phí
 - **Traces & nhãn:**
   - Retrieval: `results/retrieval/<config>_<split>/traces.json` & `summary.json`
-  - Agent `dev`: [selected_dev/traces.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_dev/traces.json), [selected_dev/reviews.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_dev/reviews.json), [selected_dev/agent_summary.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_dev/agent_summary.json)
-  - Agent `test`: [selected_test/traces.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_test/traces.json), [selected_test/reviews.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_test/reviews.json), [selected_test/agent_summary.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/agent/selected_test/agent_summary.json)
+  - Agent `dev`: [selected_dev/traces.json](../../results/agent/selected_dev/traces.json), [selected_dev/reviews.json](../../results/agent/selected_dev/reviews.json), [selected_dev/agent_summary.json](../../results/agent/selected_dev/agent_summary.json)
+  - Agent `test`: [selected_test/traces.json](../../results/agent/selected_test/traces.json), [selected_test/reviews.json](../../results/agent/selected_test/reviews.json), [selected_test/agent_summary.json](../../results/agent/selected_test/agent_summary.json)
 - **Lệnh chạy tái lập:**
   - Unit tests: `.venv\Scripts\python.exe -m unittest discover -s tests -v` (20/20 pass)
   - Export Day 6: `.venv\Scripts\python.exe -m src.export_day6`
@@ -125,14 +125,14 @@
   - **Quyền sử dụng:** World Bank Open Knowledge / Public Disclosure Authorized (`CC BY 3.0 IGO`, trang 2).
   - **Số trang:** **100 trang vật lý** (trang 1–100).
 - **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:**
-  - **Toàn văn 100 trang ([adv_ingest.py](file:///c:/Users/admin/LabTeam/TH%20day%2007/src/adv_ingest.py)):**
+  - **Toàn văn 100 trang ([adv_ingest.py](../../src/adv_ingest.py)):**
     - Render tất cả 100 trang thành PNG 150 DPI (`pages/p001.png`–`p100.png`) qua `pypdfium2`.
     - **Text:** Trích xuất toàn văn bằng `pypdf`, chia chunk overlap (`size=900`, `overlap=150`) -> **373 text chunks** gắn đúng số trang gốc (`ADV:wb-vietnam-ccdr-2022:pXXX:tYY`).
     - **Bảng, biểu đồ, ảnh/sơ đồ/bản đồ:** Quét 58 trang có dấu hiệu trực quan bằng Gemini Vision (`gemini-3.5-flash-lite`) để trích xuất cấu trúc bảng Markdown, trục/chú giải/giá trị biểu đồ, nhãn bản đồ/sơ đồ, kèm tọa độ `bbox_pct` để crop ảnh từng vùng (`crops/pXXX_elYY.png`) -> **47 visual elements** (**15 bảng**, **16 biểu đồ**, **16 ảnh/sơ đồ/bản đồ**).
     - **Vector store:** Toàn bộ **420 records** (`373 text + 47 visual`) được embed bằng `gemini-embedding-001` (3072 chiều) và lưu vào bảng PostgreSQL `pgvector` `adv_chunks` + index BM25. Chi phí index toàn tài liệu: `\$0.025656` (vision) + `\$0.012749` (embedding) = **`\$0.0384`** (`623.46s`).
-    - **Phần chưa xử lý & ảnh hưởng:** **3 trang cuối (`98, 99, 100`)** là trang trắng / bìa sau có `0` ký tự và không chứa hình phân tích (được ghi log riêng trong [ingest_stats.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/ingest_stats.json); không ảnh hưởng tới nội dung báo cáo). Đã kiểm chứng đối chiếu nội dung trích xuất với ảnh trang gốc cho toàn bộ bảng/hình trong benchmark và trang bị thêm tool `inspect_page_visual(page, focus_question)` để agent kiểm tra trực tiếp ảnh PNG trang gốc khi trả lời.
+    - **Phần chưa xử lý & ảnh hưởng:** **3 trang cuối (`98, 99, 100`)** là trang trắng / bìa sau có `0` ký tự và không chứa hình phân tích (được ghi log riêng trong [ingest_stats.json](../../starter/data/advanced/ingest_stats.json); không ảnh hưởng tới nội dung báo cáo). Đã kiểm chứng đối chiếu nội dung trích xuất với ảnh trang gốc cho toàn bộ bảng/hình trong benchmark và trang bị thêm tool `inspect_page_visual(page, focus_question)` để agent kiểm tra trực tiếp ảnh PNG trang gốc khi trả lời.
 - **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên `dev`:**
-  - **Benchmark ([adv_cases.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/adv_cases.json)):** tổng **48 câu** không trùng lặp ý/đáp án giữa `dev` và `test`:
+  - **Benchmark ([adv_cases.json](../../starter/data/advanced/adv_cases.json)):** tổng **48 câu** không trùng lặp ý/đáp án giữa `dev` và `test`:
     - **`dev` (18 câu):** 15 có đáp án (`3 table`, `3 image_diagram`, `3 chart`, `3 multi_hop`, `3 text`) + `3 unanswerable` (`au01`–`au03`).
     - **`test` (30 câu):** 24 có đáp án (`6 table`, `5 image_diagram`, `5 chart`, `4 multi_hop`, `4 text`) + `6 unanswerable` (`at25`–`at30`, kiểm chứng từ khóa xuất hiện 0 lần trên 100 trang).
     - Không dùng ảnh trang trí (chapter opener photos) làm câu hỏi ảnh/biểu đồ; toàn bộ nhóm `image_diagram` dùng sơ đồ khái niệm, bản đồ nguy cơ/tài nguyên, sơ đồ tài chính và ma trận ưu tiên.
@@ -191,9 +191,9 @@
 </details>
 
 - **Trace, nhãn, thời gian, chi phí và lỗi hệ thống:**
-  - Traces & nhãn lưu tại [multimodal_vision_test/traces.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/traces.json), [reviews.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/reviews.json) và [eval_summary.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/eval_summary.json).
+  - Traces & nhãn lưu tại [multimodal_vision_test/traces.json](../../results/advanced/multimodal_vision_test/traces.json), [reviews.json](../../results/advanced/multimodal_vision_test/reviews.json) và [eval_summary.json](../../results/advanced/multimodal_vision_test/eval_summary.json).
   - **Thời gian & chi phí chạy `test` (30 câu):** `0` lỗi hệ thống, trung bình `1.9` tool calls/câu, median latency `11,106.3 ms` (~11.1s/câu do gọi Vision tool + pacing), tổng chi phí LLM `\$0.033346` + retriever `\$0.000102` = **`\$0.033448`**.
 - **Giới hạn, cách tái lập và đường dẫn benchmark:**
   - **Giới hạn:** Ở câu `at11`, các bảng kéo dài nhiều trang (Annex 4, p.94–97) chưa tự động gộp thành một entity logic nên truy xuất trả `p094` trước `p095`; ở câu `at23`, LLM tự diễn giải ngược tỷ lệ tương đối ("less likely" vs "more likely"). Ngoài ra, miễn phí API Gemini giới hạn 15 RPM / 500 RPD nên phải phân tách model giữa bước ingest (`gemini-3.5-flash-lite`) và đánh giá (`gemini-3.1-flash-lite`).
-  - **Đường dẫn tái lập:** Tải PDF từ URL World Bank ở trên về `starter/data/advanced/vietnam_ccdr_full.pdf`, chạy `python -m src.adv_ingest`, sau đó chạy `python -m src.adv_run_eval --split test --config multimodal_vision --model gemini-3.1-flash-lite` và `python -m src.adv_build_reviews`. Benchmark gốc: [adv_cases.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/adv_cases.json).
+  - **Đường dẫn tái lập:** Tải PDF từ URL World Bank ở trên về `starter/data/advanced/vietnam_ccdr_full.pdf`, chạy `python -m src.adv_ingest`, sau đó chạy `python -m src.adv_run_eval --split test --config multimodal_vision --model gemini-3.1-flash-lite` và `python -m src.adv_build_reviews`. Benchmark gốc: [adv_cases.json](../../starter/data/advanced/adv_cases.json).
 
