@@ -1,0 +1,16 @@
+{
+  "config": "agent_selected",
+  "method": "rerank",
+  "max_searches": 4,
+  "top_k": 5,
+  "budget_chars": 2200,
+  "enable_adjacent": true,
+  "total_cases": 17,
+  "errors": 0,
+  "answered": 15,
+  "abstained": 2,
+  "avg_search_calls": 1.18,
+  "median_ms": 3892.6,
+  "total_llm_cost_usd": 0.00842,
+  "retriever_cost_usd": 0.008069
+}

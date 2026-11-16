@@ -1,0 +1,20 @@
+{
+  "config": "hybrid",
+  "split": "dev",
+  "n": 15,
+  "top_k": 3,
+  "budget_chars": 800,
+  "auto_filter": false,
+  "hit1": 6,
+  "hit1_ratio": "6/15",
+  "hit1_pct": 40.0,
+  "hit3": 11,
+  "hit3_ratio": "11/15",
+  "hit3_pct": 73.3,
+  "context_evidence": 6,
+  "context_evidence_ratio": "6/15",
+  "context_evidence_pct": 40.0,
+  "avg_context_chars": 567.3,
+  "median_ms": 38.07,
+  "service_cost_usd": 0.0
+}

@@ -1,0 +1,644 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "question": "What global GDP and global trade growth rates were projected for 2023 compared to 2022?",
+    "config": "rerank_imp2",
+    "applied_filter": null,
+    "top_k": 5,
+    "budget_chars": 1800,
+    "gold": [
+      {
+        "source_id": "wb-taking-stock-2023-08",
+        "page": 11,
+        "evidence": "Global GDP growth is projected to decline to 2.1 percent in 2023 from 3.1 percent in 2022"
+      }
+    ],
+    "results": [
+      {
+        "id": "A:wb-taking-stock-2023-08:p011:c000",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 11,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "overview",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3715,
+          "chunk_index": 0
+        },
+        "text": "11\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nRecent Economic Developments\nThe external environment remains challenging\nwith downside risks prevailing in the near-\nterm. Global GDP growth is projected to decline to 2.1\npercent in 2023 from 3.1 percent in 2022, reflecting\nweakening demand in most advanced economies. In\nline with slower global growth, global trade growth\nis estimated to weaken from 6 percent in 2022 to 1.7\npercent in 2023.\nAfter registering 8 percent real GDP growth\nin 2022, Vietnam",
+        "score": 10.0,
+        "rank": 1,
+        "strategy": "hybrid_rerank",
+        "hit": true
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p019:c003",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 19,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2430,
+          "chunk_index": 3
+        },
+        "text": "erated after the last’s\nI. RECENT ECONOMIC DEVELOPMENTS\nFigure 1.1. Global GDP growth\nPercent (y/y)\nSource: Global Economic Prospects, June 2023, World Bank\n2022 2024f (Jun-23)\n2023f (Jun-23) 2023f (Jun-22)\n0\n2\n4\n6\n8\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\n8\n6\n4\n2\n0\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\nFigure 1.2. Global goods trade growth\nPercent (y/y)\nGrowth June-23 forecasts June-22 forecasts\n25\n15\n5\n-5\n-15\n2018 2019 2020 2021 2022 2023f 2024f\n18 World Bank, Global Ec",
+        "score": 6.5,
+        "rank": 2,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p019:c001",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 19,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2430,
+          "chunk_index": 1
+        },
+        "text": "e but remain well above pre-pandemic levels.\nGlobal trade is expected to grow by only 1.7 percent in 2023 (2.6 percentage points lower than June 2022’s\nforecast, Figure 1.2).\nVietnam’s economic growth decelerated sharply\nAfter registering 8 percent real GDP growth in 2022, economic growth decelerated sharply\nin the first semester of 2023, reflecting a slump in external and weaker domestic demand.\nVietnam’s real GDP growth slowed to 3.7 percent (y/y) during the first semester of 2023, 19 well bel",
+        "score": 4.0,
+        "rank": 3,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p011:c001",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 11,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "overview",
+          "char_len": 498,
+          "strategy": "A",
+          "char_count": 2640,
+          "chunk_index": 1
+        },
+        "text": "supporting the growth\nmomentum. However, private consumption\nremained a moderate driver of aggregate\ndemand relative to the region (54 percent\nof GDP compared to a median of 61.7\npercent, respectively) as household savings\nincreased amid heightened uncertainty in\nrecent years.\nTrade strongly rebounded in 2024, driven\nby the global technology upcycle. Total\nexports grew 15.5 percent in 2024, in stark\ncontrast to a -2.5 percent contraction in\n2023. Merchandise export growth reached\n14 percent by",
+        "score": 1.0,
+        "rank": 4,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p021:c000",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 21,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 1350,
+          "chunk_index": 0
+        },
+        "text": "ELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 11\nTrade rebounded strongly in 2024, driven by the global technology upcycle. Total exports grew\n15.5 percent in 2024, in stark contrast to a -2.5 percent contraction in 2023 caused by a slowdown\nin global trade volumes (Figure 1.6). Merchandise export growth reached 14 percent by the end\nof 2024, driven by strong electronics exports - in particular computers (Figure 1.7). Merchandise\nexports grew strongly during January-August, before s",
+        "score": 1.0,
+        "rank": 5,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p011:c000",
+      "A:wb-taking-stock-2023-08:p019:c003",
+      "A:wb-taking-stock-2023-08:p019:c001"
+    ],
+    "context_chars": 1768,
+    "elapsed_ms": 25396.76,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "question": "In the 2023 public investment analysis, what share of budgeted allocations was actually spent and what is the international good practice threshold for budget deviations?",
+    "config": "rerank_imp2",
+    "applied_filter": null,
+    "top_k": 5,
+    "budget_chars": 1800,
+    "gold": [
+      {
+        "source_id": "wb-taking-stock-2023-08",
+        "page": 42,
+        "evidence": "only 77 percent of allocations spent (Figure 2.4). The differences between budgeted and actual spending (23 percent)"
+      }
+    ],
+    "results": [
+      {
+        "id": "A:wb-taking-stock-2023-08:p042:c000",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 42,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2641,
+          "chunk_index": 0
+        },
+        "text": "42\nTAKING STOCK AUGUST 2023\nonly 77 percent of allocations spent (Figure 2.4). The differences between budgeted and actual spending (23\npercent) and the resulting capital expenditure carried over from one year to the next (18 to 31 percent of total\ncapital expenditures) are significantly larger than in many peer countries, and way above international good\npractices which suggest budget deviations to remain below 5 percent.78 PIM inefficiency is also manifested\nin significant project completion d",
+        "score": 10.0,
+        "rank": 1,
+        "strategy": "hybrid_rerank",
+        "hit": true
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p016:c002",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 16,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "overview",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 4345,
+          "chunk_index": 2
+        },
+        "text": "pital\nexpenditure carried over from one year to the next,\nare significantly larger than in many peer countries,\nand way beyond international good practices which\nsuggest the variation levels to be below 5 percent. 14\nPublic investment management (PIM) inefficiency\nis also manifested in significant project completion\ndelays and cost overruns. A recent World Bank\nreview15 of selected, large-scale transport projects\nfound an average delay time of five years, and an\naverage cost overrun double the o",
+        "score": 8.5,
+        "rank": 2,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p016:c001",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 16,
+        "text": "e\nand development. Vietnam’s infrastructure quality\nranked 77th out of 141 countries worldwide,13 behind\nregional peers such as China, India, Indonesia,\nMalaysia, and Thailand—countries that Vietnam is\ncompeting with for FDI. Investment budgets suffered\nfrom chronic under-execution with only 77 percent of\nallocations spent between 2017 and 2022. The large\ndifferences between budgeted and actual spending\n(23 percent), and the consequential high capital\nexpenditure carried over from one year to th",
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "overview",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 4345,
+          "chunk_index": 1
+        },
+        "score": 7.0,
+        "strategy": "hybrid_rerank",
+        "rank": 3,
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p033:c003",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 33,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2703,
+          "chunk_index": 3
+        },
+        "text": "ched 11.3 percent of GDP, compared to 12.4\npercent in 2023 and equivalent to 94.5 percent of that targeted. Disbursement of public investment was\nestimated at 4.6 percent of GDP in 2024 (7.1 percent in 2023) corresponding to 77.5 percent of the\nprime minister’s approved budget allocation as end of December 2024, dipping below the 81.9 percent\ndisbursement rate for the same period in 2023. Planned annual savings in recurrent expenditures are\nearmarked to finance the civil service salary reform ag",
+        "score": 4.0,
+        "rank": 4,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p035:c000",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 35,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 4177,
+          "chunk_index": 0
+        },
+        "text": "35\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\n65 Of planned budget approved by the National Assembly, as of December 31, 2022.\nimplementation with disbursement of the public investment budget jumping by 43.3 percent (y/y) during\nthe first semester of 2023. However, historical public investment implementation rates have been low in the\nrecent past, for example reaching only 67.3 percent in 2022.65 Steps to accelerate and improve the efficiency\nof implementation would also help address emerging infr",
+        "score": 2.5,
+        "rank": 5,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p042:c000",
+      "A:wb-taking-stock-2023-08:p016:c002",
+      "A:wb-taking-stock-2023-08:p016:c001"
+    ],
+    "context_chars": 1768,
+    "elapsed_ms": 1734.56,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "question": "What methodological weakness in project appraisal limits Vietnam ability to evaluate climate change risks and alternative adaptation options?",
+    "config": "rerank_imp2",
+    "applied_filter": null,
+    "top_k": 5,
+    "budget_chars": 1800,
+    "gold": [
+      {
+        "source_id": "wb-taking-stock-2023-08",
+        "page": 51,
+        "evidence": "These shortcomings in the appraisal process, particularly the absence of systematic methodologies like social cost-benefit analysis"
+      }
+    ],
+    "results": [
+      {
+        "id": "A:wb-taking-stock-2023-08:p051:c001",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 51,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3471,
+          "chunk_index": 1
+        },
+        "text": "have already been identified earlier\nin the section discussing the PIM challenges. This weakness means there is no formal methodological basis\nfor evaluating climate change impacts of projects and respective mitigation efforts or evaluating alternative\nadaptation options in response to identified climate change risks. Project appraisals for large projects\nrequire environmental impact assessments. Notionally, in relation to climate change and responses, this\nshould consider both the impacts of an",
+        "score": 10.0,
+        "rank": 1,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p051:c000",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 51,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3471,
+          "chunk_index": 0
+        },
+        "text": "51\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\ndiscussed above, the current PIM and IGF systems are unable to prioritize and implement these kinds of\ntransboundary resolutions and investments.\nGeneral weaknesses in appraisal methods mean limited attention is paid to the specifics\nof climate change risk and adaptation. These shortcomings in the appraisal process, particularly the\nabsence of systematic methodologies like social cost-benefit analysis, have already been identified earlier\nin the sectio",
+        "score": 8.5,
+        "rank": 2,
+        "strategy": "hybrid_rerank",
+        "hit": true
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p051:c002",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 51,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3471,
+          "chunk_index": 2
+        },
+        "text": "onses, this\nshould consider both the impacts of and on the project. While procedures for construction projects in the\nConstruction Law and supporting regulations recognize the need to consider climate change risks and\nadaptation, there is no regulatory requirement to examine climate change risks early in project preparation,\nsuch as during preparation of the feasibility study and appraisal, when it is more efficient to develop,\nanalyze, and integrate adaptive responses.\nGoing forward, Vietnam wi",
+        "score": 6.0,
+        "rank": 3,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p046:c005",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 46,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3584,
+          "chunk_index": 5
+        },
+        "text": "ects amplify problems at planning\nand appraisal. More specially:\nz Project preparation/selection stage: A key impediment is the absence of unified methodological\nguidelines to support evidence-informed decision-making. 91 Pre-feasibility studies (PFSs) are not\nprepared for Group B 92 projects (which can be considered large for most provinces) 93 and not made\npublic, except for official development assistance (ODA) projects. The lack of rigorous project costing—\ndue to low technical cost norms, o",
+        "score": 4.5,
+        "rank": 4,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2023-08:p051:c005",
+        "source_id": "wb-taking-stock-2023-08",
+        "source": "starter/data/taking_stock_2023_08.pdf",
+        "page": 51,
+        "metadata": {
+          "year": 2023,
+          "title": "Taking Stock August 2023: Making Public Investment Work for Growth",
+          "section": "special_topic",
+          "char_len": 499,
+          "strategy": "A",
+          "char_count": 3471,
+          "chunk_index": 5
+        },
+        "text": "social cost benefit analyses and other complementary or\nsupplementary tools and for the total costs for the entire project lifecycle to be estimated in project\nproposals. In order to enhance climate resilience of the country, climate change screening should be\nmandated from the early stage of investment policy and associated adaptation measures should be\nevaluated in both the Pre-FSs and feasibility studies of projects with high risks.\nz Second, it will be equally important to enhance project i",
+        "score": 4.0,
+        "rank": 5,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p051:c001",
+      "A:wb-taking-stock-2023-08:p051:c000",
+      "A:wb-taking-stock-2023-08:p051:c002"
+    ],
+    "context_chars": 1768,
+    "elapsed_ms": 2126.24,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "question": "In the 2025 report, why did private consumption remain a moderate driver of aggregate demand in 2024 compared to the regional median?",
+    "config": "rerank_imp2",
+    "applied_filter": {
+      "year": 2025
+    },
+    "top_k": 5,
+    "budget_chars": 1800,
+    "gold": [
+      {
+        "source_id": "wb-taking-stock-2025-03",
+        "page": 11,
+        "evidence": "private consumption remained a moderate driver of aggregate demand relative to the region (54 percent of GDP compared to a median of 61.7 percent, respectively) as household savings increased"
+      }
+    ],
+    "results": [
+      {
+        "id": "A:wb-taking-stock-2025-03:p011:c001",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 11,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "overview",
+          "char_len": 498,
+          "strategy": "A",
+          "char_count": 2640,
+          "chunk_index": 1
+        },
+        "text": "supporting the growth\nmomentum. However, private consumption\nremained a moderate driver of aggregate\ndemand relative to the region (54 percent\nof GDP compared to a median of 61.7\npercent, respectively) as household savings\nincreased amid heightened uncertainty in\nrecent years.\nTrade strongly rebounded in 2024, driven\nby the global technology upcycle. Total\nexports grew 15.5 percent in 2024, in stark\ncontrast to a -2.5 percent contraction in\n2023. Merchandise export growth reached\n14 percent by",
+        "score": 10.0,
+        "rank": 1,
+        "strategy": "hybrid_rerank",
+        "hit": true
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p019:c002",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 19,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2202,
+          "chunk_index": 2
+        },
+        "text": "mand relative\nto the median in the region (54 percent of GDP compared to 61.7 percent, respectively) and has slowly\ndeclined as household savings increased amid heightened uncertainty in recent years (Figure 1.3).\n1.1 Recent Economic Developments\nFigure 1.1. Viet Nam was the fastest-\ngrowing developing economy in East Asia\nin 2024\nFigure 1.2. GDP growth was driven by a\nstrong rebound in exports\nReal GDP growth, percent\nGDP demand components growth, percent\n2 Resolution No. 103/2023/QH15 on the p",
+        "score": 9.5,
+        "rank": 2,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p019:c001",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 19,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "economic_developments",
+          "char_len": 499,
+          "strategy": "A",
+          "char_count": 2202,
+          "chunk_index": 1
+        },
+        "text": "weakened in 2023, leading to a trade contraction and a slowdown in GDP\ngrowth to 5 percent real GDP. This was followed by a sharp rebound in 2024 with exports and imports\ngrowing by 15.5 and 16.1 percent, respectively. Further, final consumption and investment growth\naccelerated in 2024 reaching 6.6 and 7.2 percent, respectively, also supporting growth momentum\n(Figure 1.2). However, private consumption remained a moderate driver of aggregate demand relative\nto the median in the region (54 perc",
+        "score": 9.0,
+        "rank": 3,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p027:c002",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 27,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "economic_developments",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2421,
+          "chunk_index": 2
+        },
+        "text": "e hikes, real income grew modestly\nafter 2023’s headwinds but has not translated into higher private consumption. The average\nincome of employees reached VND8.2 million/month (US$326) in December 2024, growing on\naverage in 2024 by 8.6 percent in nominal terms and 4.8 percent in real terms, below pre-pandemic\nlevels (Figure 1.18). Income growth has not fully translated into domestic consumption, instead\ncontributing to higher gross savings rate, which reached 37.2 percent in 2024 compared to 33.",
+        "score": 8.0,
+        "rank": 4,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p012:c004",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 12,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "overview",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 2977,
+          "chunk_index": 4
+        },
+        "text": "ail sales grew 9.3 percent (y/y) by Q4–\n2024, stable from 2023, but below a pre-\npandemic average of 11.6 percent, despite\na 2-percentage point reduction in VAT to\n8 percent throughout 2024. Consumer\nconfidence was impacted by the slow real\nestate recovery and rising inflation in H1-\n2024, which dampened demand for non-\nessential goods and services. As a result,\nprivate consumption of goods remained\nrelatively weak compared to consumption\nof services such as accommodation and\ncatering (11.5 perc",
+        "score": 7.0,
+        "rank": 5,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p011:c001",
+      "A:wb-taking-stock-2025-03:p019:c002",
+      "A:wb-taking-stock-2025-03:p019:c001"
+    ],
+    "context_chars": 1765,
+    "elapsed_ms": 1406.81,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "question": "Which five ministries and key electricity stakeholder are identified to drive Viet Nam e-mobility transition?",
+    "config": "rerank_imp2",
+    "applied_filter": null,
+    "top_k": 5,
+    "budget_chars": 1800,
+    "gold": [
+      {
+        "source_id": "wb-taking-stock-2025-03",
+        "page": 58,
+        "evidence": "the ministries of Transport (MoT), Industry and Trade (MoIT), Finance (MoF), Planning and Investment (MPI) and of Science and Technology (MoST) have been identified as critical ministries to drive the transition, with Viet Nam Electricity an additional key stakeholder."
+      }
+    ],
+    "results": [
+      {
+        "id": "A:wb-taking-stock-2025-03:p058:c000",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 58,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3209,
+          "chunk_index": 0
+        },
+        "text": "48 I TAKING STOCK MARCH 2025\nA cross-ministerial steering committee could be established and directly under the Prime\nMinister’s Office, led by up to two ministries. Based on the components of the e-mobility\necosystem and their mandates, the ministries of Transport (MoT), Industry and Trade (MoIT),\nFinance (MoF), Planning and Investment (MPI) and of Science and Technology (MoST) have been\nidentified as critical ministries to drive the transition, with Viet Nam Electricity an additional key\nstake",
+        "score": 10.0,
+        "rank": 1,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p058:c001",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 58,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "special_topic",
+          "char_len": 499,
+          "strategy": "A",
+          "char_count": 3209,
+          "chunk_index": 1
+        },
+        "text": "with Viet Nam Electricity an additional key\nstakeholder. 33 To ensure effective implementation, key sub-national governments responsible\nfor deployment of e-mobility programs should also be included in planning and decision-making.\nImportant stakeholders – such as research centers, industry associations, and academia – should\nbe consulted during the shaping of policy.\nTransport sector reforms related to e-mobility transition\nFurther to the technical analysis, a set of comprehensive policy recom",
+        "score": 8.5,
+        "rank": 2,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p017:c003",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 17,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "overview",
+          "char_len": 499,
+          "strategy": "A",
+          "char_count": 3105,
+          "chunk_index": 3
+        },
+        "text": "across the EV Value Chain, of which 61\npercent from the EV charging infrastructure\nindustry.\nA set of recommendations were developed\nto help the Government of Viet Nam\nachieve its targets for E-mobility transition.\nThe targets set under the Decision 876/\nQD-TTg related to transitioning the road\ntransportation sector towards electric\nmobility (E-Mobility) using electric vehicles\n(EVs) – to have 50 percent of urban\nvehicles and 100 urban buses and taxi to\nbe powered by electricity or green energy",
+        "score": 1.0,
+        "rank": 3,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p057:c000",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 57,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 1480,
+          "chunk_index": 0
+        },
+        "text": "ELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 47\nFigure 2.10. E-mobility transition ecosystem\nSource: World Bank calculations\nInspections\nPower Supply\n& Decarbonization\nGrid Readiness\n& Digitalization\nBuilding Codes\n& Urban Planning\nBattery Production,\nRecycling and Reuse\nWorkforce\nSkills\nStandards\n1. EV Uptake\nE-Mobility\nEcosystem\n3. EV Charging 2. EV Production\nMonitoringIncentives\nAchieving the e-mobility transition requires a profound structural shift in Viet Nam’s vehicle marke",
+        "score": 0.0,
+        "rank": 4,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      },
+      {
+        "id": "A:wb-taking-stock-2025-03:p059:c000",
+        "source_id": "wb-taking-stock-2025-03",
+        "source": "starter/data/taking_stock_2025_03.pdf",
+        "page": 59,
+        "metadata": {
+          "year": 2025,
+          "title": "Taking Stock March 2025: Electrifying Journeys - E-mobility Transition in Viet Nam",
+          "section": "special_topic",
+          "char_len": 500,
+          "strategy": "A",
+          "char_count": 3148,
+          "chunk_index": 0
+        },
+        "text": "ELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 49\nPower sector reforms related to e-mobility transition\nA key feature of this chapter is a set of power sector-focused policy recommendations, critical given\nuncertainty around inclusion of load sources from e-mobility in PDP8. To ensure the power system’s\npreparedness for EV charging, several steps need to be taken (Table 2.7) not only for generation supply,\nbut also for network requirements. Smart-grid together with off-grid solutions",
+        "score": 0.0,
+        "rank": 5,
+        "strategy": "hybrid_rerank",
+        "hit": false
+      }
+    ],
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p058:c000",
+      "A:wb-taking-stock-2025-03:p058:c001",
+      "A:wb-taking-stock-2025-03:p017:c003"
+    ],
+    "context_chars": 1766,
+    "elapsed_ms": 1537.52,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  }
+]

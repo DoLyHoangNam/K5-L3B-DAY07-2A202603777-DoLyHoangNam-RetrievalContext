@@ -1,0 +1,523 @@
+[
+  {
+    "query_id": "q16",
+    "question": "What global GDP and global trade growth rates were projected for 2023 compared to 2022?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời (đã đạt giới hạn tìm kiếm).",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2023-08:p019:c003 | starter/data/taking_stock_2023_08.pdf | page 19]\nerated after the last’s\nI. RECENT ECONOMIC DEVELOPMENTS\nFigure 1.1. Global GDP growth\nPercent (y/y)\nSource: Global Economic Prospects, June 2023, World Bank\n2022 2024f (Jun-23)\n2023f (Jun-23) 2023f (Jun-22)\n0\n2\n4\n6\n8\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\n8\n6\n4\n2\n0\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\nFigure 1.2. Global goods trade growth\nPercent (y/y)\nGrowth June-23 forecasts June-22 forecasts\n25\n15\n5\n-5\n-15\n2018 2019 2020 2021 2022 2023f 2024f\n18 World Bank, Global Ec",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p019:c003"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "global GDP global trade growth 2023 2022",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 0.7662
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p037:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 37,
+            "score": 0.7382
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 0.7277
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p019:c003"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "global GDP growth global trade growth percent 2022 2023",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 0.7514
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p037:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 37,
+            "score": 0.7389
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 0.7225
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p019:c003"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 2804,
+    "output_tokens": 90,
+    "llm_cost_usd": 0.000475,
+    "elapsed_ms": 46648.06
+  },
+  {
+    "query_id": "q17",
+    "question": "In the 2023 public investment analysis, what share of budgeted allocations was actually spent and what is the international good practice threshold for budget deviations?",
+    "status": "answered",
+    "answer": "In the public investment analysis, only 77 percent of budgeted allocations were actually spent [A:wb-taking-stock-2023-08:p042:c000]. The international good practice threshold suggests that budget deviations should remain below 5 percent [A:wb-taking-stock-2023-08:p042:c000].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p042:c000"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p042:c000 | starter/data/taking_stock_2023_08.pdf | page 42]\n42\nTAKING STOCK AUGUST 2023\nonly 77 percent of allocations spent (Figure 2.4). The differences between budgeted and actual spending (23\npercent) and the resulting capital expenditure carried over from one year to the next (18 to 31 percent of total\ncapital expenditures) are significantly larger than in many peer countries, and way above international good\npractices which suggest budget deviations to remain below 5 percent.78 PIM inefficiency is also manifested\nin significant project completion d",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p042:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "public investment budgeted allocations share spent budget deviations international good practice threshold 2023",
+        "filter": {
+          "year": 2023
+        },
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p042:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 42,
+            "score": 0.7931
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p041:c007",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 41,
+            "score": 0.7414
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p016:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 16,
+            "score": 0.74
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p042:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1405,
+    "output_tokens": 183,
+    "llm_cost_usd": 0.000321,
+    "elapsed_ms": 3080.3
+  },
+  {
+    "query_id": "q18",
+    "question": "What methodological weakness in project appraisal limits Vietnam ability to evaluate climate change risks and alternative adaptation options?",
+    "status": "answered",
+    "answer": "A key weakness limiting Vietnam's ability to evaluate climate change risks and adaptive responses is that there is no regulatory requirement to examine climate change risks early in project preparation—such as during the preparation of the feasibility study and appraisal—when it is most efficient to develop, analyze, and integrate alternative adaptive responses [A:wb-taking-stock-2023-08:p051:c002].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p051:c002"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p051:c002 | starter/data/taking_stock_2023_08.pdf | page 51]\nonses, this\nshould consider both the impacts of and on the project. While procedures for construction projects in the\nConstruction Law and supporting regulations recognize the need to consider climate change risks and\nadaptation, there is no regulatory requirement to examine climate change risks early in project preparation,\nsuch as during preparation of the feasibility study and appraisal, when it is more efficient to develop,\nanalyze, and integrate adaptive responses.\nGoing forward, Vietnam wi",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p051:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "project appraisal climate change risks alternative adaptation options methodological weakness Vietnam",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 0.8026
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 0.7963
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p017:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 17,
+            "score": 0.775
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p051:c002"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "methodological weakness project appraisal climate change risks Vietnam",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 0.8016
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 0.8003
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 0.785
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p051:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 2350,
+    "output_tokens": 193,
+    "llm_cost_usd": 0.000468,
+    "elapsed_ms": 3710.55
+  },
+  {
+    "query_id": "q19",
+    "question": "In the 2025 report, why did private consumption remain a moderate driver of aggregate demand in 2024 compared to the regional median?",
+    "status": "answered",
+    "answer": "In 2024, private consumption remained a moderate driver of aggregate demand compared to the regional median (54 percent of GDP compared to a regional median of 61.7 percent) because household savings increased amid heightened uncertainty in recent years [A:wb-taking-stock-2025-03:p011:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p011:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p011:c001 | starter/data/taking_stock_2025_03.pdf | page 11]\nsupporting the growth\nmomentum. However, private consumption\nremained a moderate driver of aggregate\ndemand relative to the region (54 percent\nof GDP compared to a median of 61.7\npercent, respectively) as household savings\nincreased amid heightened uncertainty in\nrecent years.\nTrade strongly rebounded in 2024, driven\nby the global technology upcycle. Total\nexports grew 15.5 percent in 2024, in stark\ncontrast to a -2.5 percent contraction in\n2023. Merchandise export growth reached\n14 percent by",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p011:c001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "private consumption moderate driver aggregate demand 2024 regional median",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p011:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 11,
+            "score": 0.7856
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 0.7659
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p012:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 12,
+            "score": 0.7605
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p011:c001"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1418,
+    "output_tokens": 170,
+    "llm_cost_usd": 0.000315,
+    "elapsed_ms": 1864.82
+  },
+  {
+    "query_id": "q20",
+    "question": "Which five ministries and key electricity stakeholder are identified to drive Viet Nam e-mobility transition?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời (đã đạt giới hạn tìm kiếm).",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p058:c001 | starter/data/taking_stock_2025_03.pdf | page 58]\nwith Viet Nam Electricity an additional key\nstakeholder. 33 To ensure effective implementation, key sub-national governments responsible\nfor deployment of e-mobility programs should also be included in planning and decision-making.\nImportant stakeholders – such as research centers, industry associations, and academia – should\nbe consulted during the shaping of policy.\nTransport sector reforms related to e-mobility transition\nFurther to the technical analysis, a set of comprehensive policy recom",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p058:c001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "ministries key electricity stakeholder e-mobility transition Viet Nam",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 0.8311
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 0.822
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p043:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 43,
+            "score": 0.7759
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p058:c001"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "five ministries key electricity stakeholder e-mobility transition",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 0.7773
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 0.7771
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p017:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 17,
+            "score": 0.7356
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p058:c001"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 2353,
+    "output_tokens": 73,
+    "llm_cost_usd": 0.000397,
+    "elapsed_ms": 2898.8
+  },
+  {
+    "query_id": "u03",
+    "question": "What was the total passenger volume of Long Thanh International Airport in Q1 2025?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời (đã đạt giới hạn tìm kiếm).",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p025:c004 | starter/data/taking_stock_2025_03.pdf | page 25]\nom a rebound in tourist entries. The lack\nof domestic demand was also highlighted as a primary factor impacting local firms in 2024 (Figure\n1.15). At the same time, as a sign of a growing middle class, high-end purchases recently increased\nas evidenced by sales of 293,000 cars in 2024 (+24 percent y/y by Q4–24), including 10,000 hybrid\nvehicles10 and increased demand for mid-range apartment units. 11\n10 Viet Nam Automobile Manufacturers’ Association.\n11 Some 6,700 Grade B units were sold in Ha N",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p025:c004"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Long Thanh International Airport passenger volume Q1 2025",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p025:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 25,
+            "score": 0.6598
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p044:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 44,
+            "score": 0.6592
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p032:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 32,
+            "score": 0.6559
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p025:c004"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Long Thanh",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p043:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 43,
+            "score": 0.6349
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p059:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 59,
+            "score": 0.6331
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p017:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 17,
+            "score": 0.6309
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p025:c004"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 2545,
+    "output_tokens": 79,
+    "llm_cost_usd": 0.000429,
+    "elapsed_ms": 2993.8
+  },
+  {
+    "query_id": "u04",
+    "question": "What was Vietnam's bilateral trade deficit with South Korea in Q4 2024?",
+    "status": "abstain",
+    "answer": "The retrieved documents do not contain information regarding Vietnam's bilateral trade deficit with South Korea in Q4 2024.",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p022:c001 | starter/data/taking_stock_2025_03.pdf | page 22]\n24\nDec-24\nBil. US$\nExports (fob) (RHS)\nImports (cif) (RHS)\nImports (Y/Y % change, 3mma)\nExports (Y/Y % change, 3mma)\n8.4 6.9\n18.9\n10.6\n-4.6\n14.0\n-5%\n0%\n5%\n10%\n15%\n20%\n2019 2020 2021 2022 2023 2024\nElectronics (excl. Computers) Computers\nMetals Agriculture\nFootwear Textiles & Garments\nMachinery Others\nTotal exports\nSource: Haver Analytics and World Bank staff calculations\nNote: fob = free/freight on board and cif = Cost, insurance,\nand freight RHS = right hand side\nSource: Haver Analytics and Wor",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p022:c001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "bilateral trade deficit South Korea Q4 2024 Vietnam",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p022:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 22,
+            "score": 0.7324
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.7315
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p021:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 21,
+            "score": 0.7308
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p022:c001"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "South Korea trade deficit Q4 2024",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p022:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 22,
+            "score": 0.7353
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.7291
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 0.7254
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p022:c001"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 2715,
+    "output_tokens": 105,
+    "llm_cost_usd": 0.00047,
+    "elapsed_ms": 62867.78
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "config": "agent_baseline",
+  "method": "dense",
+  "max_searches": 2,
+  "top_k": 3,
+  "budget_chars": 800,
+  "enable_adjacent": false,
+  "total_cases": 7,
+  "errors": 0,
+  "answered": 3,
+  "abstained": 4,
+  "avg_search_calls": 1.71,
+  "median_ms": 3080.3,
+  "total_llm_cost_usd": 0.002875,
+  "retriever_cost_usd": 2.8e-05
+}

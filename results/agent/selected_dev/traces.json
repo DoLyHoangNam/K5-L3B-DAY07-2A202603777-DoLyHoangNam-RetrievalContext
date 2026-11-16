@@ -1,0 +1,1334 @@
+[
+  {
+    "query_id": "q01",
+    "question": "What was Vietnam real GDP growth in the first half of 2023?",
+    "status": "answered",
+    "answer": "Vietnam's real GDP growth slowed to 3.7 percent year-on-year during the first half of 2023 [A:wb-taking-stock-2023-08:p011:c001] [A:wb-taking-stock-2023-08:p019:c001].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p011:c001",
+      "A:wb-taking-stock-2023-08:p019:c001"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p011:c001 | starter/data/taking_stock_2023_08.pdf | page 11]\nstering 8 percent real GDP growth\nin 2022, Vietnam’s economic growth\ndecelerated sharply in the first half of 2023,\nreflecting a slump in external and weaker\ndomestic demand. Vietnam’s real GDP growth\nslowed to 3.7 percent year-on-year (y/y) during\nthe first half of 2023, 1 well below growth posted\nduring the same period in 2022 (6.4 percent, y/y).\nThe slowdown was led by a sharp deterioration\nin external demand with exports contracting\nby 12 percent (y/y) in the first half of 2023. This\nin turn\n\n[A:wb-taking-stock-2023-08:p019:c001 | starter/data/taking_stock_2023_08.pdf | page 19]\ne but remain well above pre-pandemic levels.\nGlobal trade is expected to grow by only 1.7 percent in 2023 (2.6 percentage points lower than June 2022’s\nforecast, Figure 1.2).\nVietnam’s economic growth decelerated sharply\nAfter registering 8 percent real GDP growth in 2022, economic growth decelerated sharply\nin the first semester of 2023, reflecting a slump in external and weaker domestic demand.\nVietnam’s real GDP growth slowed to 3.7 percent (y/y) during the first semester of 2023, 19 well bel\n\n[A:wb-taking-stock-2023-08:p019:c002 | starter/data/taking_stock_2023_08.pdf | page 19]\n/y) during the first semester of 2023, 19 well below\ngrowth posted during the same period in 2022 (6.4 percent, y/y) (Figure 1.3). The slowdown was led by a\ndeterioration of external demand with exports contracting by 12 percent (y/y) in the first half of 2023, in\nturn weighing on the performance of the export sector, which is estimated to account for 50 percent of\nVietnam’s GDP directly and indirectly. 20 Simultaneously, domestic demand also moderated after the last’s\nI. RECENT ECONOMIC DEVELOP",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p011:c001",
+      "A:wb-taking-stock-2023-08:p019:c001",
+      "A:wb-taking-stock-2023-08:p019:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "real GDP growth first half 2023 Vietnam",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 9.8
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p020:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 20,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 6.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p011:c001",
+          "A:wb-taking-stock-2023-08:p019:c001",
+          "A:wb-taking-stock-2023-08:p019:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1997,
+    "output_tokens": 193,
+    "llm_cost_usd": 0.000415,
+    "elapsed_ms": 5008.28
+  },
+  {
+    "query_id": "q02",
+    "question": "What was the estimated cumulative disbursement of the public investment budget at the end of June 2023?",
+    "status": "answered",
+    "answer": "At the end of June 2023, the estimated cumulative disbursement of the public investment budget remained low at 30.5 percent of the annual budget [A:wb-taking-stock-2023-08:p013:c001].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p013:c001"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p013:c001 | starter/data/taking_stock_2023_08.pdf | page 13]\ncovery Plan. However, the\nestimated cumulative disbursement of the public\ninvestment budget remained low at 30.5 percent of\nthe annual budget at the end of June 2023.\nOutlook, risks, and policy implications\nVietnam’s economy is expected to grow by\n4.7 percent in 2023, with a slow projected\nrecovery to 5.5 percent in 2024 and to 6.0\npercent in 2025. While softening, domestic\ndemand is expected to be the main driver of\ngrowth in 2023. Private consumption will remain\nresilient, - growing 6.0 (y/y)\n\n[A:wb-taking-stock-2023-08:p013:c000 | starter/data/taking_stock_2023_08.pdf | page 13]\n13\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nas revenue collection contracted by 7 percent in\nthe first half of 2023 compared to a year ago due\nto the slowing economic activities. Meanwhile,\ntotal expenditure rose by 12.8 percent (y/y) in the\nfirst half of 2023, due to a 43 percent (y/y) increase\nin public investment disbursement related to\nimplementation of the investment component\n(valued at 1.6 percent of GDP) of the 2022-2023\nSocio-Economic Recovery Plan. However, the\nestimated cumulative dis\n\n[A:wb-taking-stock-2023-08:p031:c005 | starter/data/taking_stock_2023_08.pdf | page 31]\n400\n200\n0\n-200\n25\n20\n15\n10\n5\n0\n-5\n-10\n-15\nH1-19 H1-20 H1-21 H1-22 H1-23\nWhile overall budget expenditure increased in the first semester of 2023, implementation\nchallenges associated with public investment remained. By the end of June, total expenditure lagged\nat 39 percent of the annual plan (or 17 percent of GDP), while disbursement of public investment reached\nonly 30 percent of the annual planned budget. These low execution rates are comparable to 2022 and\nprevious years, partly reflective o",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p013:c001",
+      "A:wb-taking-stock-2023-08:p013:c000",
+      "A:wb-taking-stock-2023-08:p031:c005"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "cumulative disbursement of the public investment budget June 2023",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p013:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 13,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p013:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 13,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 7.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p014:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 14,
+            "score": 6.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p013:c001",
+          "A:wb-taking-stock-2023-08:p013:c000",
+          "A:wb-taking-stock-2023-08:p031:c005"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2016,
+    "output_tokens": 144,
+    "llm_cost_usd": 0.000389,
+    "elapsed_ms": 3600.75
+  },
+  {
+    "query_id": "q03",
+    "question": "In the 2023 report, what was Vietnam projected GDP growth for 2023, 2024, and 2025?",
+    "status": "answered",
+    "answer": "In the August 2023 report, Vietnam's real GDP growth was projected to be 4.7 percent in 2023, followed by a slow recovery to 5.5 percent in 2024 and 6.0 percent in 2025 [A:wb-taking-stock-2023-08:p013:c001] [A:wb-taking-stock-2023-08:p032:c004].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p013:c001",
+      "A:wb-taking-stock-2023-08:p032:c004"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p032:c004 | starter/data/taking_stock_2023_08.pdf | page 32]\ncted to affect economic growth in the short term\nVietnam’s economy is expected to grow by 4.7 percent in 2023, with a slow projected\nrecovery to 5.5 percent in 2024 and to 6.0 percent in 2025. While softening, domestic demand\nis expected to be the main driver of growth in 2023. Private consumption will remain resilient, growing\n6.0 (y/y) percent - below its pre-pandemic growth of 7 percent (y/y) in 2019 - and contributing 3.4\npercentage point to GDP growth. Overall, investment will contribute 1.\n\n[A:wb-taking-stock-2023-08:p013:c001 | starter/data/taking_stock_2023_08.pdf | page 13]\ncovery Plan. However, the\nestimated cumulative disbursement of the public\ninvestment budget remained low at 30.5 percent of\nthe annual budget at the end of June 2023.\nOutlook, risks, and policy implications\nVietnam’s economy is expected to grow by\n4.7 percent in 2023, with a slow projected\nrecovery to 5.5 percent in 2024 and to 6.0\npercent in 2025. While softening, domestic\ndemand is expected to be the main driver of\ngrowth in 2023. Private consumption will remain\nresilient, - growing 6.0 (y/y)\n\n[A:wb-taking-stock-2023-08:p011:c000 | starter/data/taking_stock_2023_08.pdf | page 11]\n11\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nRecent Economic Developments\nThe external environment remains challenging\nwith downside risks prevailing in the near-\nterm. Global GDP growth is projected to decline to 2.1\npercent in 2023 from 3.1 percent in 2022, reflecting\nweakening demand in most advanced economies. In\nline with slower global growth, global trade growth\nis estimated to weaken from 6 percent in 2022 to 1.7\npercent in 2023.\nAfter registering 8 percent real GDP growth\nin 2022, Vietnam",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p032:c004",
+      "A:wb-taking-stock-2023-08:p013:c001",
+      "A:wb-taking-stock-2023-08:p011:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "GDP growth projected 2023 2024 2025",
+        "filter": {
+          "year": 2023
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p032:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 32,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p013:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 13,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 6.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p033:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 33,
+            "score": 4.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p033:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 33,
+            "score": 3.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p032:c004",
+          "A:wb-taking-stock-2023-08:p013:c001",
+          "A:wb-taking-stock-2023-08:p011:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2038,
+    "output_tokens": 242,
+    "llm_cost_usd": 0.000451,
+    "elapsed_ms": 3003.6
+  },
+  {
+    "query_id": "q04",
+    "question": "How did retail sales growth in Vietnam change during the first six months of 2023?",
+    "status": "answered",
+    "answer": "In the first half of 2023, growth of retail sales slowed to 10.9 percent year-on-year (compared to 12 percent year-on-year in the first half of 2022) [A:wb-taking-stock-2023-08:p021:c000]. Monthly retail sales growth also showed a steady deceleration over this period, dropping from 12.8 percent year-on-year in January to 6.5 percent year-on-year in June [A:wb-taking-stock-2023-08:p021:c000].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p021:c000"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p021:c000 | starter/data/taking_stock_2023_08.pdf | page 21]\n21\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nMeanwhile, private consumption also slowed due to fading base effects from last year’s strong\npost-COVID rebound and weakness in consumer confidence. Growth of retail sales – a proxy for private\nconsumption – slowed to 10.9 percent (y/y) in the first half of 2023 (compared with 12 percent (y/y) in the\nfirst half of 2022), with monthly retail sales growth showing a steady deceleration from 12.8 percent (y/y) in\nJanuary to just 6.5 percent (y/y) in June\n\n[A:wb-taking-stock-2023-08:p021:c004 | starter/data/taking_stock_2023_08.pdf | page 21]\ny/y), due to knock-on effects of the external demand shock and loss in\nconsumer confidence. The substantial slowdown in sales of services is largely due to the base effect (post-pandemic normalization in sales)\nin tourism and hospitality services (36 percent y/y in January to 6.5 percent y/y in June).\n25 Infocus, Consumer Survey June 2023.\n26 GSO data, World Bank staff calculations.\nthat affected northern Vietnam in May and June 2023 disrupted production and are estimated to have\nhad a negative\n\n[A:wb-taking-stock-2023-08:p021:c003 | starter/data/taking_stock_2023_08.pdf | page 21]\nthe same period of 2022,\ndue to weaker private investment given slowing domestic and external demand (Figure 1.7). The contribution\nof private domestic investment to total investment eased to 1.4 percentage points in the first semester of 2023\n24 Sales of goods, which contributes about 70 percent to total retail sales, slowed from 9.7 percent y/y in January 2023 to 6 percent y/y in\nFebruary, well below the pre-pandemic growth rates (11.9 percent y/y), due to knock-on effects of the external dema",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p021:c000",
+      "A:wb-taking-stock-2023-08:p021:c004",
+      "A:wb-taking-stock-2023-08:p021:c003"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "retail sales growth first six months 2023 Vietnam",
+        "filter": {
+          "year": 2023
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p021:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 21,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p021:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 21,
+            "score": 5.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p021:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 21,
+            "score": 4.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 3.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 1.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p021:c000",
+          "A:wb-taking-stock-2023-08:p021:c004",
+          "A:wb-taking-stock-2023-08:p021:c003"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1969,
+    "output_tokens": 238,
+    "llm_cost_usd": 0.000438,
+    "elapsed_ms": 3892.57
+  },
+  {
+    "query_id": "q05",
+    "question": "What was the budget size of the public investment component under the 2022-23 Socio-Economic Recovery Program?",
+    "status": "answered",
+    "answer": "The public investment component under the 2022-23 Socio-Economic Recovery Program has a budget close to VND170 trillion, which is equivalent to 1.8 percent of GDP (or 1.6 percent of GDP as noted in planned figures) [A:wb-taking-stock-2023-08:p031:c000] [A:wb-taking-stock-2023-08:p014:c003].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p014:c003",
+      "A:wb-taking-stock-2023-08:p031:c000"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p031:c000 | starter/data/taking_stock_2023_08.pdf | page 31]\n31\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\n51 The 16.9 percent (y/y) bump in corporate income tax in H1-2023 resulted from payments derived from 2022 tax deferrals which became due\nin Q1-2023.\n52 The 2022-23 Socio-Economic Recovery Program includes a public investment component with a budget close to VND170 trillion (or 1.8\npercent of GDP). As preparation of investment projects under this component took almost a year to complete, disbursement only commenced\nin early 2023.\nAccelerated public inv\n\n[A:wb-taking-stock-2023-08:p031:c003 | starter/data/taking_stock_2023_08.pdf | page 31]\nf the public investment budget\njumped by 43.3 percent (y/y) during the first semester of 2023, providing some support to the economy\n(Figure 1.25). The surge in disbursement of the investment budget included the roll out the investment\ncomponent of the 2022–23 Socio-Economic Recovery Program approved in early 2022 (1.8 percent of GDP).52\nSource: MoF and World Bank staff calculations\nNote: RHS = right-hand scale\nSource: MoF and World Bank staff calculations\n(A)\nPercent of GDP\nFigure 1.23. Budget\n\n[A:wb-taking-stock-2023-08:p014:c003 | starter/data/taking_stock_2023_08.pdf | page 14]\nould bring public\ninvestments to 7.1 percent of GDP in 2023, up\nfrom 5.5 percent planned in 2022, providing a\nfiscal impulse of 0.4 percent of GDP to support\naggregate demand. The government has planned\na 38 percent increase (y/y) in public investment\nfor 2023 – equivalent to 1.6 percent of GDP (as\npart of 2022-2023 Socio-Economic Recovery\nProgram). It is accelerating implementation with\ndisbursement of the public investment budget\njumping by 43.3 percent (y/y) during the first\nsemester of 2023.",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p031:c000",
+      "A:wb-taking-stock-2023-08:p031:c003",
+      "A:wb-taking-stock-2023-08:p014:c003"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Socio Economic Recovery Program public investment budget size 2022 2023",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p014:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 14,
+            "score": 9.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p013:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 13,
+            "score": 8.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p035:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 35,
+            "score": 8.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p031:c000",
+          "A:wb-taking-stock-2023-08:p031:c003",
+          "A:wb-taking-stock-2023-08:p014:c003"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2020,
+    "output_tokens": 229,
+    "llm_cost_usd": 0.00044,
+    "elapsed_ms": 64565.86
+  },
+  {
+    "query_id": "q06",
+    "question": "What average annual government investment as a share of GDP does Vietnam need during 2021-2030 to support infrastructure development?",
+    "status": "answered",
+    "answer": "To support infrastructure development during the 2021–2030 period, Vietnam needs an average government investment of 7.3 percent of GDP annually [A:wb-taking-stock-2023-08:p015:c006] [A:wb-taking-stock-2023-08:p039:c001].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p015:c006",
+      "A:wb-taking-stock-2023-08:p039:c001"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p039:c001 | starter/data/taking_stock_2023_08.pdf | page 39]\nring 2021–2030 and 6.5 to 7.5 percent\nthrough 2031–2050. 68 The country also needs to ensure that gross capital investments from all sectors\naccount for 32 to 35 percent of GDP on average from 2021 until 2030, including government investment at\nan average of 7.3 percent of GDP annually to support infrastructure development during this period. 69 This\nis in line with global experience that fast-growing countries are characterized by high public investment,\ndefined as 7 percent of GDP or more.70\nD\n\n[A:wb-taking-stock-2023-08:p015:c006 | starter/data/taking_stock_2023_08.pdf | page 15]\nindividuals to make environmentally\nconscious choices.\nVietnam, in seeking to reach upper middle-\nincome status by 2030 and high-income\nstatus by 2045, aspires to become a modern\nand industrialized nation with a higher\nquality of life for its citizens. To achieve this\nambitious development goal, the Vietnamese\nGovernment estimates that it needs to invest\nan average of 7.3 percent of GDP annually into\ninfrastructure during the 2021-2030 period. 10\nDespite growing needs, Vietnam’s public\ninvestmen\n\n[A:wb-taking-stock-2023-08:p039:c002 | starter/data/taking_stock_2023_08.pdf | page 39]\nvestment,\ndefined as 7 percent of GDP or more.70\nDespite critical growing needs, Vietnam’s public investment level has declined in the past\ndecade. From 2011 to 2022, the share of public investment in total government expenditures and GDP\nfell from 27 to 20 percent, and 8 to 6 percent, respectively. 71 Yet the economy remains relatively capital\nscarce with a public capital stock per capita and per worker well below upper middle-income countries\n(UMICs) and high-income countries (HICs) (Figures 2",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p039:c001",
+      "A:wb-taking-stock-2023-08:p015:c006",
+      "A:wb-taking-stock-2023-08:p039:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "government investment share GDP infrastructure 2021 2030 Vietnam",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p039:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 39,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p015:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 15,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p039:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 39,
+            "score": 6.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p039:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 39,
+            "score": 5.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p040:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 40,
+            "score": 3.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p039:c001",
+          "A:wb-taking-stock-2023-08:p015:c006",
+          "A:wb-taking-stock-2023-08:p039:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1983,
+    "output_tokens": 195,
+    "llm_cost_usd": 0.000414,
+    "elapsed_ms": 4241.35
+  },
+  {
+    "query_id": "q07",
+    "question": "What average delay and cost overrun did a recent World Bank review find for selected large-scale transport projects in Vietnam?",
+    "status": "answered",
+    "answer": "A recent World Bank review of selected large-scale transport projects in Vietnam found an average delay of five years [A:wb-taking-stock-2023-08:p016:c002] [A:wb-taking-stock-2023-08:p042:c001] and an average cost overrun of double the original cost at the design and budget allocation stage [A:wb-taking-stock-2023-08:p042:c001].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p016:c002",
+      "A:wb-taking-stock-2023-08:p042:c001"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p042:c001 | starter/data/taking_stock_2023_08.pdf | page 42]\nlso manifested\nin significant project completion delays and cost overruns. A recent World Bank review 79 of selected large-\nscale transport projects found an average delay of five years, and an average cost overrun of double the\noriginal cost at the design and budget allocation stage.\nIncreasing capital spending decentralization\nPublic investment efficiency is also affected by Vietnam’s fragmented intergovernmental\nsystem and increasingly decentralized capital spending. Since the early 1990s, th\n\n[A:wb-taking-stock-2023-08:p016:c002 | starter/data/taking_stock_2023_08.pdf | page 16]\npital\nexpenditure carried over from one year to the next,\nare significantly larger than in many peer countries,\nand way beyond international good practices which\nsuggest the variation levels to be below 5 percent. 14\nPublic investment management (PIM) inefficiency\nis also manifested in significant project completion\ndelays and cost overruns. A recent World Bank\nreview15 of selected, large-scale transport projects\nfound an average delay time of five years, and an\naverage cost overrun double the o\n\n[A:wb-taking-stock-2023-08:p042:c004 | starter/data/taking_stock_2023_08.pdf | page 42]\noverall (39.5 percent) (Figure 2.6).\n78 Public Expenditure and Financial Accountability (PEFA) Framework, Performance Indicator 1.\n79 Regional Investments in Vietnam: Challenges and Opportunities (WB Policy Note, 2023). Review sample included 14 transport projects\nwhich accounts for 13 percent of transport investment budget during 2011-20 (sourced from MOT). In the same review, it is worth noting that\ntime overrun tends to vary more widely between one to three years in the case of smaller projec\n\n[A:wb-taking-stock-2023-08:p016:c009 | starter/data/taking_stock_2023_08.pdf | page 16]\nm: Challenges and Opportunities (World Bank Policy Note, 2023). In the same review, it is noted that time overrun\ntends to vary more widely between one to three years in the case of smaller projects.\n16 Vibrant Vietnam: Forging the Foundation of a High-Income Economy” (World Bank Report, 2019).",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p042:c001",
+      "A:wb-taking-stock-2023-08:p016:c002",
+      "A:wb-taking-stock-2023-08:p042:c004",
+      "A:wb-taking-stock-2023-08:p016:c009"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "large scale transport projects delay cost overrun World Bank review Vietnam",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p042:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 42,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p016:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 16,
+            "score": 9.8
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p042:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 42,
+            "score": 8.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p016:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 16,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p016:c009",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 16,
+            "score": 7.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p042:c001",
+          "A:wb-taking-stock-2023-08:p016:c002",
+          "A:wb-taking-stock-2023-08:p042:c004",
+          "A:wb-taking-stock-2023-08:p016:c009"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2051,
+    "output_tokens": 230,
+    "llm_cost_usd": 0.000446,
+    "elapsed_ms": 5147.51
+  },
+  {
+    "query_id": "q08",
+    "question": "How is climate change adaptation currently treated in Vietnam overall fiscal strategy and project budget prioritization?",
+    "status": "answered",
+    "answer": "Climate change adaptation is not fully accounted for in Vietnam's overall fiscal strategy nor in the prioritization of projects for budget funding [A:wb-taking-stock-2023-08:p017:c000] [A:wb-taking-stock-2023-08:p050:c001]. Furthermore, high-level policy commitments (such as the net zero by 2050 target and the Green Growth Strategy) are not yet associated with credible fiscal implication estimates by either the Ministry of Finance (MoF) or the Ministry of Planning and Investment (MPI) [A:wb-taking-stock-2023-08:p050:c001]. Subnational governments are also least prepared due to a lack of policies and processes to assess and mitigate climate risks on large investments and assets [A:wb-taking-stock-2023-08:p017:c001].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p017:c000",
+      "A:wb-taking-stock-2023-08:p017:c001",
+      "A:wb-taking-stock-2023-08:p050:c001"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p017:c000 | starter/data/taking_stock_2023_08.pdf | page 17]\n17\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\n17 Vietnam Country Climate Development Report (CCDR) (World Bank, 2022).\nUS$701 billion over 2022-2040, or approximately 6.8\npercent of GDP per year.17 Public investment—with its\ncritical role as catalyst for private investment—would\naccount for more than one-third of the financing\nneeds, or about 2.4 percent of GDP. However,\nclimate change adaptation is not fully accounted for\nin the overall fiscal strategy nor in prioritization of\nprojects for budget\n\n[A:wb-taking-stock-2023-08:p050:c001 | starter/data/taking_stock_2023_08.pdf | page 50]\nr.\nClimate change largely absent in fiscal and investment decision\nClimate change adaptation is not fully accounted for in the overall fiscal strategy nor in\nprioritization of projects for budget funding. The high-level policy commitment by the Prime\nMinister at COP26 (net zero by 2050) and the Green Growth Strategy until 2030, vision 2050 (approved\nby the Prime Minister in 2021) and action plans are yet to be associated with credible estimates by either\nthe MoF or MPI of their fiscal implicatio\n\n[A:wb-taking-stock-2023-08:p017:c001 | starter/data/taking_stock_2023_08.pdf | page 17]\nategy nor in prioritization of\nprojects for budget funding in Vietnam. Subnational\ngovernments are least prepared as they lack policies\nand processes to assess and mitigate climate change’s\nphysical and transition risks on large investments and\nassets. The lack of information on the value of assets\nand their risk exposure increases the cost of their\ninsurance. Transboundary development challenges\nare emerging more frequently with more severity\nand require coordinated actions across various level",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p017:c000",
+      "A:wb-taking-stock-2023-08:p050:c001",
+      "A:wb-taking-stock-2023-08:p017:c001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "climate change adaptation fiscal strategy project budget prioritization Vietnam",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p017:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 17,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p050:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 50,
+            "score": 9.8
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p017:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 17,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p046:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 46,
+            "score": 9.2
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p046:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 46,
+            "score": 9.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p017:c000",
+          "A:wb-taking-stock-2023-08:p050:c001",
+          "A:wb-taking-stock-2023-08:p017:c001"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1897,
+    "output_tokens": 351,
+    "llm_cost_usd": 0.000495,
+    "elapsed_ms": 3456.36
+  },
+  {
+    "query_id": "q09",
+    "question": "What was Viet Nam real GDP growth in 2024 according to the March 2025 report?",
+    "status": "answered",
+    "answer": "According to the March 2025 report, Viet Nam's real GDP growth reached 7.1 percent in 2024, driven by a strong rebound in exports [A:wb-taking-stock-2025-03:p011:c000] [A:wb-taking-stock-2025-03:p019:c000].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p011:c000",
+      "A:wb-taking-stock-2025-03:p019:c000"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p019:c000 | starter/data/taking_stock_2025_03.pdf | page 19]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 9\nGrowth accelerated in 2024 driven by a strong rebound in\nexports\nViet Nam’s real GDP growth reached 7.1 percent in 2024, driven by a strong rebound in exports,\noutpacing most regional peers. GDP growth is estimated to be the highest of developing countries in\nEast Asia in 2024, including ASEAN countries, surpassing the government’s target of 6–6.5 percent 2\n(Figure 1.1). External demand weakened in 2023, leading to a trade contraction\n\n[A:wb-taking-stock-2025-03:p011:c000 | starter/data/taking_stock_2025_03.pdf | page 11]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I i\nEXECUTIVE SUMMARY\nGrowth accelerated in 2024\ndriven by a strong rebound in\nexports\nViet Nam’s real GDP growth reached 7.1\npercent in 2024, driven by a strong rebound\nin exports, outpacing most regional peers.\nExternal demand strongly rebounded in\n2024 after a contraction in 2023. Final\nconsumption and investment growth also\naccelerated in 2024 reaching 6.6 and 7.2\npercent, respectively, supporting the growth\nmomentum. However, private\n\n[A:wb-taking-stock-2025-03:p019:c001 | starter/data/taking_stock_2025_03.pdf | page 19]\nweakened in 2023, leading to a trade contraction and a slowdown in GDP\ngrowth to 5 percent real GDP. This was followed by a sharp rebound in 2024 with exports and imports\ngrowing by 15.5 and 16.1 percent, respectively. Further, final consumption and investment growth\naccelerated in 2024 reaching 6.6 and 7.2 percent, respectively, also supporting growth momentum\n(Figure 1.2). However, private consumption remained a moderate driver of aggregate demand relative\nto the median in the region (54 perc",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p019:c000",
+      "A:wb-taking-stock-2025-03:p011:c000",
+      "A:wb-taking-stock-2025-03:p019:c001"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "real GDP growth 2024",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p011:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 11,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 8.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 7.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p011:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 11,
+            "score": 6.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p019:c000",
+          "A:wb-taking-stock-2025-03:p011:c000",
+          "A:wb-taking-stock-2025-03:p019:c001"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1989,
+    "output_tokens": 209,
+    "llm_cost_usd": 0.000424,
+    "elapsed_ms": 22260.49
+  },
+  {
+    "query_id": "q10",
+    "question": "Although formal employment and underemployment improved in 2024, what happened to youth unemployment?",
+    "status": "answered",
+    "answer": "Despite improvements in underemployment and stable formal employment and overall unemployment in 2024, youth unemployment rose, reaching 8 percent by the end of 2024 compared to 7.6 percent the previous year [A:wb-taking-stock-2025-03:p012:c001] [A:wb-taking-stock-2025-03:p027:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p012:c001",
+      "A:wb-taking-stock-2025-03:p027:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p012:c001 | starter/data/taking_stock_2025_03.pdf | page 12]\n). Labor force participation\nand formal unemployment remained\nrelatively stable at 68.5 and 2.2 percent in\n2024, respectively, while underemployment\nrates lowered at 1.7 percent at the end of\n2024 (-0.3 pp from the same period in 2023)\nsuggesting greater labor utilization. However,\nyouth unemployment rose, reaching 8\npercent by end–2024, from 7.6 percent the\nprevious year.\nManufacturing employment growth ticked\nup to 3.4 percent (y/y) by November\n2024 from a low base (-2.3 percent (y/y)\na year e\n\n[A:wb-taking-stock-2025-03:p027:c001 | starter/data/taking_stock_2025_03.pdf | page 27]\ndue to agricultural employment measurement and structural changes\nsince the pandemic.12 Unemployment remained stable at 2.2 percent in 2024, while underemployment\nrates lowered at 1.7 percent at the end of 2024 (-0.3 pp from the same period in 2023) suggesting\ngreater labor utilization. However, youth unemployment rose, reaching 8 percent by end–2024, from\n7.6 percent the previous year.\nAmid improved labor market conditions and public sector wage hikes, real income grew modestly\nafter 2023’s he\n\n[A:wb-taking-stock-2025-03:p027:c000 | starter/data/taking_stock_2025_03.pdf | page 27]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 17\nFormal employment remained stable, yet small improvements in underemployment contrasted\nwith persistently high youth unemployment. There were 52.1 million Vietnamese employed\nby December 2024, adding about 550,000 workers over the last 12 months (GSO). Labor force\nparticipation remained relatively stable at 69 percent in December 2024 (Figure 1.17), but below\n2019’s 71.1 percent partly due to agricultural employment measurement and st",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p012:c001",
+      "A:wb-taking-stock-2025-03:p027:c001",
+      "A:wb-taking-stock-2025-03:p027:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "youth unemployment 2024 formal employment underemployment",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p012:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 12,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p027:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 27,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p027:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 27,
+            "score": 9.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p012:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 12,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p027:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 27,
+            "score": 4.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p012:c001",
+          "A:wb-taking-stock-2025-03:p027:c001",
+          "A:wb-taking-stock-2025-03:p027:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1979,
+    "output_tokens": 211,
+    "llm_cost_usd": 0.000423,
+    "elapsed_ms": 3701.05
+  },
+  {
+    "query_id": "q11",
+    "question": "What was the estimated disbursement of public investment in 2024 as a percentage of GDP and of the prime minister approved budget?",
+    "status": "answered",
+    "answer": "In 2024, the disbursement of public investment was estimated at 4.6 percent of GDP [A:wb-taking-stock-2025-03:p014:c001] [A:wb-taking-stock-2025-03:p033:c003], corresponding to 77.5 percent of the Prime Minister's approved budget allocation as of the end of December 2024 [A:wb-taking-stock-2025-03:p014:c001] [A:wb-taking-stock-2025-03:p033:c003].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p014:c001",
+      "A:wb-taking-stock-2025-03:p033:c003"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p033:c003 | starter/data/taking_stock_2025_03.pdf | page 33]\nched 11.3 percent of GDP, compared to 12.4\npercent in 2023 and equivalent to 94.5 percent of that targeted. Disbursement of public investment was\nestimated at 4.6 percent of GDP in 2024 (7.1 percent in 2023) corresponding to 77.5 percent of the\nprime minister’s approved budget allocation as end of December 2024, dipping below the 81.9 percent\ndisbursement rate for the same period in 2023. Planned annual savings in recurrent expenditures are\nearmarked to finance the civil service salary reform ag\n\n[A:wb-taking-stock-2025-03:p014:c001 | starter/data/taking_stock_2025_03.pdf | page 14]\npercent\nof GDP. Current expenditure reached 11.3\npercent of GDP, compared to 12.4 percent\nin 2023. Disbursement of public investment\nis estimated at 4.6 percent of GDP in 2024\n(7.1 percent in 2023) corresponding to 77.5\npercent of the prime minister’s approved\nbudget as end of December 2024. Planned\nannual savings in recurrent expenditures are\nearmarked to finance the civil service salary\nreform agenda, including a substantive wage\nbill increase from July 1, 2024 (on average,\n30 and 15 percent\n\n[A:wb-taking-stock-2025-03:p014:c002 | starter/data/taking_stock_2025_03.pdf | page 14]\nfrom July 1, 2024 (on average,\n30 and 15 percent increases in salary base\nand pensions, respectively). 1 Slow capital\ndisbursement was attributed to delays in\nland clearance and compensation for major\nnational highway projects, scarcity of backfill\nmaterials (stone and sand), and fluctuating\nprices of raw materials. In addition, regulatory\nhurdles and lengthy approval procedures\ncontinued to slow implementation of public\ninvestment projects.\nElectricity intensity of GDP\nincreased\nPower generati",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p033:c003",
+      "A:wb-taking-stock-2025-03:p014:c001",
+      "A:wb-taking-stock-2025-03:p014:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "disbursement of public investment 2024 percentage of GDP prime minister approved budget",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p033:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 33,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p014:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 14,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p014:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 14,
+            "score": 4.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p033:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 33,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p014:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 14,
+            "score": 0.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p033:c003",
+          "A:wb-taking-stock-2025-03:p014:c001",
+          "A:wb-taking-stock-2025-03:p014:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1983,
+    "output_tokens": 275,
+    "llm_cost_usd": 0.000462,
+    "elapsed_ms": 26833.59
+  },
+  {
+    "query_id": "q12",
+    "question": "What more flexible approach did the State Bank of Vietnam introduce in 2024 regarding bank credit growth ceilings?",
+    "status": "answered",
+    "answer": "In 2024, the State Bank of Vietnam (SBV) introduced a more flexible approach to its credit growth caps by allowing selected banks with stronger capital bases to exceed their predetermined indicative quotas once they reached 80 percent of their limit by August, without needing to seek approval for additional credit room [A:wb-taking-stock-2025-03:p013:c007] [A:wb-taking-stock-2025-03:p031:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p013:c007",
+      "A:wb-taking-stock-2025-03:p031:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p031:c001 | starter/data/taking_stock_2025_03.pdf | page 31]\nto extend credit\nto maintain their indicative quotas, creating bunching by year end. These efforts to meet the credit\nceiling could create inefficiencies by allocating resource to unproductive activities and distorting asset\nprices. However, in 2024, the SBV introduced a slightly more flexible approach, allowing selected\nbanks with stronger capital bases to exceed their quotas once they reached 80 percent of their limit\nby August, without having to seek approval for additional credit room.\nHeadl\n\n[A:wb-taking-stock-2025-03:p013:c007 | starter/data/taking_stock_2025_03.pdf | page 13]\n2024, the SBV started\nto introduce a more flexible approach to its\ncredit growth caps, allowing selected banks\nwith a strong capital base to expand loan\nbases beyond the predetermined indicative\n\n[A:wb-taking-stock-2025-03:p013:c006 | starter/data/taking_stock_2025_03.pdf | page 13]\nof the year. Credit\ngrowth increased in the second half of\nthe year, driven by wholesale and retail\ntrade, manufacturing, and real estate.\nCredit growth ceilings in recent years have\nprovided an incentive for banks to extend\ncredit to maintain their quotas, creating\nbunching by year end. These efforts\nto meet the credit ceiling could create\ninefficiencies by allocating resources to\nunproductive activities and distorting asset\nprices. However, in 2024, the SBV started\nto introduce a more flexible\n\n[A:wb-taking-stock-2025-03:p031:c000 | starter/data/taking_stock_2025_03.pdf | page 31]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 21\nCredit growth picked up during 2024, reaching the government’s target of 15 percent by the end of\nthe year. Credit growth increased in the second half of the year, driven by wholesale and retail trade,\nmanufacturing, and real estate (Figure 1.25). Credit growth ceilings, a monetary and macroprudential\ntool to control inflation and excessive growth, have provided an incentive for banks to extend credit\nto maintain their indicative quot",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p031:c001",
+      "A:wb-taking-stock-2025-03:p013:c007",
+      "A:wb-taking-stock-2025-03:p013:c006",
+      "A:wb-taking-stock-2025-03:p031:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "State Bank of Vietnam credit growth ceilings 2024 flexible approach",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p031:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 31,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c007",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c006",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p031:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 31,
+            "score": 6.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 3.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p031:c001",
+          "A:wb-taking-stock-2025-03:p013:c007",
+          "A:wb-taking-stock-2025-03:p013:c006",
+          "A:wb-taking-stock-2025-03:p031:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2026,
+    "output_tokens": 230,
+    "llm_cost_usd": 0.000442,
+    "elapsed_ms": 3625.3
+  },
+  {
+    "query_id": "q13",
+    "question": "How much GHG emissions did the transport sector in Viet Nam account for in 2021 and what share of total economy-wide GHG emissions was it?",
+    "status": "answered",
+    "answer": "In 2021, the transport sector in Viet Nam accounted for 32.9 million tons of carbon dioxide equivalent (MtCO2eq), which represented 7.2 percent of total economy-wide GHG emissions [A:wb-taking-stock-2025-03:p016:c001] [A:wb-taking-stock-2025-03:p042:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p016:c001",
+      "A:wb-taking-stock-2025-03:p042:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p042:c001 | starter/data/taking_stock_2025_03.pdf | page 42]\nion plans to decarbonize the transport sector.\nThe energy sector is the biggest contributor to GHG emissions, of which transport is a main driver.\nWithout decarbonation, this share would rise significantly with the rapid increase in car use. The transport\nsector accounted for 32.9 million tons of carbon dioxide equivalent (MtCO2eq) in 2021, or 7.2 percent\nof total economy-wide GHG emissions in Viet Nam, the majority of which were generated from road\ntransport, with the most emitting road vehicle\n\n[A:wb-taking-stock-2025-03:p016:c001 | starter/data/taking_stock_2025_03.pdf | page 16]\nmain driver. Without decarbonation, this\nshare would rise significantly with the rapid\nincrease in car use. The transport sector in\nViet Nam accounted for about 32.9 million\ntons of carbon dioxide equivalent (MtCO2eq)\nin 2021, or 7.2 percent of total economy-\nwide GHG emissions, the majority of which\nare generated from road transport. Although\ncar ownership remains a luxury for most\nVietnamese today, a growing middle class is\nfueling auto sales at a compounded average\ngrowth rate of 15 percent b\n\n[A:wb-taking-stock-2025-03:p016:c000 | starter/data/taking_stock_2025_03.pdf | page 16]\nvi I TAKING STOCK MARCH 2025\nViet Nam has set ambitious goals to\ndecarbonize its economy by 2050. At the\nUnited Nation’s Climate Change Conference\nin Glasgow in November 2021 (COP26),\nthe Prime Minister of Viet Nam made an\nambitious pledge to achieve economy-\nwide net zero emissions by 2050, which\nset into motion plans to decarbonize the\ntransportation sector.\nThe energy sector is the biggest contributor\nto GHG emissions, of which transport is\na main driver. Without decarbonation, this\nshare wou",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p042:c001",
+      "A:wb-taking-stock-2025-03:p016:c001",
+      "A:wb-taking-stock-2025-03:p016:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "transport sector GHG emissions 2021 share total economy-wide",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p042:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 42,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p016:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 16,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p016:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 16,
+            "score": 4.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p042:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 42,
+            "score": 2.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p042:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 42,
+            "score": 1.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p042:c001",
+          "A:wb-taking-stock-2025-03:p016:c001",
+          "A:wb-taking-stock-2025-03:p016:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1958,
+    "output_tokens": 214,
+    "llm_cost_usd": 0.000422,
+    "elapsed_ms": 3667.55
+  },
+  {
+    "query_id": "q14",
+    "question": "In the e-mobility transition chapter, what are the three EV transition pathways and when are ADS policy levers activated?",
+    "status": "answered",
+    "answer": "The three e-mobility transition pathways are the Business-as-Usual (BAU) Scenario, Stated Policy Scenario (SPS), and Accelerated Decarbonization Scenario (ADS) [A:wb-taking-stock-2025-03:p047:c000]. Under the ADS, policy levers are activated starting in 2025 (compared to 2030 under the SPS) [A:wb-taking-stock-2025-03:p047:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p047:c000",
+      "A:wb-taking-stock-2025-03:p047:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p047:c001 | starter/data/taking_stock_2025_03.pdf | page 47]\nkey\nassumptions across all scenarios.\nEach pathway rests on different policy choices to support EV uptake, production, and its charging\nnetwork. Variations across the three pathways are further split into the following parameters: (i)\nlevels of EV uptake, (ii) levels of EV production and supply and (iii) availability of EV charging (Table\n2.3). In terms of timelines, ADS is based on policy levers activated from 2025, compared to 2030\nunder the SPS.\n2.3 E-mobility scenarios\nTable 2.2. Definition\n\n[A:wb-taking-stock-2025-03:p047:c000 | starter/data/taking_stock_2025_03.pdf | page 47]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 37\nThree e-mobility transition pathways were developed to better understand EV uptake scenarios\nand accompanying policy. Based on the pathways – Business-as-Usual (BAU) Scenario, Stated Policy\nScenario (SPS) and Accelerated Decarbonization Scenario (ADS) – the analysis included modelling\ndifferent levels of EV uptake for 18 specific vehicle use categories in Viet Nam. Table 2.2 highlights key\nassumptions across all scenarios.\nEach pathwa\n\n[A:wb-taking-stock-2025-03:p048:c002 | starter/data/taking_stock_2025_03.pdf | page 48]\nle 2.3. Comparative views of key factors affecting EV charging profiles\n(BAU, SPS, and ADS)\nEV Uptake\nEV\nProduction\n& Supply\nEV\nCharging\nE-Mobility Ecosystem Element and Policy Levers BAU SPS ADS\nNo\nYes\nBy 2030: urban vehicles,\npublic buses and taxis.\nBy 2050: all road\nvehicles.\nEV Uptake Targets and Target\nCoverage\nGovernment Support and Incentives\nfor EV Update\nTargeted Support for Hard-to-Transit\nVehicle Segments\nRolling Out National Standards for EV\nManufacturing and Charging\nGovernment Supp",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p047:c001",
+      "A:wb-taking-stock-2025-03:p047:c000",
+      "A:wb-taking-stock-2025-03:p048:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "three EV transition pathways ADS policy levers e-mobility",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p047:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 47,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p047:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 47,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p048:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 48,
+            "score": 9.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p047:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 47,
+            "score": 8.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p047:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 47,
+            "score": 6.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p047:c001",
+          "A:wb-taking-stock-2025-03:p047:c000",
+          "A:wb-taking-stock-2025-03:p048:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1948,
+    "output_tokens": 230,
+    "llm_cost_usd": 0.00043,
+    "elapsed_ms": 3779.33
+  },
+  {
+    "query_id": "q15",
+    "question": "How much additional power transmission capacity will be required by 2050 to support 100 percent electrification of road transport?",
+    "status": "answered",
+    "answer": "Up to 15 percent of additional transmission capacity will be needed by 2050 to allow for 100 percent electrification of road transport [A:wb-taking-stock-2025-03:p051:c000] [A:wb-taking-stock-2025-03:p051:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p051:c000",
+      "A:wb-taking-stock-2025-03:p051:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p051:c001 | starter/data/taking_stock_2025_03.pdf | page 51]\nof additional transmission capacity will be needed by 2050 to allow for 100 percent electrification of\nroad transport.\nTo reduce e-mobility impacts on the power sector, network and battery efficiency enhancements\nare critical, while simultaneously promoting passenger and freight transport modal shifts in the\nlong run. The ADS pathway requires 16 percent incremental generation above the PDP8 outlook by\n2045, of which 4 percent covers efficiency losses during power distribution, transmission and\n\n[A:wb-taking-stock-2025-03:p051:c000 | starter/data/taking_stock_2025_03.pdf | page 51]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 41\nThe incremental demand for EV charging translates into estimated grid generation supply growth of\n4.9 percent (CAGR 2035–50) compared to 3.7 percent currently planned in PDP8. To accommodate\nthis level of demand, the sector will need additional network capacity on top of PDP8 at an average of\n3–5 and 12–20 percent during 2030–45 and 2045–50, respectively. Subsequently, up to 15 percent\nof additional transmission capacity will be neede\n\n[A:wb-taking-stock-2025-03:p051:c002 | starter/data/taking_stock_2025_03.pdf | page 51]\nosses during power distribution, transmission and battery\ncharging. By 2050, efficiency losses will account for 7 percent of the additional 28 percent increase in\ngeneration required (Figure 2.4). In response, policies and investments are needed to address these\nlosses during power distribution and transmission as well as for battery charging.\nAdditional power sector investment to accommodate EV charging demand will focus on increasing\nsupply, with a further outlay to boost grid capacity needed",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p051:c001",
+      "A:wb-taking-stock-2025-03:p051:c000",
+      "A:wb-taking-stock-2025-03:p051:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "electrification of road transport power transmission capacity 2050",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p051:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 51,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p051:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 51,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p051:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 51,
+            "score": 7.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p050:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 50,
+            "score": 6.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p060:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 60,
+            "score": 5.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p051:c001",
+          "A:wb-taking-stock-2025-03:p051:c000",
+          "A:wb-taking-stock-2025-03:p051:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1920,
+    "output_tokens": 198,
+    "llm_cost_usd": 0.000407,
+    "elapsed_ms": 3771.74
+  },
+  {
+    "query_id": "u01",
+    "question": "What was Vietnam's exact Gini coefficient for income inequality in 2024 according to the Taking Stock reports?",
+    "status": "abstain",
+    "answer": "The retrieved Taking Stock reports do not contain information regarding Vietnam's Gini coefficient for income inequality in 2024.",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p012:c006 | starter/data/taking_stock_2025_03.pdf | page 12]\nnominal\nterms and 4.8 percent in real terms, below\npre-pandemic levels. Income growth\nhas not fully translated into domestic\nconsumption, instead contributing to higher\ngross savings rate, which reached 37.2\npercent in 2024 compared to 33.6 percent\nin 2023, according to CEIC.\n\n[A:wb-taking-stock-2025-03:p027:c001 | starter/data/taking_stock_2025_03.pdf | page 27]\ndue to agricultural employment measurement and structural changes\nsince the pandemic.12 Unemployment remained stable at 2.2 percent in 2024, while underemployment\nrates lowered at 1.7 percent at the end of 2024 (-0.3 pp from the same period in 2023) suggesting\ngreater labor utilization. However, youth unemployment rose, reaching 8 percent by end–2024, from\n7.6 percent the previous year.\nAmid improved labor market conditions and public sector wage hikes, real income grew modestly\nafter 2023’s he\n\n[A:wb-taking-stock-2025-03:p027:c002 | starter/data/taking_stock_2025_03.pdf | page 27]\ne hikes, real income grew modestly\nafter 2023’s headwinds but has not translated into higher private consumption. The average\nincome of employees reached VND8.2 million/month (US$326) in December 2024, growing on\naverage in 2024 by 8.6 percent in nominal terms and 4.8 percent in real terms, below pre-pandemic\nlevels (Figure 1.18). Income growth has not fully translated into domestic consumption, instead\ncontributing to higher gross savings rate, which reached 37.2 percent in 2024 compared to 33.\n\n[A:wb-taking-stock-2025-03:p012:c005 | starter/data/taking_stock_2025_03.pdf | page 12]\nices such as accommodation and\ncatering (11.5 percent growth y/y) or\ntourism (16 percent y/y), that benefited\nfrom a rebound in tourist entries.\nAmid improved labor market conditions\nand public sector wage hikes, real income\ngrew modestly after 2023’s headwinds\nbut has not translated into higher private\nconsumption. The average income of\nemployees reached VND8.2 million/month\n(US$326) in December 2024, growing on\naverage in 2024 by 8.6 percent in nominal\nterms and 4.8 percent in real terms, belo",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p012:c006",
+      "A:wb-taking-stock-2025-03:p027:c001",
+      "A:wb-taking-stock-2025-03:p027:c002",
+      "A:wb-taking-stock-2025-03:p012:c005"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Gini coefficient income inequality 2024",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p012:c006",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 12,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p027:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 27,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p027:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 27,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p012:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 12,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p039:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 39,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p012:c006",
+          "A:wb-taking-stock-2025-03:p027:c001",
+          "A:wb-taking-stock-2025-03:p027:c002",
+          "A:wb-taking-stock-2025-03:p012:c005"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Gini coefficient inequality",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p039:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 39,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p050:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 50,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p020:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 20,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p043:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 43,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p021:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 21,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p012:c006",
+          "A:wb-taking-stock-2025-03:p027:c001",
+          "A:wb-taking-stock-2025-03:p027:c002",
+          "A:wb-taking-stock-2025-03:p012:c005"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 4482,
+    "output_tokens": 94,
+    "llm_cost_usd": 0.000729,
+    "elapsed_ms": 57908.37
+  },
+  {
+    "query_id": "u02",
+    "question": "What specific corporate income tax rate did Vietnam's National Assembly approve for semiconductor foreign investors in 2025?",
+    "status": "abstain",
+    "answer": "The retrieved World Bank Taking Stock reports do not contain information regarding a corporate income tax rate approved by Vietnam's National Assembly for semiconductor foreign investors in 2025.",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p038:c001 | starter/data/taking_stock_2025_03.pdf | page 38]\ne expected to remain stable in the\nshort- to medium-terms, reflecting foreign investors’ sustained interest in Viet Nam.\nAfter tightening in 2024, the fiscal account is expected to return to a deficit is in 2025-26 due to\nplanned increases in expenditures. Fiscal deficit is estimated to reach 1.4 percent of GDP in 2025\nand to narrow to 1.0 percent in 2026, while the government planned a continued reduction in debt\nstock as growth is expected to outpace interest rate. Expenditure in 2025 is plann\n\n[A:wb-taking-stock-2025-03:p032:c005 | starter/data/taking_stock_2025_03.pdf | page 32]\nJune 30, 2025.\nIncreased overall revenues were attributed to more land sales, with non-tax revenue reaching 5.3 percent\nof GDP (+0.5 percent from 2023).\n\n[A:wb-taking-stock-2023-08:p032:c001 | starter/data/taking_stock_2023_08.pdf | page 32]\ne tax Personal income tax Value added tax\nExcise tax Trade Total revenues\nCurrent Investment Total\n50\n40\n30\n20\n10\n0\n-10\n-20\n40\n30\n20\n10\n0\n-10\n-20\n-30\nCorporate income tax Personal income tax\nValue added tax Excise tax Trade Total revenues\nPublic and publicly guaranteed (PPG) debt remains sustainable highlighting ample fiscal space\nto use for counter-cyclical fiscal policy. PPG debt is estimated at 35.7 percent for 2022, continuing\na decline from 2016 when PPG debt was 47.5 percent, and well belo\n\n[A:wb-taking-stock-2025-03:p038:c000 | starter/data/taking_stock_2025_03.pdf | page 38]\n28 I TAKING STOCK MARCH 2025\nis expected to have a marginal impact on headline inflation given the limited size of the public sector\nin overall employment (3.8 percent of total employment 21).\nForeign investment and trade turnover are expected to remain important drivers of growth over\n2025–26, but with heightened uncertainty. The current account is projected to maintain a surplus,\nprimarily driven by the merchandise trade balance. FDI inflows are expected to remain stable in the\nshort- to mediu",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p038:c001",
+      "A:wb-taking-stock-2025-03:p032:c005",
+      "A:wb-taking-stock-2023-08:p032:c001",
+      "A:wb-taking-stock-2025-03:p038:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "corporate income tax semiconductor foreign investors National Assembly 2025",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p038:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 38,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p032:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 32,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p032:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 32,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p038:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 38,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p038:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 38,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p038:c001",
+          "A:wb-taking-stock-2025-03:p032:c005",
+          "A:wb-taking-stock-2023-08:p032:c001",
+          "A:wb-taking-stock-2025-03:p038:c000"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "semiconductor corporate income tax National Assembly",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p032:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 32,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p028:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 28,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p033:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 33,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 1.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p038:c001",
+          "A:wb-taking-stock-2025-03:p032:c005",
+          "A:wb-taking-stock-2023-08:p032:c001",
+          "A:wb-taking-stock-2025-03:p038:c000"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "semiconductor",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p022:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 22,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p024:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 24,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p036:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 36,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p024:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 24,
+            "score": 1.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p022:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 22,
+            "score": 1.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p038:c001",
+          "A:wb-taking-stock-2025-03:p032:c005",
+          "A:wb-taking-stock-2023-08:p032:c001",
+          "A:wb-taking-stock-2025-03:p038:c000"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "search_calls": 3,
+    "input_tokens": 7447,
+    "output_tokens": 126,
+    "llm_cost_usd": 0.001193,
+    "elapsed_ms": 36759.56
+  }
+]

@@ -1,0 +1,580 @@
+[
+  {
+    "query_id": "q16",
+    "question": "What global GDP and global trade growth rates were projected for 2023 compared to 2022?",
+    "status": "answered",
+    "answer": "Global GDP growth was projected to decline to 2.1 percent in 2023 from 3.1 percent in 2022 [A:wb-taking-stock-2023-08:p011:c000] [A:wb-taking-stock-2023-08:p019:c000]. In addition, global trade growth was estimated to weaken from 6 percent in 2022 to 1.7 percent in 2023 [A:wb-taking-stock-2023-08:p011:c000].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p011:c000",
+      "A:wb-taking-stock-2023-08:p019:c000"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p011:c000 | starter/data/taking_stock_2023_08.pdf | page 11]\n11\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nRecent Economic Developments\nThe external environment remains challenging\nwith downside risks prevailing in the near-\nterm. Global GDP growth is projected to decline to 2.1\npercent in 2023 from 3.1 percent in 2022, reflecting\nweakening demand in most advanced economies. In\nline with slower global growth, global trade growth\nis estimated to weaken from 6 percent in 2022 to 1.7\npercent in 2023.\nAfter registering 8 percent real GDP growth\nin 2022, Vietnam\n\n[A:wb-taking-stock-2023-08:p019:c000 | starter/data/taking_stock_2023_08.pdf | page 19]\n19\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\nThe global economy is facing strong headwinds\nGlobal economic growth is expected to decelerate substantially from 3.1 percent in 2022 to 2.1\npercent in 2023 (Figure 1.1). This slowdown is due to the continued tightening of monetary policy to\ncontrol high inflation and weakening demand in most advanced economies.18 Inflation is projected to decline\ngradually as demand weakens and commodity prices decrease but remain well above pre-pandemic levels.\nGloba\n\n[A:wb-taking-stock-2023-08:p019:c003 | starter/data/taking_stock_2023_08.pdf | page 19]\nerated after the last’s\nI. RECENT ECONOMIC DEVELOPMENTS\nFigure 1.1. Global GDP growth\nPercent (y/y)\nSource: Global Economic Prospects, June 2023, World Bank\n2022 2024f (Jun-23)\n2023f (Jun-23) 2023f (Jun-22)\n0\n2\n4\n6\n8\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\n8\n6\n4\n2\n0\nWorld\nAdvanced\nEMDEs\nChina\nUnited States\nEuro Area\nFigure 1.2. Global goods trade growth\nPercent (y/y)\nGrowth June-23 forecasts June-22 forecasts\n25\n15\n5\n-5\n-15\n2018 2019 2020 2021 2022 2023f 2024f\n18 World Bank, Global Ec",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p011:c000",
+      "A:wb-taking-stock-2023-08:p019:c000",
+      "A:wb-taking-stock-2023-08:p019:c003"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "global GDP global trade growth 2023 2022",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p011:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 11,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 9.2
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 8.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p019:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 19,
+            "score": 7.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p021:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 21,
+            "score": 3.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p011:c000",
+          "A:wb-taking-stock-2023-08:p019:c000",
+          "A:wb-taking-stock-2023-08:p019:c003"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 2056,
+    "output_tokens": 259,
+    "llm_cost_usd": 0.000464,
+    "elapsed_ms": 6392.87
+  },
+  {
+    "query_id": "q17",
+    "question": "In the 2023 public investment analysis, what share of budgeted allocations was actually spent and what is the international good practice threshold for budget deviations?",
+    "status": "answered",
+    "answer": "In the public investment analysis, 77 percent of budgeted allocations were actually spent (leaving a 23 percent difference between budgeted and actual spending) [A:wb-taking-stock-2023-08:p042:c000]. The international good practice threshold suggests that budget deviations remain below 5 percent [A:wb-taking-stock-2023-08:p042:c000].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p042:c000"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p042:c000 | starter/data/taking_stock_2023_08.pdf | page 42]\n42\nTAKING STOCK AUGUST 2023\nonly 77 percent of allocations spent (Figure 2.4). The differences between budgeted and actual spending (23\npercent) and the resulting capital expenditure carried over from one year to the next (18 to 31 percent of total\ncapital expenditures) are significantly larger than in many peer countries, and way above international good\npractices which suggest budget deviations to remain below 5 percent.78 PIM inefficiency is also manifested\nin significant project completion d\n\n[A:wb-taking-stock-2023-08:p016:c002 | starter/data/taking_stock_2023_08.pdf | page 16]\npital\nexpenditure carried over from one year to the next,\nare significantly larger than in many peer countries,\nand way beyond international good practices which\nsuggest the variation levels to be below 5 percent. 14\nPublic investment management (PIM) inefficiency\nis also manifested in significant project completion\ndelays and cost overruns. A recent World Bank\nreview15 of selected, large-scale transport projects\nfound an average delay time of five years, and an\naverage cost overrun double the o\n\n[A:wb-taking-stock-2023-08:p035:c000 | starter/data/taking_stock_2023_08.pdf | page 35]\n35\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\n65 Of planned budget approved by the National Assembly, as of December 31, 2022.\nimplementation with disbursement of the public investment budget jumping by 43.3 percent (y/y) during\nthe first semester of 2023. However, historical public investment implementation rates have been low in the\nrecent past, for example reaching only 67.3 percent in 2022.65 Steps to accelerate and improve the efficiency\nof implementation would also help address emerging infr",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p042:c000",
+      "A:wb-taking-stock-2023-08:p016:c002",
+      "A:wb-taking-stock-2023-08:p035:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "public investment budget deviation international good practice 2023",
+        "filter": {
+          "year": 2023
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p042:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 42,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p016:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 16,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p035:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 35,
+            "score": 4.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p031:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 31,
+            "score": 4.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p042:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 42,
+            "score": 2.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p042:c000",
+          "A:wb-taking-stock-2023-08:p016:c002",
+          "A:wb-taking-stock-2023-08:p035:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1935,
+    "output_tokens": 190,
+    "llm_cost_usd": 0.000404,
+    "elapsed_ms": 4064.47
+  },
+  {
+    "query_id": "q18",
+    "question": "What methodological weakness in project appraisal limits Vietnam ability to evaluate climate change risks and alternative adaptation options?",
+    "status": "answered",
+    "answer": "Vietnam faces general weaknesses in project appraisal methods—particularly the absence of systematic methodologies such as social cost-benefit analysis—which means there is no formal methodological basis for evaluating the climate change impacts of projects, their mitigation efforts, or alternative adaptation options [A:wb-taking-stock-2023-08:p051:c000] [A:wb-taking-stock-2023-08:p051:c001]. Additionally, there is no regulatory requirement to examine climate change risks early in project preparation (such as during feasibility studies and appraisals) when it is most efficient to develop, analyze, and integrate adaptive responses [A:wb-taking-stock-2023-08:p051:c002].",
+    "citations": [
+      "A:wb-taking-stock-2023-08:p051:c000",
+      "A:wb-taking-stock-2023-08:p051:c001",
+      "A:wb-taking-stock-2023-08:p051:c002"
+    ],
+    "context": "[A:wb-taking-stock-2023-08:p051:c001 | starter/data/taking_stock_2023_08.pdf | page 51]\nhave already been identified earlier\nin the section discussing the PIM challenges. This weakness means there is no formal methodological basis\nfor evaluating climate change impacts of projects and respective mitigation efforts or evaluating alternative\nadaptation options in response to identified climate change risks. Project appraisals for large projects\nrequire environmental impact assessments. Notionally, in relation to climate change and responses, this\nshould consider both the impacts of an\n\n[A:wb-taking-stock-2023-08:p051:c000 | starter/data/taking_stock_2023_08.pdf | page 51]\n51\nMAKING PUBLIC INVESTMENT WORK FOR GROWTH\ndiscussed above, the current PIM and IGF systems are unable to prioritize and implement these kinds of\ntransboundary resolutions and investments.\nGeneral weaknesses in appraisal methods mean limited attention is paid to the specifics\nof climate change risk and adaptation. These shortcomings in the appraisal process, particularly the\nabsence of systematic methodologies like social cost-benefit analysis, have already been identified earlier\nin the sectio\n\n[A:wb-taking-stock-2023-08:p051:c002 | starter/data/taking_stock_2023_08.pdf | page 51]\nonses, this\nshould consider both the impacts of and on the project. While procedures for construction projects in the\nConstruction Law and supporting regulations recognize the need to consider climate change risks and\nadaptation, there is no regulatory requirement to examine climate change risks early in project preparation,\nsuch as during preparation of the feasibility study and appraisal, when it is more efficient to develop,\nanalyze, and integrate adaptive responses.\nGoing forward, Vietnam wi",
+    "context_ids": [
+      "A:wb-taking-stock-2023-08:p051:c001",
+      "A:wb-taking-stock-2023-08:p051:c000",
+      "A:wb-taking-stock-2023-08:p051:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "methodological weakness project appraisal climate change risks adaptation options",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c001",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c000",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c002",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 8.5
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p051:c005",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 51,
+            "score": 7.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p017:c004",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 17,
+            "score": 6.5
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2023-08:p051:c001",
+          "A:wb-taking-stock-2023-08:p051:c000",
+          "A:wb-taking-stock-2023-08:p051:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1825,
+    "output_tokens": 307,
+    "llm_cost_usd": 0.000458,
+    "elapsed_ms": 4159.92
+  },
+  {
+    "query_id": "q19",
+    "question": "In the 2025 report, why did private consumption remain a moderate driver of aggregate demand in 2024 compared to the regional median?",
+    "status": "answered",
+    "answer": "In the 2025 report, private consumption remained a moderate driver of aggregate demand compared to the regional median (54 percent of GDP compared to a regional median of 61.7 percent) because household savings increased amid heightened uncertainty in recent years [A:wb-taking-stock-2025-03:p011:c001] [A:wb-taking-stock-2025-03:p019:c002].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p011:c001",
+      "A:wb-taking-stock-2025-03:p019:c002"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p011:c001 | starter/data/taking_stock_2025_03.pdf | page 11]\nsupporting the growth\nmomentum. However, private consumption\nremained a moderate driver of aggregate\ndemand relative to the region (54 percent\nof GDP compared to a median of 61.7\npercent, respectively) as household savings\nincreased amid heightened uncertainty in\nrecent years.\nTrade strongly rebounded in 2024, driven\nby the global technology upcycle. Total\nexports grew 15.5 percent in 2024, in stark\ncontrast to a -2.5 percent contraction in\n2023. Merchandise export growth reached\n14 percent by\n\n[A:wb-taking-stock-2025-03:p019:c001 | starter/data/taking_stock_2025_03.pdf | page 19]\nweakened in 2023, leading to a trade contraction and a slowdown in GDP\ngrowth to 5 percent real GDP. This was followed by a sharp rebound in 2024 with exports and imports\ngrowing by 15.5 and 16.1 percent, respectively. Further, final consumption and investment growth\naccelerated in 2024 reaching 6.6 and 7.2 percent, respectively, also supporting growth momentum\n(Figure 1.2). However, private consumption remained a moderate driver of aggregate demand relative\nto the median in the region (54 perc\n\n[A:wb-taking-stock-2025-03:p019:c002 | starter/data/taking_stock_2025_03.pdf | page 19]\nmand relative\nto the median in the region (54 percent of GDP compared to 61.7 percent, respectively) and has slowly\ndeclined as household savings increased amid heightened uncertainty in recent years (Figure 1.3).\n1.1 Recent Economic Developments\nFigure 1.1. Viet Nam was the fastest-\ngrowing developing economy in East Asia\nin 2024\nFigure 1.2. GDP growth was driven by a\nstrong rebound in exports\nReal GDP growth, percent\nGDP demand components growth, percent\n2 Resolution No. 103/2023/QH15 on the p",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p011:c001",
+      "A:wb-taking-stock-2025-03:p019:c001",
+      "A:wb-taking-stock-2025-03:p019:c002"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "private consumption moderate driver aggregate demand 2024 regional median",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p011:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 11,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 9.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 9.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p020:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 20,
+            "score": 5.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p019:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 19,
+            "score": 3.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p011:c001",
+          "A:wb-taking-stock-2025-03:p019:c001",
+          "A:wb-taking-stock-2025-03:p019:c002"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1989,
+    "output_tokens": 228,
+    "llm_cost_usd": 0.000435,
+    "elapsed_ms": 2868.6
+  },
+  {
+    "query_id": "q20",
+    "question": "Which five ministries and key electricity stakeholder are identified to drive Viet Nam e-mobility transition?",
+    "status": "answered",
+    "answer": "The five ministries identified to drive Viet Nam's e-mobility transition are the Ministry of Transport (MoT), Ministry of Industry and Trade (MoIT), Ministry of Finance (MoF), Ministry of Planning and Investment (MPI), and Ministry of Science and Technology (MoST) [A:wb-taking-stock-2025-03:p058:c000]. The key electricity stakeholder identified is Viet Nam Electricity [A:wb-taking-stock-2025-03:p058:c000] [A:wb-taking-stock-2025-03:p058:c001].",
+    "citations": [
+      "A:wb-taking-stock-2025-03:p058:c000",
+      "A:wb-taking-stock-2025-03:p058:c001"
+    ],
+    "context": "[A:wb-taking-stock-2025-03:p058:c000 | starter/data/taking_stock_2025_03.pdf | page 58]\n48 I TAKING STOCK MARCH 2025\nA cross-ministerial steering committee could be established and directly under the Prime\nMinister’s Office, led by up to two ministries. Based on the components of the e-mobility\necosystem and their mandates, the ministries of Transport (MoT), Industry and Trade (MoIT),\nFinance (MoF), Planning and Investment (MPI) and of Science and Technology (MoST) have been\nidentified as critical ministries to drive the transition, with Viet Nam Electricity an additional key\nstake\n\n[A:wb-taking-stock-2025-03:p058:c001 | starter/data/taking_stock_2025_03.pdf | page 58]\nwith Viet Nam Electricity an additional key\nstakeholder. 33 To ensure effective implementation, key sub-national governments responsible\nfor deployment of e-mobility programs should also be included in planning and decision-making.\nImportant stakeholders – such as research centers, industry associations, and academia – should\nbe consulted during the shaping of policy.\nTransport sector reforms related to e-mobility transition\nFurther to the technical analysis, a set of comprehensive policy recom\n\n[A:wb-taking-stock-2025-03:p057:c000 | starter/data/taking_stock_2025_03.pdf | page 57]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I 47\nFigure 2.10. E-mobility transition ecosystem\nSource: World Bank calculations\nInspections\nPower Supply\n& Decarbonization\nGrid Readiness\n& Digitalization\nBuilding Codes\n& Urban Planning\nBattery Production,\nRecycling and Reuse\nWorkforce\nSkills\nStandards\n1. EV Uptake\nE-Mobility\nEcosystem\n3. EV Charging 2. EV Production\nMonitoringIncentives\nAchieving the e-mobility transition requires a profound structural shift in Viet Nam’s vehicle marke",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p058:c000",
+      "A:wb-taking-stock-2025-03:p058:c001",
+      "A:wb-taking-stock-2025-03:p057:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "five ministries key electricity stakeholder e-mobility transition Viet Nam",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 10.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p058:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 58,
+            "score": 7.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p057:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 57,
+            "score": 2.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p059:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 59,
+            "score": 1.5
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p017:c003",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 17,
+            "score": 1.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p058:c000",
+          "A:wb-taking-stock-2025-03:p058:c001",
+          "A:wb-taking-stock-2025-03:p057:c000"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "search_calls": 1,
+    "input_tokens": 1903,
+    "output_tokens": 258,
+    "llm_cost_usd": 0.00044,
+    "elapsed_ms": 27203.97
+  },
+  {
+    "query_id": "u03",
+    "question": "What was the total passenger volume of Long Thanh International Airport in Q1 2025?",
+    "status": "abstain",
+    "answer": "The retrieved World Bank Taking Stock documents do not contain information regarding the total passenger volume of Long Thanh International Airport in Q1 2025.",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p044:c000 | starter/data/taking_stock_2025_03.pdf | page 44]\n34 I TAKING STOCK MARCH 2025\nFigure 2.2. Motorization rate for two-wheelers and passenger cars 2010–2022\n254\n357\n518\n4 10 22\n0\n100\n200\n300\n400\n500\n600\n2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022\nActive Two-wheelers Active Passenger cars\nSource: World Bank calculations\nTransitioning into electric motorbikes and leapfrogging into\nEV cars\nBetween 2024 and 2035, Viet Nam’s e-mobility transition will primarily be driven by the transition\nof the two-wheeler (2W) segment to electri\n\n[A:wb-taking-stock-2025-03:p030:c000 | starter/data/taking_stock_2025_03.pdf | page 30]\n20 I TAKING STOCK MARCH 2025\nFigure 1.22. Continued pressure on the\nexchange rate led to depreciation\nFigure 1.23. SBV managed a gradual\ndepreciation by selling foreign reserves\nVND/US$ Foreign reserves, US$ billion\n22,000\n23,000\n24,000\n25,000\n26,000\nDec-22 Jun-23 Dec-23 Jun-24 Dec-24\nCentral rate Market rate\n2.00\n2.50\n3.00\n3.50\n4.00\n80\n85\n90\n95\n100\n105\n110\n\nStock of foreign reserves\nMonths of imports (RHS)\nQ1-22\nQ2-22\nQ3-22\nQ4-22\nQ3-23\nQ4-23\nQ1-23\nQ2-23\nQ2-24\nQ1-24\nQ3-24\nSource: SBV and World B\n\n[A:wb-taking-stock-2025-03:p042:c000 | starter/data/taking_stock_2025_03.pdf | page 42]\n32 I TAKING STOCK MARCH 2025\nFigure 2.1. Share of GHG emissions by vehicle segments in Viet Nam, 2020\n28%\n6%\n1%\n11%\n54%\nTwo-wheelers\nPassenger cars\nCity Buses\nIntercity Bus/Coach\nTrucks\nSource: Ministry of Transport, Viet Nam, and World Bank calculations\nViet Nam has set ambitious goals to decarbonize its economy by 2050. The prime minister of Viet\nNam’s pledge at COP2623 in 2021 to achieve economy-wide net-zero emissions by 2050 has set into\nmotion plans to decarbonize the transport sector.\nThe",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p044:c000",
+      "A:wb-taking-stock-2025-03:p030:c000",
+      "A:wb-taking-stock-2025-03:p042:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Long Thanh International Airport passenger volume Q1 2025",
+        "filter": {
+          "year": 2025
+        },
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p044:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 44,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p030:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 30,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p042:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 42,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p045:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 45,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p025:c004",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 25,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p044:c000",
+          "A:wb-taking-stock-2025-03:p030:c000",
+          "A:wb-taking-stock-2025-03:p042:c000"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "Long Thanh",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2023-08:p050:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 50,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p044:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 44,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p032:c003",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 32,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p043:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 43,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2023-08:p044:c006",
+            "source_id": "wb-taking-stock-2023-08",
+            "page": 44,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p044:c000",
+          "A:wb-taking-stock-2025-03:p030:c000",
+          "A:wb-taking-stock-2025-03:p042:c000"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 4726,
+    "output_tokens": 108,
+    "llm_cost_usd": 0.000774,
+    "elapsed_ms": 5066.71
+  },
+  {
+    "query_id": "u04",
+    "question": "What was Vietnam's bilateral trade deficit with South Korea in Q4 2024?",
+    "status": "abstain",
+    "answer": "The retrieved Taking Stock documents do not contain information regarding Vietnam's bilateral trade deficit with South Korea in Q4 2024.",
+    "citations": [],
+    "context": "[A:wb-taking-stock-2025-03:p028:c002 | starter/data/taking_stock_2025_03.pdf | page 28]\nplus was offset by capital outflows\nThe current account surplus shrank in the first 9 months of 2024, compared to the same period in\n2023, due to a rising services deficit. The merchandise trade registered a surplus of 10.6 percent of\nGDP in 9M–2024, comparable to 10.8 percent in the same period of 2023, after a rebound of exports.\nThe services account deficit widened to -2.9 percent of GDP in 9M–2024, from -2.1 percent a year\nearlier, due to growing trade services imports (US$14.6 billion, 40 p\n\n[A:wb-taking-stock-2025-03:p013:c001 | starter/data/taking_stock_2025_03.pdf | page 13]\n2023, after a rebound of exports.\nThe services account deficit widened to 2.9\npercent of GDP in 9M–2024, from 2.1 percent\na year earlier, due to growing trade services\nimports (US$14.6 billion, 40 percent of total\nservices imports). Net income outflows\nremained stable at 2.3 percent of GDP in 9M-\n2024. Overall, the current account surplus\nreached US$17.5 billion, or 5.4 percent of\nGDP in 9M–2024, down from US$19.6 billion\nor 6.3 percent of GDP in 9M–2023.\nSteady FDI inflows were offset by large\n\n[A:wb-taking-stock-2025-03:p013:c000 | starter/data/taking_stock_2025_03.pdf | page 13]\nELECTRIFYING JOURNEYS: E-MOBILITY TRANSITION IN VIET NAM I iii\nThe balance of payment deficit\nwidened to 2.3 percent of GDP as\nthe current account surplus was\noffset by capital outflows\nThe current account surplus shrank in the\nfirst 9 months of 2024, compared to the\nsame period in 2023, due to a rising services\ndeficit. The merchandise trade registered a\nsurplus of 10.6 percent of GDP in 9M–2024,\ncomparable to 10.8 percent in the same\nperiod of 2023, after a rebound of exports.\nThe services acc",
+    "context_ids": [
+      "A:wb-taking-stock-2025-03:p028:c002",
+      "A:wb-taking-stock-2025-03:p013:c001",
+      "A:wb-taking-stock-2025-03:p013:c000"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "bilateral trade deficit South Korea Q4 2024",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p025:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 25,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p028:c002",
+          "A:wb-taking-stock-2025-03:p013:c001",
+          "A:wb-taking-stock-2025-03:p013:c000"
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "query": "South Korea trade deficit Q4 2024",
+        "filter": null,
+        "top_k": 5,
+        "results": [
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c001",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p025:c002",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 25,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p013:c000",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 13,
+            "score": 0.0
+          },
+          {
+            "id": "A:wb-taking-stock-2025-03:p028:c005",
+            "source_id": "wb-taking-stock-2025-03",
+            "page": 28,
+            "score": 0.0
+          }
+        ],
+        "context_ids": [
+          "A:wb-taking-stock-2025-03:p028:c002",
+          "A:wb-taking-stock-2025-03:p013:c001",
+          "A:wb-taking-stock-2025-03:p013:c000"
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "search_calls": 2,
+    "input_tokens": 4198,
+    "output_tokens": 106,
+    "llm_cost_usd": 0.000693,
+    "elapsed_ms": 4936.87
+  }
+]
