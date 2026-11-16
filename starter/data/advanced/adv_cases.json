@@ -1,0 +1,434 @@
+[
+  {
+    "id": "ad01",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "From Table 1 (Cross-Country Emission Overview), what are Vietnam's emissions per capita (tCO2e per capita), carbon intensity (tCO2e/million $GDP), total emissions (MtCO2e), and % of global emissions?",
+    "expected_answer": "3.8 tCO2e per capita, 1,486.2 tCO2e/million $GDP, 364.4 MtCO2e total emissions, and 0.8% of global emissions.",
+    "evidence": "PDF page 18 (report p. 8), Table 1 'Cross-Country Emission Overview', Vietnam row."
+  },
+  {
+    "id": "ad02",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "From Table 2 (Estimates of incremental financing needs for adaptation measures, 2022–2050), what are the total financing needs versus existing financing in both average % of GDP per year and accumulated NPV ($ billion)?",
+    "expected_answer": "Total financing needs: 6.3–7.2% of GDP per year ($479.2–547.6 billion NPV); Existing financing: 1.8% of GDP per year ($136.9 billion NPV) at a 6% discount rate.",
+    "evidence": "PDF page 29 (report p. 19), Table 2 'Total financing needs' and 'Existing financing' rows."
+  },
+  {
+    "id": "ad03",
+    "split": "dev",
+    "group": "table",
+    "answerable": true,
+    "question": "From Table 5 (Investment Needs and Economic Costs: Accelerated Decarbonization Scenario, 2022–2040), what are the total system costs deviation, fuel cost savings, and net total system costs deviation ($ billion NPV and % change) between CPS and ADS?",
+    "expected_answer": "Total system costs: +$65 billion (+56%); Minus fuel costs savings: -$32 billion (-31%); Net total system costs: +$33 billion (+13%).",
+    "evidence": "PDF page 52 (report p. 42), Table 5 rows 'Total system costs', 'Minus fuel costs savings', and 'Net total system costs'."
+  },
+  {
+    "id": "ad04",
+    "split": "dev",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "According to the conceptual diagram in Figure 1 (A new development paradigm for Vietnam), what are the two pathways linking 'Vietnam Today' to 'Vietnam in 2045', and list all five core actions shown in the center box.",
+    "expected_answer": "The two pathways are Resilient Pathway and Decarbonizing Pathway. The five actions in the center box are: (1) Building resilient infrastructure, (2) Protecting the most vulnerable, (3) Implementing structural reforms to incentivize farmers and firms, (4) Pricing carbon, and (5) Mobilizing financing.",
+    "evidence": "PDF page 12 (report p. 2), Figure 1 diagram."
+  },
+  {
+    "id": "ad05",
+    "split": "dev",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "In the three-panel map Figure 9 (Extreme hazard susceptibility exposure of national-scale roads in Vietnam), what are the three hazard types mapped and what percentage exposure range does the darkest color category represent in each legend?",
+    "expected_answer": "The three hazards are Landslide, 1,000-year river flooding, and Typhoon flooding; the darkest color category in the Percentage exposure legend represents 40 to 100.",
+    "evidence": "PDF page 34 (report p. 24), Figure 9 three-panel map and legends."
+  },
+  {
+    "id": "ad06",
+    "split": "dev",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "In the Figure 21 diagram (Financing needs and potential sources of funding, 2022–2040), what is the total financing need ($ billion and % of GDP per year) and how is it split between the Resilient and Decarbonizing pathways?",
+    "expected_answer": "Total financing needs are $368 billion (6.8% of GDP per year), split into Resilient: 4.7% of GDP per year and Decarbonizing: 2.1% of GDP per year.",
+    "evidence": "PDF page 71 (report p. 61), Figure 21 top blue box and narrative."
+  },
+  {
+    "id": "ad07",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "In the treemap chart Figure 3 (Estimated costs of climate change in 2020), what are the three largest cost categories and their exact values in $ million?",
+    "expected_answer": "Fishery ($4,219 million), Labor Productivity ($2,807 million), and Sea Level Rise ($1,474 million).",
+    "evidence": "PDF page 17 (report p. 7), Figure 3 treemap rectangles."
+  },
+  {
+    "id": "ad08",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "In the line chart Figure 7 (Evolution of SOEs' share of output in Vietnam's carbon-intensive industrial sectors), which sector had the highest SOE output share and which had the lowest in 2018 (preliminary), and what were their exact percentages?",
+    "expected_answer": "Highest: Coal at 98%; Lowest: Steel at 14%.",
+    "evidence": "PDF page 24 (report p. 14), Figure 7 2018 (prel.) endpoint labels."
+  },
+  {
+    "id": "ad09",
+    "split": "dev",
+    "group": "chart",
+    "answerable": true,
+    "question": "In Figure 22 (Private climate and green outstanding loans from 2016 to 2021), how much did Green credit outstanding grow from 2016 to 2020 (in $ billion), and what was its level in 2021:Q1?",
+    "expected_answer": "Green credit outstanding grew from $3.7 billion in 2016 to $14.5 billion in 2020, and remained at $14.5 billion in 2021:Q1.",
+    "evidence": "PDF page 72 (report p. 62), Figure 22 left bar chart."
+  },
+  {
+    "id": "ad10",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Table 3 (PDF p. 46 / report p. 36) and Chapter 5 (PDF p. 71 / report p. 61), what is the cumulative RNZP investment need through 2040, and how do the $114 billion decarbonizing component and $254 billion resilience component break down?",
+    "expected_answer": "The combined RNZP requires $368 billion cumulative through 2040 (~6.8% of GDP/year): ~$254 billion for resilience (2022–2040) and $114 billion for decarbonizing ($81.3 billion in sectoral investments from Table 3 plus $33 billion for social programs).",
+    "evidence": "PDF page 46 (Table 3) and PDF page 71 (Section 5 & Figure 21)."
+  },
+  {
+    "id": "ad11",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Section 4.3.3 text and Figure 16 (PDF p. 59 / report p. 49), what share of Vietnam's 2020 total GHG emissions came from agriculture, what share of agricultural emissions was rice production, and which single measure in Figure 16 has the highest positive abatement cost ($/tCO2e)?",
+    "expected_answer": "Agriculture accounted for about 19% of Vietnam's total GHG emissions in 2020, with rice production accounting for about 48% of agricultural emissions; in Figure 16, 'Moving from rice to maize' has the highest positive cost (just under $400/tCO2e).",
+    "evidence": "PDF page 59 (report p. 49), Section 4.3.3 paragraph 1 and Figure 16 bar chart."
+  },
+  {
+    "id": "ad12",
+    "split": "dev",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Using Section 3.3.4 / Figure 10 (PDF p. 37 / report p. 27) and Box 4 (PDF p. 41 / report p. 31), what share of Ca Mau and Kien Giang provinces would be inundated by a 1-meter sea-level rise, and how is the Mekong Delta projected to be affected by climate-induced migration by 2050?",
+    "expected_answer": "A 1-meter sea-level rise would inundate 79% of Ca Mau province and 76% of Kien Giang province (p. 37); Box 4 (p. 41) projects the Mekong Delta (along with around HCMC) to be the largest climate out-migration hotspot by 2050, driven mainly by sea-level rise augmented by storm surge.",
+    "evidence": "PDF page 37 (Figure 10 & text) and PDF page 41 (Box 4)."
+  },
+  {
+    "id": "ad13",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Section 1.3 (PDF p. 19 / report p. 9), how many annual premature deaths in Vietnam did the WHO link to air pollution in 2016, and how did Vietnam's average annual PM2.5 concentration compare to the WHO safety threshold?",
+    "expected_answer": "The WHO estimated more than 60,000 premature deaths per year linked to air pollution; Vietnam's average annual PM2.5 concentration was consistently 4 to 5 times higher than the WHO safety threshold of 10 micrograms/m3.",
+    "evidence": "PDF page 19 (report p. 9), Section 1.3 text."
+  },
+  {
+    "id": "ad14",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Box 2 (PDF p. 36 / report p. 26), how many firms were analyzed in the IFC/World Bank vulnerability assessment, which two exported sectors were most financially vulnerable, and which three non-tradable sectors were most vulnerable?",
+    "expected_answer": "Balance sheet data from 700,000 firms in Vietnam was analyzed; manufacturing and agriculture were the most financially vulnerable exported sectors, while real estate, construction, and education were the most vulnerable non-tradable sectors.",
+    "evidence": "PDF page 36 (report p. 26), Box 2."
+  },
+  {
+    "id": "ad15",
+    "split": "dev",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Section 4.1 (PDF p. 45 / report p. 35), what three carbon tax trajectories up to 2040 were analyzed (starting from $12/tCO2e in 2022), and which option is sufficient to cut emissions by 42.8% in 2030 and 73.6% in 2040 relative to BAU?",
+    "expected_answer": "Three options starting at $12/tCO2e in 2022 and ramping up by 2040 to $40, $90, or $120/tCO2e; the $90/tCO2e option is sufficient to reduce emissions by 42.8% by 2030 and 73.6% by 2040 relative to BAU.",
+    "evidence": "PDF page 45 (report p. 35), Section 4.1 paragraph 3."
+  },
+  {
+    "id": "au01",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What was the estimated total construction cost in VND trillion for Vietnam's North-South high-speed rail line reported in the CCDR?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'high-speed' appears 0 times in the report."
+  },
+  {
+    "id": "au02",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What annual green hydrogen production target (in million tonnes per year by 2035) does the Vietnam CCDR project?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'hydrogen' appears 0 times in the report."
+  },
+  {
+    "id": "au03",
+    "split": "dev",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What installed capacity of Small Modular Reactors (SMRs) in GW is modeled for Vietnam's power system in 2040 in this report?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'small modular' appears 0 times in the report."
+  },
+  {
+    "id": "at01",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "In Table 1 (Cross-Country Emission Overview), compare Thailand and Vietnam across all four numeric columns (emissions per capita in tCO2e, carbon intensity in tCO2e/million $GDP, total emissions in MtCO2e, and % of global emissions).",
+    "expected_answer": "Thailand: 6.2 tCO2e per capita, 851.4 tCO2e/million $GDP, 431.2 MtCO2e total emissions, 0.9% of global emissions. Vietnam: 3.8 tCO2e per capita, 1,486.2 tCO2e/million $GDP, 364.4 MtCO2e total emissions, 0.8% of global emissions.",
+    "evidence": "PDF page 18 (report p. 8), Table 1 rows 'Thailand' and 'Vietnam'."
+  },
+  {
+    "id": "at02",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "In Table 3 (Investment needs and output gains under the Net-Zero Pathway), compare the 2022–2040 net economic impact and output gains ($ billion in NPV terms at 6% discount rate) between 'NZP' and 'NZP with supporting reforms', and calculate the difference in 2022–2040 output gains.",
+    "expected_answer": "Under NZP: output gains -$53.7 billion and net economic impact -$134.9 billion. Under NZP with supporting reforms: output gains +$80.1 billion and net economic impact -$1.3 billion. Output gains improve by $133.8 billion (from -$53.7B to +$80.1B).",
+    "evidence": "PDF page 46 (report p. 36), Table 3 column '2022–2040'."
+  },
+  {
+    "id": "at03",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "In Table 4 (How key supporting policies would affect the impact of the NZP on GHG emissions and GDP), excluding 'NZP with all supporting measures', which single policy row achieves a positive % change in GDP in 2040, and which row achieves the largest % reduction in GHG emissions in 2040?",
+    "expected_answer": "Only 'NZP with energy efficiency gains' achieves a positive % change in GDP in 2040 (+0.2%). The largest % reduction in GHG emissions in 2040 is 'NZP without reforms' (-73.6%), followed by 'NZP with low crowding out of other investments' (-73.5%).",
+    "evidence": "PDF page 48 (report p. 38), Table 4 columns '2040' under '% change in GHG emissions' and '% change in GDP'."
+  },
+  {
+    "id": "at04",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "In Table 5 (Investment Needs and Economic Costs: Accelerated Decarbonization Scenario, 2022–2040), which power generation technology has the largest absolute capital cost increase ($ billion) and which has the largest percentage increase under ADS relative to CPS?",
+    "expected_answer": "Largest absolute capital cost increase: Wind (offshore) at +$39 billion (+402%). Largest percentage increase: Solar at +429% (+$21 billion).",
+    "evidence": "PDF page 52 (report p. 42), Table 5 sub-rows under 'Capital costs for new generation and storage'."
+  },
+  {
+    "id": "at05",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "From Annex 1 (Vietnam Key Climate and Development Data), what were Vietnam's 2020 total electricity consumption (TWh), energy share from renewables (%), and energy share from fossil fuels (%), and what data source is cited for these three rows?",
+    "expected_answer": "In 2020: Total electricity consumption was 267.18 TWh; Energy from renewables was 84.78%; Energy from fossil fuels was 15.22%. Source cited: Our World in Data.",
+    "evidence": "PDF page 85 (report p. 75), Annex 1 'Energy Consumption and the Power Sector' section."
+  },
+  {
+    "id": "at06",
+    "split": "test",
+    "group": "table",
+    "answerable": true,
+    "question": "From the Annex 3 CGE modeling table 'Key damages and macroeconomic results from CGE model', what is the Baseline Real GDP growth (%) in 2050, and under RCP 4.5 in 2050 what is the Total climate damage (% of GDP) along with its Agriculture, Heat, and Flooding components?",
+    "expected_answer": "Baseline Real GDP average growth in 2050 is 4.24%. Under RCP 4.5 in 2050, Total damages are 9.36% of GDP, broken down into Agriculture 2.31%, Heat 2.92%, and Flooding 4.00%.",
+    "evidence": "PDF page 89 (report p. 79), Annex 3 table rows 'Real GDP' and 'Damages'."
+  },
+  {
+    "id": "at07",
+    "split": "test",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "According to the coastal flood risk map Figure 11 (Flood risks in coastal regions), which five cities are explicitly labeled on the map of Vietnam, and what is the title of the color legend?",
+    "expected_answer": "The five labeled cities are Hanoi, Haiphong, Da Nang, Ho Chi Minh City, and Can Tho; the color legend title is 'Relative Flood Risk'.",
+    "evidence": "PDF page 38 (report p. 28), Figure 11 map callouts and legend."
+  },
+  {
+    "id": "at08",
+    "split": "test",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "According to the map Figure 14 (Vietnam's domestic coal production is concentrated in the northern areas of the country), which province is marked in the box as 'Major Coal Producing Province', and name at least five other geographic/coal labels shown on the map.",
+    "expected_answer": "Quang Ninh is marked as 'Major Coal Producing Province'. Other labels shown on the map include: Na Duong, Thai Nguyen, Hongai, Campha, Hà Nội, Da River or Song Da, Red River Delta, and Ca River and Nghe Tinh.",
+    "evidence": "PDF page 54 (report p. 44), Figure 14 map labels and legend."
+  },
+  {
+    "id": "at09",
+    "split": "test",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "In the funding diagram Figure 21 (Financing needs and potential sources of funding, 2022–2040), what are the three potential sources of funding, their exact dollar amounts ($ billion), and their annual % of GDP shares?",
+    "expected_answer": "Private: $184 billion (~3.4% of GDP per year); Public: $130 billion (~2.4% of GDP per year); External: $54 billion (~1% of GDP per year).",
+    "evidence": "PDF page 71 (report p. 61), Figure 21 three orange boxes."
+  },
+  {
+    "id": "at10",
+    "split": "test",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "In the Annex 4 Resilient Pathway Impact-Urgency Priority Matrix, list at least four actions placed in the High Urgency + High Impact quadrant (top-left action cell).",
+    "expected_answer": "The High Urgency + High Impact cell contains 7 actions: (1) Implement, with urgency, a coordinated regional investment program in the Mekong Delta; (2) Develop an integrated coastal resilience investment program for main urban centers and connecting infrastructure; (3) Rehabilitate or upgrade irrigation infrastructure; (4) Invest in afforestation and reforestation, with a focus on mangroves; (5) Implement a modernized, scaled-up adaptive social safety net program; (6) Restrict overly risky new development, including in buffer zones, by amending the land law; (7) Upgrade road and power assets to higher climate-resilient design standards.",
+    "evidence": "PDF page 94 (report p. 84), Annex 4 Resilient Pathway 2x2 matrix."
+  },
+  {
+    "id": "at11",
+    "split": "test",
+    "group": "image_diagram",
+    "answerable": true,
+    "question": "In the Annex 4 Decarbonizing Pathway High Urgency matrix, how many actions are in the High Impact (left) column versus the Medium Impact (right) column, and list at least two actions from the Medium Impact + High Urgency cell?",
+    "expected_answer": "There are 8 actions in High Impact + High Urgency (left) and 5 actions in Medium Impact + High Urgency (right). The 5 Medium Impact + High Urgency actions are: (1) Use power system planning as a dynamic investment decision tool; (2) Invest in power grid's capacity and flexibility to absorb additional renewable energy; (3) Support transitioning to electric vehicles through standards, incentives, and investments in public charging stations and buses; (4) Facilitate the imports of clean technologies by cutting non-tariff measures applied on environmental goods and services; (5) Invest in and scale up the use of low carbon technologies in rice production.",
+    "evidence": "PDF page 95 (report p. 85), Annex 4 Decarbonizing Pathway matrix."
+  },
+  {
+    "id": "at12",
+    "split": "test",
+    "group": "chart",
+    "answerable": true,
+    "question": "In Figure 2 (Reaching high-income status in 2045 will require faster growth for Vietnam), what is the GDP per capita level of the HIC (high-income country) threshold line (Constant 2015 US$), and at approximately which Time-T point does the dashed 'Vietnam (2021-2045)' curve cross that threshold?",
+    "expected_answer": "The HIC threshold is $12,695 (Constant 2015 US$); the dashed Vietnam (2021-2045) line reaches and crosses the HIC threshold at around T+54 (corresponding to year 2045).",
+    "evidence": "PDF page 15 (report p. 5), Figure 2 line chart and narrative paragraph 1."
+  },
+  {
+    "id": "at13",
+    "split": "test",
+    "group": "chart",
+    "answerable": true,
+    "question": "In the horizontal stacked bar chart Figure 6 (Climate change impacts and disaster risks observed by businesses, 2019), which impact category has the highest combined 'Quite a lot' + 'A lot' percentage, and what are all four segment percentages for 'Business/production interruption'?",
+    "expected_answer": "'Business/production interruption' has the highest combined share (38% + 16% = 54%). Its four segment percentages are: Not at all 11%, Just a little 35%, Quite a lot 38%, and A lot 16%.",
+    "evidence": "PDF page 23 (report p. 13), Figure 6 stacked horizontal bar chart."
+  },
+  {
+    "id": "at14",
+    "split": "test",
+    "group": "chart",
+    "answerable": true,
+    "question": "In Figure 8 (Estimated economic impacts of higher and more variable temperatures and precipitation patterns, rising sea levels—loss of GDP), what is the projected GDP loss (% deviation from baseline) in 2050 under RCP 2.6 versus RCP 4.5, and around which years do the two curves visibly diverge?",
+    "expected_answer": "By 2050, GDP loss reaches 9.8% under RCP 2.6 versus 12.3% under RCP 4.5. Both trajectories move closely together until around 2030–2032, after which RCP 4.5 diverges noticeably upward above RCP 2.6.",
+    "evidence": "PDF page 28 (report p. 18), Figure 8 line chart and text."
+  },
+  {
+    "id": "at15",
+    "split": "test",
+    "group": "chart",
+    "answerable": true,
+    "question": "In Figure 13 (Comparison of electricity sources and GHG emission between CPS and ADS), compare 2040 total Electricity Generated and Coal generation (in TWh) across BAU, CPS, and ADS in the left chart, and compare 2040 Power Sector GHG Emissions (MtCO2e) between CPS and ADS in the right chart.",
+    "expected_answer": "Left chart (2040 Electricity Generated): BAU is 922 TWh total (Coal 550 TWh), CPS is 788 TWh total (Coal 276 TWh), and ADS is 812 TWh total (Coal 26 TWh). Right chart (2040 Power Sector GHG Emissions): CPS is 246 MtCO2e compared to ADS at 63 MtCO2e.",
+    "evidence": "PDF page 51 (report p. 41), Figure 13 left stacked bar chart and right line chart."
+  },
+  {
+    "id": "at16",
+    "split": "test",
+    "group": "chart",
+    "answerable": true,
+    "question": "In the grouped bar chart Figure 20 (Changes in employment per sector in 2040), which sector shows the largest percentage employment gain under 'NZP with reforms' and which shows the largest percentage drop under 'NZP' (without reforms), with exact values?",
+    "expected_answer": "Largest gain under 'NZP with reforms': Electricity (+23.6%). Largest drop under 'NZP': Transport (-6.3%).",
+    "evidence": "PDF page 66 (report p. 56), Figure 20 bar labels."
+  },
+  {
+    "id": "at17",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Table 1 and Annex 1, compare Vietnam's 2018 total GHG emissions (MtCO2e) with Vietnam's 2030 BAU emission scenario and 2030 unconditional 9% NDC target (MtCO2e), and compute how many MtCO2e of growth occur between 2018 actual emissions and the 2030 unconditional NDC target.",
+    "expected_answer": "Vietnam's 2018 total GHG emissions were 364.43 MtCO2e (364.4 in Table 1). In Annex 1, the 2030 BAU emission scenario is 927.9 MtCO2e and the 2030 unconditional 9% NDC target is 844 MtCO2e—representing an increase of 479.57 MtCO2e (or ~479.6 MtCO2e) above 2018 levels.",
+    "evidence": "PDF page 18 (Table 1) and PDF page 85 (Annex 1 GHG Emissions rows)."
+  },
+  {
+    "id": "at18",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Figure 3 and Section 1.2 / Figure 8, what were the 2020 climate change costs for Agriculture and Environmental Disaster (in $ million), and what total GDP share (%) and cumulative cost ($ billion) could climate change impose on Vietnam by 2050?",
+    "expected_answer": "In 2020 (Figure 3, p. 17), Agriculture cost $837 million and Environmental Disaster cost $447 million. By 2050 (p. 28), climate change impacts could cost Vietnam 12–14.5% of GDP or cumulative costs of $400–$523 billion.",
+    "evidence": "PDF page 17 (Figure 3) and PDF page 28 (Section 1.2 & Figure 8)."
+  },
+  {
+    "id": "at19",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Section 4.1, Table 5, and Box 6, what are the three main highlights regarding coal power capacity, fossil fuel share, and renewable share in 2040 under ADS (Box 6), and how much do coal and offshore wind capital costs change in Table 5?",
+    "expected_answer": "In Box 6 (p. 50), under ADS: coal capacity peaks in 2025 and phases out so only a small footprint remains by 2040; fossil fuels drop below 10% of generation capacity; and renewables dominate at up to 90% of installed capacity. In Table 5 (p. 52), coal capital costs change by -$19 billion (-72%) while offshore wind capital costs change by +$39 billion (+402%).",
+    "evidence": "PDF page 50 (Box 6) and PDF page 52 (Table 5)."
+  },
+  {
+    "id": "at20",
+    "split": "test",
+    "group": "multi_hop",
+    "answerable": true,
+    "question": "Combining Section 4.3.3 on agricultural decarbonization and Footnote 75 on IRRI Mekong Delta field trials, how much new investment is estimated for NZP agricultural decarbonization (2022–2040), and what annual GHG reduction (MtCO2e/year by 2030) and net benefit per hectare (million VND/ha) did the IRRI trials find for AWD+1M5R?",
+    "expected_answer": "NZP agricultural decarbonization requires an estimated $15.6 billion in new investment over 2022–2040 (p. 59). IRRI field trials in the Mekong Delta estimated an average net benefit of 27.53 million VND per ha and potential GHG emission reduction of 10.97 MtCO2e per year by 2030 assuming 1.9 million ha coverage (p. 60, Footnote 75).",
+    "evidence": "PDF page 59 (Section 4.3.3) and PDF page 60 (Footnote 75)."
+  },
+  {
+    "id": "at21",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Section 3.3.1 (Resilient agriculture and forestry), what are the projected agricultural output losses in Vietnam by 2030 and by 2050 under RCP 2.6, RCP 4.5, and RCP 8.5, and how much has Vietnam's PFES program paid out since 2008?",
+    "expected_answer": "Projected agricultural output losses: by 2030, 5.6% (RCP 2.6), 6% (RCP 4.5), and 6.2% (RCP 8.5); by 2050, 7.6% (RCP 2.6), 7.9% (RCP 4.5), and 10.6% (RCP 8.5). Since 2008, the PFES program has paid out nearly $400 million.",
+    "evidence": "PDF page 31 (report p. 21), Section 3.3.1 paragraphs 2–3."
+  },
+  {
+    "id": "at22",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Box 5 (Hanoi air pollution: How targeted action can maximize co-benefits), what are the five main sources of PM2.5 air pollution in Hanoi and their percentage shares, and why are PM2.5 concentrations projected to continue increasing?",
+    "expected_answer": "The five main sources are: (i) industry (~35%), (ii) transport (~25%), (iii) ammonia emissions from livestock and fertilizer use (20%), (iv) residential sector / biomass cooking (10%), and (v) open burning of agricultural waste (~7%). PM2.5 is projected to increase mainly due to planned coal capacity expansion (10 new coal-fired power plants in the Northern region by 2030) without stricter air pollution regulations and growing agricultural ammonia emissions.",
+    "evidence": "PDF page 47 (report p. 37), Box 5."
+  },
+  {
+    "id": "at23",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Sections 4.4.1 and 4.4.2 on distributional impacts of the NZP transition, which household characteristics are most penalized under the NZP, and by how many percentage points does a 10% increase in energy prices raise poverty and economic insecurity rates?",
+    "expected_answer": "The most penalized households under NZP are younger (50-year-old head is 10% less likely to be insecure than 40-year-old), less educated (lower secondary is 12% less likely than lower), ethnic minority (Kinh is 37% less likely), and rural (urban is 10% less likely). A 10% energy price increase leads to increases in poverty and economic insecurity rates by 0.5 and 1.3 percentage points, respectively.",
+    "evidence": "PDF page 64 (report p. 54), Section 4.4.1 bullets and Section 4.4.2 paragraph 2."
+  },
+  {
+    "id": "at24",
+    "split": "test",
+    "group": "text",
+    "answerable": true,
+    "question": "According to Section 5.1 (The private sector will be pivotal), out of 85 credit institutions reporting to the State Bank of Vietnam (SBV), how many lack a dedicated green finance business unit and how many lack a specific procedure on green credit appraisal?",
+    "expected_answer": "Out of 85 credit institutions reporting to the SBV, 72 lack a dedicated business unit for green finance and 74 lack a specific procedure on green credit appraisal.",
+    "evidence": "PDF page 72 (report p. 62), Section 5.1 paragraph 3."
+  },
+  {
+    "id": "at25",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What is the exact USD 15.5 billion financing breakdown of Vietnam's Just Energy Transition Partnership (JETP) detailed in the report?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'JETP' appears 0 times (the July 2022 CCDR predates the December 2022 JETP agreement)."
+  },
+  {
+    "id": "at26",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "How many public electric vehicle charging stations did VinFast install across Vietnam's provinces in 2022 according to the CCDR?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'VinFast' appears 0 times in the report."
+  },
+  {
+    "id": "at27",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What was the opening carbon credit trading price per tonne of CO2 on the Ho Chi Minh City Stock Exchange pilot in 2025 according to the report?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'stock exchange' appears 0 times in the report."
+  },
+  {
+    "id": "at28",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What regasification capacity (in million tonnes per annum) is reported for the Thi Vai LNG terminal in 2024?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'Thi Vai' and 'regasification' appear 0 times in the report."
+  },
+  {
+    "id": "at29",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "What specific annual mangrove reforestation budget (in VND billion) was allocated to Ben Tre province for 2023 in the CCDR?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'Ben Tre' appears 0 times in the report."
+  },
+  {
+    "id": "at30",
+    "split": "test",
+    "group": "unanswerable",
+    "answerable": false,
+    "question": "How much domestic lithium mining and battery recycling capacity (in tonnes per year) does the CCDR project for Vietnam by 2030?",
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Verified across all 100 pages: 'lithium' and 'battery recycling' appear 0 times in the report."
+  }
+]

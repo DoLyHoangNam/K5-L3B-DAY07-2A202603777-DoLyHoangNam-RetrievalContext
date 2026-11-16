@@ -1,0 +1,39 @@
+{
+  "document_id": "wb-vietnam-ccdr-2022",
+  "title": "Vietnam Country Climate and Development Report (World Bank, July 2022)",
+  "source_url": "https://documents1.worldbank.org/curated/en/099355507062229876/pdf/P17724103036ee07909701028a237b6d18b.pdf",
+  "license": "World Bank Open Knowledge / Public Disclosure Authorized (CC BY 3.0 IGO)",
+  "total_physical_pages": 100,
+  "indexed_pages": 97,
+  "skipped_pages": [
+    {
+      "page": 98,
+      "reason": "Blank/back-cover page with no extractable analytical text or figure",
+      "chars": 0
+    },
+    {
+      "page": 99,
+      "reason": "Blank/back-cover page with no extractable analytical text or figure",
+      "chars": 0
+    },
+    {
+      "page": 100,
+      "reason": "Blank/back-cover page with no extractable analytical text or figure",
+      "chars": 0
+    }
+  ],
+  "text_chunks": 373,
+  "visual_elements": 47,
+  "visual_elements_by_kind": {
+    "table": 15,
+    "chart": 16,
+    "image_diagram": 16
+  },
+  "total_indexed_records": 420,
+  "vision_input_tokens": 101846,
+  "vision_output_tokens": 17298,
+  "vision_cost_usd": 0.025656,
+  "embed_chars": 339974,
+  "embed_cost_usd": 0.012749,
+  "elapsed_seconds": 623.46
+}

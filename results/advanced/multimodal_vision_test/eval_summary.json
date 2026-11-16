@@ -1,0 +1,375 @@
+{
+  "total": 30,
+  "passed": 28,
+  "pass_ratio": "28/30",
+  "pass_pct": 93.33,
+  "errors": 0,
+  "by_group": {
+    "table": {
+      "pass": 6,
+      "total": 6,
+      "ratio": "6/6",
+      "pct": 100.0
+    },
+    "image_diagram": {
+      "pass": 4,
+      "total": 5,
+      "ratio": "4/5",
+      "pct": 80.0
+    },
+    "chart": {
+      "pass": 5,
+      "total": 5,
+      "ratio": "5/5",
+      "pct": 100.0
+    },
+    "multi_hop": {
+      "pass": 4,
+      "total": 4,
+      "ratio": "4/4",
+      "pct": 100.0
+    },
+    "text": {
+      "pass": 3,
+      "total": 4,
+      "ratio": "3/4",
+      "pct": 75.0
+    },
+    "unanswerable": {
+      "pass": 6,
+      "total": 6,
+      "ratio": "6/6",
+      "pct": 100.0
+    }
+  },
+  "cases": [
+    {
+      "query_id": "at01",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p018:v01"
+      ],
+      "reason": "Exact 4-column values for Thailand & Vietnam matching Table 1 (PDF p.18); cited p018:v01."
+    },
+    {
+      "query_id": "at02",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p046:v00"
+      ],
+      "reason": "Exact 2022-2040 NPV values for NZP & NZP with reforms and $133.8B difference matching Table 3 (PDF p.46)."
+    },
+    {
+      "query_id": "at03",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p048:v00",
+        "PAGE:48"
+      ],
+      "reason": "Correctly identified 'NZP with energy efficiency gains' (+0.2%) and 'NZP without reforms' (-73.6%) in Table 4 (PDF p.48)."
+    },
+    {
+      "query_id": "at04",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:52"
+      ],
+      "reason": "Correctly identified Wind (offshore) +$39B and Solar +429% in Table 5 (PDF p.52)."
+    },
+    {
+      "query_id": "at05",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p085:t02"
+      ],
+      "reason": "Exact 267.18 TWh, 84.78%, 15.22%, Our World in Data matching Annex 1 (PDF p.85)."
+    },
+    {
+      "query_id": "at06",
+      "group": "table",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p089:t03"
+      ],
+      "reason": "Exact Baseline Real GDP 4.24% and RCP 4.5 2050 damages 9.36% (Agr 2.31%, Heat 2.92%, Flood 4.00%) matching Annex 3 (PDF p.89)."
+    },
+    {
+      "query_id": "at07",
+      "group": "image_diagram",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:38"
+      ],
+      "reason": "All 5 cities (Hanoi, Haiphong, Da Nang, HCMC, Can Tho) and legend 'Relative Flood Risk' verified on Figure 11 (PDF p.38)."
+    },
+    {
+      "query_id": "at08",
+      "group": "image_diagram",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:54"
+      ],
+      "reason": "Quang Ninh and 5+ labels (Na Duong, Thai Nguyen, Hongai, Campha, Da River/Song Da) verified on Figure 14 (PDF p.54)."
+    },
+    {
+      "query_id": "at09",
+      "group": "image_diagram",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p071:v00"
+      ],
+      "reason": "Private $184B (~3.4%), Public $130B (~2.4%), External $54B (~1%) verified on Figure 21 (PDF p.71)."
+    },
+    {
+      "query_id": "at10",
+      "group": "image_diagram",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p094:t00",
+        "ADV:wb-vietnam-ccdr-2022:p094:v00"
+      ],
+      "reason": "Listed all 7 High Urgency + High Impact actions matching Annex 4 Resilient Matrix (PDF p.94)."
+    },
+    {
+      "query_id": "at11",
+      "group": "image_diagram",
+      "answerable": true,
+      "status": "answered",
+      "passed": false,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p094:v00"
+      ],
+      "reason": "FAIL: Cited p094:v00 (Resilient Pathway: 7 vs 4 actions) instead of p095 (Decarbonizing Pathway: 8 vs 5 actions)."
+    },
+    {
+      "query_id": "at12",
+      "group": "chart",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:15",
+        "ADV:wb-vietnam-ccdr-2022:p015:v00"
+      ],
+      "reason": "Exact $12,695 HIC threshold and crossing at T+54 verified on Figure 2 (PDF p.15)."
+    },
+    {
+      "query_id": "at13",
+      "group": "chart",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:23"
+      ],
+      "reason": "Exact 'Business/production interruption' 54% (11%, 35%, 38%, 16%) verified on Figure 6 (PDF p.23)."
+    },
+    {
+      "query_id": "at14",
+      "group": "chart",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p028:t01",
+        "PAGE:28"
+      ],
+      "reason": "Exact 9.8% vs 12.3% in 2050 and divergence ~2030 verified on Figure 8 (PDF p.28)."
+    },
+    {
+      "query_id": "at15",
+      "group": "chart",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:51"
+      ],
+      "reason": "Exact 2040 TWh (BAU 922/Coal 550, CPS 788/Coal 276, ADS 812/Coal 26) and emissions (CPS 246, ADS 63 MtCO2e) verified on Figure 13 (PDF p.51)."
+    },
+    {
+      "query_id": "at16",
+      "group": "chart",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:66"
+      ],
+      "reason": "Exact Electricity (+23.6%) and Transport (-6.3%) verified on Figure 20 (PDF p.66)."
+    },
+    {
+      "query_id": "at17",
+      "group": "multi_hop",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p085:t01",
+        "ADV:wb-vietnam-ccdr-2022:p085:t02"
+      ],
+      "reason": "Exact 364.43 MtCO2e (2018), 927.9 BAU, 844 NDC, +479.57 MtCO2e verified on Annex 1 (PDF p.85)."
+    },
+    {
+      "query_id": "at18",
+      "group": "multi_hop",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:17",
+        "PAGE:28"
+      ],
+      "reason": "Exact Agr $837M, Env Disaster $447M (Fig 3 p.17) and 12-14.5% GDP / $400-523B by 2050 (p.28)."
+    },
+    {
+      "query_id": "at19",
+      "group": "multi_hop",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p050:v00",
+        "ADV:wb-vietnam-ccdr-2022:p052:v00"
+      ],
+      "reason": "Exact 3 Box 6 highlights (p.50) and Coal -$19B (-72%), Offshore wind +$39B (+402%) from Table 5 (p.52)."
+    },
+    {
+      "query_id": "at20",
+      "group": "multi_hop",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p059:t02",
+        "ADV:wb-vietnam-ccdr-2022:p060:t03",
+        "ADV:wb-vietnam-ccdr-2022:p060:t04"
+      ],
+      "reason": "Exact $15.6B (p.59), 27.53M VND/ha, and 10.97 MtCO2e/yr (p.60 Footnote 75)."
+    },
+    {
+      "query_id": "at21",
+      "group": "text",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:31"
+      ],
+      "reason": "Exact 2030 (5.6%, 6%, 6.2%), 2050 (7.6%, 7.9%, 10.6%) losses and ~$400M PFES verified on PDF p.31."
+    },
+    {
+      "query_id": "at22",
+      "group": "text",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "PAGE:47"
+      ],
+      "reason": "Exact 5 Hanoi PM2.5 sources (~35%, ~25%, 20%, 10%, ~7%) and coal/ammonia drivers verified on Box 5 (PDF p.47)."
+    },
+    {
+      "query_id": "at23",
+      "group": "text",
+      "answerable": true,
+      "status": "answered",
+      "passed": false,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p064:t01",
+        "ADV:wb-vietnam-ccdr-2022:p064:t02"
+      ],
+      "reason": "FAIL: Misstated 'younger' as 'poorer' and inverted 'Kinh 37% less likely' to 'ethnic minority 37% more likely' (PDF p.64)."
+    },
+    {
+      "query_id": "at24",
+      "group": "text",
+      "answerable": true,
+      "status": "answered",
+      "passed": true,
+      "citations": [
+        "ADV:wb-vietnam-ccdr-2022:p072:t02"
+      ],
+      "reason": "Exact 72/85 lacking dedicated unit and 74/85 lacking green credit appraisal procedure (PDF p.72)."
+    },
+    {
+      "query_id": "at25",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched 4 times and abstained cleanly on JETP $15.5B breakdown (absent in July 2022 CCDR)."
+    },
+    {
+      "query_id": "at26",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched and abstained cleanly on VinFast charging stations (absent)."
+    },
+    {
+      "query_id": "at27",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched and abstained cleanly on HOSE 2025 carbon credit price (absent)."
+    },
+    {
+      "query_id": "at28",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched 5 times and abstained cleanly on Thi Vai LNG capacity (absent)."
+    },
+    {
+      "query_id": "at29",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched 2 times and abstained cleanly on Ben Tre 2023 mangrove budget (absent)."
+    },
+    {
+      "query_id": "at30",
+      "group": "unanswerable",
+      "answerable": false,
+      "status": "abstain",
+      "passed": true,
+      "citations": [],
+      "reason": "Searched 2 times and abstained cleanly on lithium mining/recycling capacity (absent)."
+    }
+  ]
+}

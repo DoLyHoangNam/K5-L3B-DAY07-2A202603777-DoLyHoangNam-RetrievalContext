@@ -113,4 +113,87 @@
 
 ### Đánh đổi và giới hạn
 - **Đánh đổi:** `agent_selected` tăng chất lượng trả lời từ `1.00/2.00` lên `2.00/2.00` (giảm từ chối nhầm từ 40% xuống 0%) nhưng đánh đổi độ trễ từ ~3.1s lên ~4.9s/câu và cần thêm chi phí rerank (~10 lần gọi/câu ở mức candidate). Khi dùng Gemini Free Tier (15 RPM), việc gọi tuần tự cả rerank và agent dễ chạm ngưỡng `429`, cần cơ chế retry/pacing.
-- **Giới hạn:** Corpus chỉ gồm text trích xuất từ 2 PDF (88 trang) của Day 6 (chưa OCR biểu đồ/ảnh riêng biệt); kích thước tập `test` là 7 câu (5 có đáp án + 2 thiếu bằng chứng), đạt mức tối thiểu của phần cơ bản nên độ biến thiên thống kê trên `test` còn cao.
+- **Giới hạn:** Corpus phần cơ bản chỉ gồm text trích xuất từ 2 PDF (88 trang) của Day 6; kích thước tập `test` cơ bản là 7 câu (5 có đáp án + 2 thiếu bằng chứng), đạt mức tối thiểu nên độ biến thiên thống kê trên `test` còn cao.
+
+---
+
+## 4. Thử thách nâng cao (+15 điểm)
+
+- **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:**
+  - **Tài liệu:** *Vietnam Country Climate and Development Report (CCDR)*, World Bank Group, ấn bản tháng 07/2022 (`vietnam_ccdr_full.pdf`).
+  - **Nguồn tải chính thức:** https://documents1.worldbank.org/curated/en/099355507062229876/pdf/P17724103036ee07909701028a237b6d18b.pdf
+  - **Quyền sử dụng:** World Bank Open Knowledge / Public Disclosure Authorized (`CC BY 3.0 IGO`, trang 2).
+  - **Số trang:** **100 trang vật lý** (trang 1–100).
+- **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:**
+  - **Toàn văn 100 trang ([adv_ingest.py](file:///c:/Users/admin/LabTeam/TH%20day%2007/src/adv_ingest.py)):**
+    - Render tất cả 100 trang thành PNG 150 DPI (`pages/p001.png`–`p100.png`) qua `pypdfium2`.
+    - **Text:** Trích xuất toàn văn bằng `pypdf`, chia chunk overlap (`size=900`, `overlap=150`) -> **373 text chunks** gắn đúng số trang gốc (`ADV:wb-vietnam-ccdr-2022:pXXX:tYY`).
+    - **Bảng, biểu đồ, ảnh/sơ đồ/bản đồ:** Quét 58 trang có dấu hiệu trực quan bằng Gemini Vision (`gemini-3.5-flash-lite`) để trích xuất cấu trúc bảng Markdown, trục/chú giải/giá trị biểu đồ, nhãn bản đồ/sơ đồ, kèm tọa độ `bbox_pct` để crop ảnh từng vùng (`crops/pXXX_elYY.png`) -> **47 visual elements** (**15 bảng**, **16 biểu đồ**, **16 ảnh/sơ đồ/bản đồ**).
+    - **Vector store:** Toàn bộ **420 records** (`373 text + 47 visual`) được embed bằng `gemini-embedding-001` (3072 chiều) và lưu vào bảng PostgreSQL `pgvector` `adv_chunks` + index BM25. Chi phí index toàn tài liệu: `\$0.025656` (vision) + `\$0.012749` (embedding) = **`\$0.0384`** (`623.46s`).
+    - **Phần chưa xử lý & ảnh hưởng:** **3 trang cuối (`98, 99, 100`)** là trang trắng / bìa sau có `0` ký tự và không chứa hình phân tích (được ghi log riêng trong [ingest_stats.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/ingest_stats.json); không ảnh hưởng tới nội dung báo cáo). Đã kiểm chứng đối chiếu nội dung trích xuất với ảnh trang gốc cho toàn bộ bảng/hình trong benchmark và trang bị thêm tool `inspect_page_visual(page, focus_question)` để agent kiểm tra trực tiếp ảnh PNG trang gốc khi trả lời.
+- **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên `dev`:**
+  - **Benchmark ([adv_cases.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/adv_cases.json)):** tổng **48 câu** không trùng lặp ý/đáp án giữa `dev` và `test`:
+    - **`dev` (18 câu):** 15 có đáp án (`3 table`, `3 image_diagram`, `3 chart`, `3 multi_hop`, `3 text`) + `3 unanswerable` (`au01`–`au03`).
+    - **`test` (30 câu):** 24 có đáp án (`6 table`, `5 image_diagram`, `5 chart`, `4 multi_hop`, `4 text`) + `6 unanswerable` (`at25`–`at30`, kiểm chứng từ khóa xuất hiện 0 lần trên 100 trang).
+    - Không dùng ảnh trang trí (chapter opener photos) làm câu hỏi ảnh/biểu đồ; toàn bộ nhóm `image_diagram` dùng sơ đồ khái niệm, bản đồ nguy cơ/tài nguyên, sơ đồ tài chính và ma trận ưu tiên.
+  - **Thử nghiệm & chốt trên `dev` (`gemini-3.1-flash-lite`):**
+    - `adv_text_baseline` (`text-only`, không `inspect_page_visual`, `budget=2500`): `13/15` câu có đáp án được trả lời (bị `abstain` ở `ad05` bản đồ Fig 9 và `ad07` treemap Fig 3), `3/3` từ chối đúng, trung bình `4.06` tool calls/câu, chi phí `\$0.03385`.
+    - **`adv_multimodal_vision` (Đã chốt):** Hybrid RRF (Dense `adv_chunks` + BM25, `top_k=6`, `budget=4500`) + `inspect_page_visual` + `get_page_text`. Đạt **`18/18` (100%) trên `dev`** (`15/15` có đáp án đúng & đủ, `3/3` từ chối đúng, `0` lỗi, trung bình `1.89` tool calls/câu, chi phí `\$0.018508`).
+
+### Kết quả chạy và chấm thủ công toàn bộ 30 câu `test` (`adv_multimodal_vision`)
+
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---:|---:|---|
+| Bảng (`table`) | 6 / 6 | 100.0% | Chính xác hoàn toàn Table 1, 3, 4, 5, Annex 1, Annex 3 CGE (`at01`–`at06`). |
+| Ảnh, sơ đồ (`image_diagram`) | 4 / 5 | 80.0% | Đúng `at07`–`at10`; **`at11` KHÔNG ĐẠT** (nhầm bảng Resilient p.94 với Decarbonizing p.95). |
+| Biểu đồ (`chart`) | 5 / 5 | 100.0% | Chính xác Fig 2, 6, 8, 13, 20 nhờ `inspect_page_visual` (`at12`–`at16`). |
+| Multi-hop (`multi_hop`) | 4 / 4 | 100.0% | Tổng hợp & tính đúng phép tính xuyên trang (`at17`–`at20`). |
+| Text (`text`) | 3 / 4 | 75.0% | Đúng `at21`, `at22`, `at24`; **`at23` KHÔNG ĐẠT** (đọc nhầm `younger` thành `poorer` và đảo ngược xác suất 37%). |
+| Thiếu bằng chứng (`unanswerable`) | 6 / 6 | 100.0% | Từ chối đúng toàn bộ `at25`–`at30`, không suy đoán. |
+| **Toàn bộ** | **28 / 30** | **93.33%** | **Đạt ngưỡng $\ge$ 90% (27/30); 0 lỗi hệ thống.** |
+
+<details>
+<summary>Chi tiết trace, citation và nhãn đối chiếu bản gốc cho toàn bộ 30 câu test (bấm để mở)</summary>
+
+| ID | Nhóm | Tools & trang đã xem | Citations | Nhãn & đối chiếu bản gốc |
+|---|---|---|---|---|
+| `at01` | table | `search` (p.18) | `p018:v01` | **Đạt** — Đúng 4 cột Thailand & Vietnam (Table 1, p.18). |
+| `at02` | table | `search`, `inspect_page_visual(46)` | `p046:v00` | **Đạt** — Đúng -134.9B vs -1.3B và chênh lệch 133.8B (Table 3, p.46). |
+| `at03` | table | `search`, `inspect_page_visual(48)` | `p048:v00`, `PAGE:48` | **Đạt** — Đúng Energy efficiency +0.2%, NZP without reforms -73.6% (Table 4, p.48). |
+| `at04` | table | `search`, `inspect_page_visual(52)` | `PAGE:52` | **Đạt** — Đúng Wind (offshore) +\$39B, Solar +429% (Table 5, p.52). |
+| `at05` | table | `search` (p.85) | `p085:t02` | **Đạt** — Đúng 267.18 TWh, 84.78%, 15.22%, Our World in Data (Annex 1, p.85). |
+| `at06` | table | `search` x3 (p.89) | `p089:t03` | **Đạt** — Đúng 4.24%, 9.36%, Agr 2.31%, Heat 2.92%, Flood 4.00% (Annex 3, p.89). |
+| `at07` | image_diagram | `search`, `inspect_page_visual(38)` | `PAGE:38` | **Đạt** — Đúng 5 thành phố & legend Relative Flood Risk (Fig 11, p.38). |
+| `at08` | image_diagram | `search`, `inspect_page_visual(54)` | `PAGE:54` | **Đạt** — Đúng Quang Ninh & 5 nhãn trên bản đồ (Fig 14, p.54). |
+| `at09` | image_diagram | `search`, `inspect_page_visual(71)` | `p071:v00` | **Đạt** — Đúng Private \$184B (~3.4%), Public \$130B (~2.4%), External \$54B (~1%) (Fig 21, p.71). |
+| `at10` | image_diagram | `search` (p.94) | `p094:t00`, `p094:v00` | **Đạt** — Liệt kê đủ 7 hành động High Urgency + High Impact (Annex 4, p.94). |
+| `at11` | image_diagram | `search` (p.94, 95) | `p094:v00` | **Không đạt** — Trả lời nhầm theo bảng Resilient (p.94: 7 vs 4) thay vì Decarbonizing (p.95: 8 vs 5). |
+| `at12` | chart | `search`, `inspect_page_visual(15)` | `PAGE:15`, `p015:v00` | **Đạt** — Đúng \$12,695 và điểm cắt T+54 (Fig 2, p.15). |
+| `at13` | chart | `search`, `inspect_page_visual(23)` | `PAGE:23` | **Đạt** — Đúng 54% (11%, 35%, 38%, 16%) (Fig 6, p.23). |
+| `at14` | chart | `search`, `inspect_page_visual(28)` | `p028:t01`, `PAGE:28` | **Đạt** — Đúng 9.8% vs 12.3% năm 2050, tách nhau ~2030 (Fig 8, p.28). |
+| `at15` | chart | `search`, `inspect_page_visual(51)` | `PAGE:51` | **Đạt** — Đúng 922/550, 788/276, 812/26 TWh; CPS 246 vs ADS 63 MtCO2e (Fig 13, p.51). |
+| `at16` | chart | `search`, `inspect_page_visual(66)` | `PAGE:66` | **Đạt** — Đúng Electricity +23.6%, Transport -6.3% (Fig 20, p.66). |
+| `at17` | multi_hop | `search`, `inspect_page_visual(85)` x2 | `p085:t01`, `p085:t02` | **Đạt** — Đúng 364.43 -> 844 MtCO2e (BAU 927.9), tăng 479.57 MtCO2e (p.85). |
+| `at18` | multi_hop | `search` x2, `inspect_page_visual(27)` | `PAGE:17`, `PAGE:28` | **Đạt** — Đúng \$837M, \$447M (p.17) và 12–14.5% GDP / \$400–\$523B (p.28). |
+| `at19` | multi_hop | `search` (p.50, 52) | `p050:v00`, `p052:v00` | **Đạt** — Đúng 3 ý Box 6 (p.50) & Coal -\$19B (-72%), Offshore wind +\$39B (+402%) (p.52). |
+| `at20` | multi_hop | `search` (p.59, 60) | `p059:t02`, `p060:t03`, `p060:t04` | **Đạt** — Đúng \$15.6B (p.59), 27.53M VND/ha & 10.97 MtCO2e/yr (p.60). |
+| `at21` | text | `search`, `inspect_page_visual(31)` | `PAGE:31` | **Đạt** — Đúng 2030 (5.6%, 6%, 6.2%), 2050 (7.6%, 7.9%, 10.6%), PFES ~\$400M (p.31). |
+| `at22` | text | `search` (p.47) | `PAGE:47` | **Đạt** — Đúng 5 nguồn PM2.5 (~35%, ~25%, 20%, 10%, ~7%) & nguyên nhân (p.47). |
+| `at23` | text | `search` (p.64) | `p064:t01`, `p064:t02` | **Không đạt** — Nhầm `younger` thành `poorer` và đảo ngược "Kinh 37% less likely" thành "ethnic minority 37% more likely" (p.64). |
+| `at24` | text | `search` (p.72) | `p072:t02` | **Đạt** — Đúng 72/85 và 74/85 tổ chức tín dụng (p.72). |
+| `at25` | unanswerable | `search` x4 | `[]` | **Đạt** — Từ chối đúng về JETP \$15.5B (không có trong báo cáo 07/2022). |
+| `at26` | unanswerable | `search` x1 | `[]` | **Đạt** — Từ chối đúng về số trạm sạc VinFast. |
+| `at27` | unanswerable | `search` x1 | `[]` | **Đạt** — Từ chối đúng về giá mở cửa tín chỉ carbon HOSE 2025. |
+| `at28` | unanswerable | `search` x5 | `[]` | **Đạt** — Từ chối đúng về công suất tái hóa khí LNG Thị Vải 2024. |
+| `at29` | unanswerable | `search` x2 | `[]` | **Đạt** — Từ chối đúng về ngân sách trồng rừng ngập mặn Bến Tre 2023. |
+| `at30` | unanswerable | `search` x2 | `[]` | **Đạt** — Từ chối đúng về công suất khai thác lithium & tái chế pin 2030. |
+
+</details>
+
+- **Trace, nhãn, thời gian, chi phí và lỗi hệ thống:**
+  - Traces & nhãn lưu tại [multimodal_vision_test/traces.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/traces.json), [reviews.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/reviews.json) và [eval_summary.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/results/advanced/multimodal_vision_test/eval_summary.json).
+  - **Thời gian & chi phí chạy `test` (30 câu):** `0` lỗi hệ thống, trung bình `1.9` tool calls/câu, median latency `11,106.3 ms` (~11.1s/câu do gọi Vision tool + pacing), tổng chi phí LLM `\$0.033346` + retriever `\$0.000102` = **`\$0.033448`**.
+- **Giới hạn, cách tái lập và đường dẫn benchmark:**
+  - **Giới hạn:** Ở câu `at11`, các bảng kéo dài nhiều trang (Annex 4, p.94–97) chưa tự động gộp thành một entity logic nên truy xuất trả `p094` trước `p095`; ở câu `at23`, LLM tự diễn giải ngược tỷ lệ tương đối ("less likely" vs "more likely"). Ngoài ra, miễn phí API Gemini giới hạn 15 RPM / 500 RPD nên phải phân tách model giữa bước ingest (`gemini-3.5-flash-lite`) và đánh giá (`gemini-3.1-flash-lite`).
+  - **Đường dẫn tái lập:** Tải PDF từ URL World Bank ở trên về `starter/data/advanced/vietnam_ccdr_full.pdf`, chạy `python -m src.adv_ingest`, sau đó chạy `python -m src.adv_run_eval --split test --config multimodal_vision --model gemini-3.1-flash-lite` và `python -m src.adv_build_reviews`. Benchmark gốc: [adv_cases.json](file:///c:/Users/admin/LabTeam/TH%20day%2007/starter/data/advanced/adv_cases.json).
+

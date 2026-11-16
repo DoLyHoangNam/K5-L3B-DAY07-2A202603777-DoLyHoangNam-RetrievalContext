@@ -1,0 +1,14 @@
+{
+  "config": "adv_multimodal_vision",
+  "use_visual_tool": true,
+  "use_rerank": false,
+  "budget": 4500,
+  "total": 30,
+  "errors": 0,
+  "answered": 24,
+  "abstained": 6,
+  "avg_tool_calls": 1.9,
+  "median_ms": 11106.3,
+  "agent_llm_cost_usd": 0.033346,
+  "retriever_cost_usd": 0.000102
+}

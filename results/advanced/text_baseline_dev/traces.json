@@ -1,0 +1,3118 @@
+[
+  {
+    "query_id": "ad01",
+    "question": "From Table 1 (Cross-Country Emission Overview), what are Vietnam's emissions per capita (tCO2e per capita), carbon intensity (tCO2e/million $GDP), total emissions (MtCO2e), and % of global emissions?",
+    "status": "answered",
+    "answer": "According to Table 1 (Cross-Country Emission Overview) on page 18, Vietnam's emission metrics are as follows: \n- Emissions per capita: 3.8 tCO2e per capita\n- Carbon intensity: 1,486.2 tCO2e/million $GDP\n- Total emissions: 364.4 MtCO2e\n- % of global emissions: 0.8%",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p018:t00"
+    ],
+    "valid_pages_seen": [
+      6,
+      11,
+      17,
+      18,
+      19,
+      85,
+      87,
+      91
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Table 1 Cross-Country Emission Overview Vietnam emissions per capita carbon intensity total emissions % of global emissions",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p018:t00",
+            "page": 18,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p006:t00",
+            "page": 6,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p085:t00",
+            "page": 85,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p011:t00",
+            "page": 11,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t00",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0286
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Table 1 Cross-Country Emission Overview Vietnam row",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p018:t00",
+            "page": 18,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p006:t00",
+            "page": 6,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p091:t00",
+            "page": 91,
+            "element_type": "text",
+            "score": 0.0265
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p085:t02",
+            "page": 85,
+            "element_type": "text",
+            "score": 0.0159
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p087:t00",
+            "page": 87,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 18,
+        "chars": 1151
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 3,
+    "input_tokens": 7869,
+    "output_tokens": 227,
+    "llm_cost_usd": 0.001317,
+    "elapsed_ms": 39190.99,
+    "group": "table",
+    "answerable": true
+  },
+  {
+    "query_id": "ad02",
+    "question": "From Table 2 (Estimates of incremental financing needs for adaptation measures, 2022–2050), what are the total financing needs versus existing financing in both average % of GDP per year and accumulated NPV ($ billion)?",
+    "status": "answered",
+    "answer": "According to Table 2 on page 29, the total financing needs for adaptation measures from 2022–2050 are 6.3–7.2% of GDP per year and 479.2–547.6 billion USD in accumulated NPV. The existing financing is 1.8% of GDP per year and 136.9 billion USD in accumulated NPV [ADV:wb-vietnam-ccdr-2022:p029:t03].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p029:t03"
+    ],
+    "valid_pages_seen": [
+      6,
+      28,
+      29,
+      71,
+      92
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Table 2 Estimates of incremental financing needs for adaptation measures 2022–2050",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t03",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t01",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p006:t00",
+            "page": 6,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p092:t01",
+            "page": 92,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t02",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t03",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0297
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 1,
+    "input_tokens": 1918,
+    "output_tokens": 203,
+    "llm_cost_usd": 0.000409,
+    "elapsed_ms": 5687.74,
+    "group": "table",
+    "answerable": true
+  },
+  {
+    "query_id": "ad03",
+    "question": "From Table 5 (Investment Needs and Economic Costs: Accelerated Decarbonization Scenario, 2022–2040), what are the total system costs deviation, fuel cost savings, and net total system costs deviation ($ billion NPV and % change) between CPS and ADS?",
+    "status": "answered",
+    "answer": "According to Table 5, the deviation between the CPS (baseline) and the ADS (Accelerated Decarbonization Scenario) for the period 2022–2040 is as follows:\n\n- Total system costs deviation: +$65 billion (56% change).\n- Fuel cost savings: -$32 billion (-31% change).\n- Net total system costs deviation: +$33 billion (13% change).",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p052:t00"
+    ],
+    "valid_pages_seen": [
+      6,
+      46,
+      50,
+      51,
+      52
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Table 5 Investment Needs and Economic Costs: Accelerated Decarbonization Scenario, 2022–2040",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p052:t00",
+            "page": 52,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t01",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p006:t00",
+            "page": 6,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t00",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p046:t00",
+            "page": 46,
+            "element_type": "text",
+            "score": 0.0302
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t02",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0292
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 1,
+    "input_tokens": 1900,
+    "output_tokens": 194,
+    "llm_cost_usd": 0.000401,
+    "elapsed_ms": 5349.47,
+    "group": "table",
+    "answerable": true
+  },
+  {
+    "query_id": "ad04",
+    "question": "According to the conceptual diagram in Figure 1 (A new development paradigm for Vietnam), what are the two pathways linking 'Vietnam Today' to 'Vietnam in 2045', and list all five core actions shown in the center box.",
+    "status": "answered",
+    "answer": "According to Figure 1, the two pathways linking 'Vietnam Today' to 'Vietnam in 2045' are the 'Resilient Pathway' (Adapting to Climate Change) and the 'Decarbonizing Pathway' (Mitigating Climate Change) [PAGE:12]. The five core actions shown in the center box are: 1) Building resilient infrastructure, 2) Protecting the most vulnerable, 3) Implementing structural reforms to incentivize farmers and firms, 4) Pricing carbon, and 5) Mobilizing financing [PAGE:12].",
+    "citations": [
+      "PAGE:12"
+    ],
+    "valid_pages_seen": [
+      5,
+      7,
+      12,
+      13,
+      80
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 1 A new development paradigm for Vietnam pathways core actions",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p012:t00",
+            "page": 12,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p012:t02",
+            "page": 12,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p005:t00",
+            "page": 5,
+            "element_type": "text",
+            "score": 0.0295
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p013:t00",
+            "page": 13,
+            "element_type": "text",
+            "score": 0.0288
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p080:t00",
+            "page": 80,
+            "element_type": "text",
+            "score": 0.0282
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 12,
+        "chars": 2495
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 2,
+    "input_tokens": 3343,
+    "output_tokens": 196,
+    "llm_cost_usd": 0.000619,
+    "elapsed_ms": 7447.46,
+    "group": "image_diagram",
+    "answerable": true
+  },
+  {
+    "query_id": "ad05",
+    "question": "In the three-panel map Figure 9 (Extreme hazard susceptibility exposure of national-scale roads in Vietnam), what are the three hazard types mapped and what percentage exposure range does the darkest color category represent in each legend?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "valid_pages_seen": [
+      7,
+      23,
+      24,
+      25,
+      33,
+      34,
+      35,
+      89,
+      91
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 9 Extreme hazard susceptibility exposure of national-scale roads in Vietnam",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t00",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t00",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0294
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t02",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0284
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t05",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0279
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 24,
+        "chars": 1525
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 9 Extreme hazard susceptibility exposure of national-scale roads in Vietnam",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t00",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t00",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0294
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t02",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0284
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t05",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0279
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 25,
+        "chars": 49
+      },
+      {
+        "event": "get_page_text",
+        "page": 23,
+        "chars": 3252
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 9 Extreme hazard susceptibility exposure of national-scale roads in Vietnam",
+        "element_type": "image_diagram",
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t00",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t00",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0159
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p034:t02",
+            "page": 34,
+            "element_type": "text",
+            "score": 0.0156
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t05",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0154
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0152
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 34,
+        "chars": 2330
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 9 legend percentage exposure range",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p091:t03",
+            "page": 91,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p023:t00",
+            "page": 23,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p089:t03",
+            "page": 89,
+            "element_type": "text",
+            "score": 0.0301
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0296
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 9\" \"percentage\" \"exposure\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p023:t00",
+            "page": 23,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p091:t03",
+            "page": 91,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p089:t03",
+            "page": 89,
+            "element_type": "text",
+            "score": 0.0301
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.03
+          }
+        ]
+      },
+      {
+        "event": "max_steps"
+      }
+    ],
+    "tool_calls": 10,
+    "input_tokens": 23296,
+    "output_tokens": 267,
+    "llm_cost_usd": 0.003655,
+    "elapsed_ms": 86697.26,
+    "group": "image_diagram",
+    "answerable": true
+  },
+  {
+    "query_id": "ad06",
+    "question": "In the Figure 21 diagram (Financing needs and potential sources of funding, 2022–2040), what is the total financing need ($ billion and % of GDP per year) and how is it split between the Resilient and Decarbonizing pathways?",
+    "status": "answered",
+    "answer": "According to Figure 21, the total financing need for the period 2022–2040 is $368 billion [ADV:wb-vietnam-ccdr-2022:p071:t03]. The financing needs are split between the Resilient pathway, which requires 4.7% of GDP per year, and the Decarbonizing pathway, which requires 2.1% of GDP per year [ADV:wb-vietnam-ccdr-2022:p071:t03].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p071:t03"
+    ],
+    "valid_pages_seen": [
+      7,
+      29,
+      51,
+      71,
+      73,
+      74
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 21 Financing needs and potential sources of funding 2022–2040",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t03",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t01",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t03",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t01",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0301
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p073:t03",
+            "page": 73,
+            "element_type": "text",
+            "score": 0.0289
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 21 Financing needs and potential sources of funding 2022–2040 details",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t03",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t01",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t01",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t03",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p074:t01",
+            "page": 74,
+            "element_type": "text",
+            "score": 0.0284
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 2,
+    "input_tokens": 3544,
+    "output_tokens": 251,
+    "llm_cost_usd": 0.000682,
+    "elapsed_ms": 8045.6,
+    "group": "image_diagram",
+    "answerable": true
+  },
+  {
+    "query_id": "ad07",
+    "question": "In the treemap chart Figure 3 (Estimated costs of climate change in 2020), what are the three largest cost categories and their exact values in $ million?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "citations": [],
+    "valid_pages_seen": [
+      4,
+      7,
+      17,
+      27,
+      28,
+      29,
+      33,
+      71
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 3 Estimated costs of climate change in 2020 treemap",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0297
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0291
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0277
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0272
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t04",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0164
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 7,
+        "chars": 2928
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 3 Estimated costs of climate change in 2020 treemap image",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0277
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0267
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t04",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0164
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 3 Estimated costs of climate change in 2020 treemap",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0297
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0291
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0277
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0272
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t04",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0164
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 3\" \"Estimated costs of climate change\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0307
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.0294
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0293
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t00",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0282
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 3\" treemap",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0297
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0296
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p004:t01",
+            "page": 4,
+            "element_type": "text",
+            "score": 0.0294
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 7,
+        "chars": 2928
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 3\" \"Estimated costs of climate change\" treemap",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0298
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0287
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0271
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0269
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 3\" \"Estimated costs of climate change\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0307
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.0294
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0293
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t00",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0282
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 3\" \"Estimated costs of climate change\" treemap",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0298
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p029:t00",
+            "page": 29,
+            "element_type": "text",
+            "score": 0.0287
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t01",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p027:t01",
+            "page": 27,
+            "element_type": "text",
+            "score": 0.0271
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t04",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0269
+          }
+        ]
+      },
+      {
+        "event": "max_steps"
+      }
+    ],
+    "tool_calls": 10,
+    "input_tokens": 31159,
+    "output_tokens": 268,
+    "llm_cost_usd": 0.004835,
+    "elapsed_ms": 20649.48,
+    "group": "chart",
+    "answerable": true
+  },
+  {
+    "query_id": "ad08",
+    "question": "In the line chart Figure 7 (Evolution of SOEs' share of output in Vietnam's carbon-intensive industrial sectors), which sector had the highest SOE output share and which had the lowest in 2018 (preliminary), and what were their exact percentages?",
+    "status": "answered",
+    "answer": "Based on Figure 7, \"Evolution of SOEs’ share of output in Vietnam’s carbon-intensive industrial sectors (%)\" for 2018 (preliminary), the sector with the highest SOE output share is Coal at 98%, and the sector with the lowest SOE output share is Steel at 14%. [ADV:wb-vietnam-ccdr-2022:p024:t00]",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p024:t00"
+    ],
+    "valid_pages_seen": [
+      7,
+      14,
+      17,
+      23,
+      24
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 7 Evolution of SOEs' share of output in Vietnam's carbon-intensive industrial sectors 2018",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p024:t00",
+            "page": 24,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p023:t01",
+            "page": 23,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t01",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0289
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 14,
+        "chars": 123
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 7 Evolution of SOEs' share of output in Vietnam's carbon-intensive industrial sectors 2018 percentages",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t01",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p024:t00",
+            "page": 24,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p023:t01",
+            "page": 23,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t01",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0289
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 4,
+    "input_tokens": 6381,
+    "output_tokens": 305,
+    "llm_cost_usd": 0.00114,
+    "elapsed_ms": 44574.3,
+    "group": "chart",
+    "answerable": true
+  },
+  {
+    "query_id": "ad09",
+    "question": "In Figure 22 (Private climate and green outstanding loans from 2016 to 2021), how much did Green credit outstanding grow from 2016 to 2020 (in $ billion), and what was its level in 2021:Q1?",
+    "status": "answered",
+    "answer": "Based on Figure 22, the Green credit outstanding was $3.7 billion in 2016 and $14.5 billion in 2020, representing a growth of $10.8 billion over that period. The level in 2021:Q1 was $14.5 billion [ADV:wb-vietnam-ccdr-2022:p072:t03].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p072:t03"
+    ],
+    "valid_pages_seen": [
+      7,
+      16,
+      22,
+      72
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 22 Private climate and green outstanding loans 2016 to 2021",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p072:t03",
+            "page": 72,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p072:t02",
+            "page": 72,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p072:t01",
+            "page": 72,
+            "element_type": "text",
+            "score": 0.0297
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p022:t02",
+            "page": 22,
+            "element_type": "text",
+            "score": 0.029
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p016:t05",
+            "page": 16,
+            "element_type": "text",
+            "score": 0.0278
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 72,
+        "chars": 3081
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 3,
+    "input_tokens": 5317,
+    "output_tokens": 262,
+    "llm_cost_usd": 0.000955,
+    "elapsed_ms": 5720.97,
+    "group": "chart",
+    "answerable": true
+  },
+  {
+    "query_id": "ad10",
+    "question": "Combining Table 3 (PDF p. 46 / report p. 36) and Chapter 5 (PDF p. 71 / report p. 61), what is the cumulative RNZP investment need through 2040, and how do the $114 billion decarbonizing component and $254 billion resilience component break down?",
+    "status": "answered",
+    "answer": "The cumulative investment need for the Resilient and Net-Zero Development Pathway (RNZP) through 2040 is estimated at $368 billion [PAGE:71]. This total is composed of two primary pillars: \n\n1. **Resilience Component ($254 billion):** This amount is required from 2022 to 2040 to enable adaptation to past and future climate change [PAGE:71].\n\n2. **Decarbonization Component ($114 billion):** This pathway to meet international commitments requires $114 billion through 2040, which breaks down into $81 billion for investments and $33 billion for social programs [PAGE:71]. \n\nNote: The $81 billion figure for decarbonization investments aligns with the $81.3 billion in net present value (NPV) terms for the Net-Zero Pathway (NZP) investment needs detailed in Table 3 (2022–2040) [PAGE:46, PAGE:71].",
+    "citations": [
+      "PAGE:46",
+      "PAGE:71"
+    ],
+    "valid_pages_seen": [
+      45,
+      46,
+      48,
+      63,
+      71
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "cumulative RNZP investment need through 2040 Table 3 page 46 Chapter 5 page 71",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t00",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t02",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0288
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t03",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0288
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t01",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0276
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p048:t04",
+            "page": 48,
+            "element_type": "text",
+            "score": 0.027
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p063:t03",
+            "page": 63,
+            "element_type": "text",
+            "score": 0.0269
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 46,
+        "chars": 2961
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 2,
+    "input_tokens": 3892,
+    "output_tokens": 331,
+    "llm_cost_usd": 0.000782,
+    "elapsed_ms": 7292.45,
+    "group": "multi_hop",
+    "answerable": true
+  },
+  {
+    "query_id": "ad11",
+    "question": "Combining Section 4.3.3 text and Figure 16 (PDF p. 59 / report p. 49), what share of Vietnam's 2020 total GHG emissions came from agriculture, what share of agricultural emissions was rice production, and which single measure in Figure 16 has the highest positive abatement cost ($/tCO2e)?",
+    "status": "answered",
+    "answer": "In 2020, the agriculture sector accounted for approximately 19 percent of Vietnam's total GHG emissions [PAGE:59]. Within the agricultural sector, rice production was responsible for about 48 percent of these emissions [PAGE:59]. According to Figure 16, the measure with the highest positive abatement cost is \"Moving from rice shrimp farming,\" which has a cost of approximately $400–$500/tCO2e [PAGE:59].",
+    "citations": [
+      "PAGE:59"
+    ],
+    "valid_pages_seen": [
+      7,
+      19,
+      31,
+      37,
+      45,
+      59,
+      60,
+      65,
+      93
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Vietnam 2020 total GHG emissions agriculture share rice production share Figure 16 abatement cost",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t00",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t00",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0304
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0299
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 59,
+        "chars": 2911
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 16 Cost-effective measures to reduce GHG emissions from rice production $/tCO2e values",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0317
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t02",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t00",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t00",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0296
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Figure 16 \"Moving from rice shrimp farming\" $/tCO2e cost",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t03",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t04",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0275
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "inspect Figure 16 chart bars to identify the measure with the highest positive abatement cost $/tCO2e",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t02",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0272
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t03",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0159
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t03",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 16\" \"Moving from rice shrimp farming\" cost $/tCO2e",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t03",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t04",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0295
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0284
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "What is the highest positive abatement cost in Figure 16?",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p093:t00",
+            "page": 93,
+            "element_type": "text",
+            "score": 0.029
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p031:t05",
+            "page": 31,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p065:t02",
+            "page": 65,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Figure 16\" \"Moving from rice shrimp farming\" \"Converting rice areas to rice aquaculture\" \"AWD\" \"rice\" \"abatement cost\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t03",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t04",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t04",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t03",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0303
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "What is the highest positive abatement cost in Figure 16? \"Moving from rice shrimp farming\" \"Converting rice areas to rice aquaculture\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t03",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t02",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t01",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.031
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t04",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t00",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0284
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 9,
+    "input_tokens": 32037,
+    "output_tokens": 456,
+    "llm_cost_usd": 0.005079,
+    "elapsed_ms": 66687.7,
+    "group": "multi_hop",
+    "answerable": true
+  },
+  {
+    "query_id": "ad12",
+    "question": "Using Section 3.3.4 / Figure 10 (PDF p. 37 / report p. 27) and Box 4 (PDF p. 41 / report p. 31), what share of Ca Mau and Kien Giang provinces would be inundated by a 1-meter sea-level rise, and how is the Mekong Delta projected to be affected by climate-induced migration by 2050?",
+    "status": "answered",
+    "answer": "A 1-meter sea-level rise would inundate 79 percent of the total area of Ca Mau province and 76 percent of Kien Giang province [PAGE:37]. Regarding climate-induced migration, the Mekong Delta is projected to be one of the largest climate out-migration hotspots by 2050, with sea-level rise augmented by storm surge serving as the primary driver of this migration [PAGE:41].",
+    "citations": [
+      "PAGE:37",
+      "PAGE:41"
+    ],
+    "valid_pages_seen": [
+      37,
+      41,
+      42
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Ca Mau Kien Giang 1-meter sea-level rise inundation share Mekong Delta climate-induced migration 2050",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t01",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p041:t02",
+            "page": 41,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p041:t01",
+            "page": 41,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t04",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p037:t00",
+            "page": 37,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p042:t01",
+            "page": 42,
+            "element_type": "text",
+            "score": 0.0299
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 1,
+    "input_tokens": 1892,
+    "output_tokens": 178,
+    "llm_cost_usd": 0.000391,
+    "elapsed_ms": 3173.51,
+    "group": "multi_hop",
+    "answerable": true
+  },
+  {
+    "query_id": "ad13",
+    "question": "According to Section 1.3 (PDF p. 19 / report p. 9), how many annual premature deaths in Vietnam did the WHO link to air pollution in 2016, and how did Vietnam's average annual PM2.5 concentration compare to the WHO safety threshold?",
+    "status": "answered",
+    "answer": "In 2016, the World Health Organization (WHO) estimated that more than 60,000 premature deaths per year in Vietnam are linked to air pollution [ADV:wb-vietnam-ccdr-2022:p019:t01]. Regarding air quality, the average annual concentration of particulate matter in Vietnam has been consistently four to five times higher than the WHO safety threshold of 10 micrograms of PM2.5 particles per cubic meter of air (μg/m³) [ADV:wb-vietnam-ccdr-2022:p019:t00].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p019:t00",
+      "ADV:wb-vietnam-ccdr-2022:p019:t01"
+    ],
+    "valid_pages_seen": [
+      12,
+      18,
+      19,
+      47,
+      85
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Section 1.3\" \"premature deaths\" \"air pollution\" 2016 \"PM2.5\" \"WHO safety threshold\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t01",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t02",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t00",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0309
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p047:t00",
+            "page": 47,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p047:t01",
+            "page": 47,
+            "element_type": "text",
+            "score": 0.0301
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p012:t02",
+            "page": 12,
+            "element_type": "text",
+            "score": 0.0293
+          }
+        ]
+      },
+      {
+        "event": "get_page_text",
+        "page": 18,
+        "chars": 1151
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"PM2.5\" \"WHO safety threshold\" Vietnam \"average annual\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t00",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p047:t00",
+            "page": 47,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p047:t01",
+            "page": 47,
+            "element_type": "text",
+            "score": 0.0291
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p085:t00",
+            "page": 85,
+            "element_type": "text",
+            "score": 0.0286
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t01",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p012:t02",
+            "page": 12,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 3,
+    "input_tokens": 6411,
+    "output_tokens": 312,
+    "llm_cost_usd": 0.001149,
+    "elapsed_ms": 9257.32,
+    "group": "text",
+    "answerable": true
+  },
+  {
+    "query_id": "ad14",
+    "question": "According to Box 2 (PDF p. 36 / report p. 26), how many firms were analyzed in the IFC/World Bank vulnerability assessment, which two exported sectors were most financially vulnerable, and which three non-tradable sectors were most vulnerable?",
+    "status": "answered",
+    "answer": "According to Box 2 on page 36, the IFC/World Bank vulnerability assessment analyzed balance sheet data from 700,000 firms in Vietnam [ADV:wb-vietnam-ccdr-2022:p036:t01]. The two exported sectors identified as most financially vulnerable were manufacturing and agriculture [ADV:wb-vietnam-ccdr-2022:p036:t02]. The three non-tradable sectors identified as most vulnerable were real estate, construction, and education [ADV:wb-vietnam-ccdr-2022:p036:t02].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p036:t01",
+      "ADV:wb-vietnam-ccdr-2022:p036:t02"
+    ],
+    "valid_pages_seen": [
+      6,
+      22,
+      35,
+      36
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Box 2 IFC/World Bank vulnerability assessment firms exported sectors non-tradable sectors",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p036:t01",
+            "page": 36,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p036:t02",
+            "page": 36,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p006:t01",
+            "page": 6,
+            "element_type": "text",
+            "score": 0.0313
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t04",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p036:t04",
+            "page": 36,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p022:t03",
+            "page": 22,
+            "element_type": "text",
+            "score": 0.0297
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 1,
+    "input_tokens": 1748,
+    "output_tokens": 255,
+    "llm_cost_usd": 0.000415,
+    "elapsed_ms": 2933.68,
+    "group": "text",
+    "answerable": true
+  },
+  {
+    "query_id": "ad15",
+    "question": "According to Section 4.1 (PDF p. 45 / report p. 35), what three carbon tax trajectories up to 2040 were analyzed (starting from $12/tCO2e in 2022), and which option is sufficient to cut emissions by 42.8% in 2030 and 73.6% in 2040 relative to BAU?",
+    "status": "answered",
+    "answer": "The three carbon tax trajectories analyzed, all starting at $12/tCO2e in 2022, ramp up to $40, $90, and $120 per tCO2e by 2040 [ADV:wb-vietnam-ccdr-2022:p045:t03]. The $90/tCO2e option is identified as sufficient to generate the necessary changes in emitting activities; when combined with sectoral investments, it would reduce emissions by 42.8% in 2030 and 73.6% in 2040 relative to the BAU scenario [ADV:wb-vietnam-ccdr-2022:p045:t03].",
+    "citations": [
+      "ADV:wb-vietnam-ccdr-2022:p045:t03"
+    ],
+    "valid_pages_seen": [
+      7,
+      22,
+      45,
+      65,
+      91
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "carbon tax trajectories 2040 12/tCO2e 2022 42.8% 73.6% BAU",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t03",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0328
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t02",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p065:t00",
+            "page": 65,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p022:t00",
+            "page": 22,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p091:t02",
+            "page": 91,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t03",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0272
+          }
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "tool_calls": 1,
+    "input_tokens": 1962,
+    "output_tokens": 270,
+    "llm_cost_usd": 0.000456,
+    "elapsed_ms": 3922.74,
+    "group": "text",
+    "answerable": true
+  },
+  {
+    "query_id": "au01",
+    "question": "What was the estimated total construction cost in VND trillion for Vietnam's North-South high-speed rail line reported in the CCDR?",
+    "status": "abstain",
+    "answer": "The Vietnam Country Climate and Development Report (2022) does not contain an estimated total construction cost in VND trillion for the North-South high-speed rail line.",
+    "citations": [],
+    "valid_pages_seen": [
+      7,
+      9,
+      15,
+      19,
+      31,
+      35,
+      39,
+      45,
+      50,
+      51,
+      52,
+      57,
+      58,
+      60,
+      70,
+      71,
+      78,
+      80,
+      94
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"North-South high-speed rail\" construction cost VND trillion",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t02",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0267
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p039:t00",
+            "page": 39,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p071:t00",
+            "page": 71,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p052:t00",
+            "page": 52,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t04",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t01",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"North-South high-speed rail\" cost",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t00",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0267
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p039:t00",
+            "page": 39,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t01",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t01",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t02",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t03",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"high-speed rail\" VND trillion",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t01",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0303
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t02",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0255
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t05",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t04",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t05",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"North-South\" \"rail\" cost",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t01",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0296
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p080:t03",
+            "page": 80,
+            "element_type": "text",
+            "score": 0.0288
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t01",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0284
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t00",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p019:t03",
+            "page": 19,
+            "element_type": "text",
+            "score": 0.0278
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t01",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0274
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"high-speed rail\" \"VND\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t02",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0308
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t01",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t00",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p007:t00",
+            "page": 7,
+            "element_type": "text",
+            "score": 0.0262
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t05",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t04",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0164
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"North-South\" rail \"trillion\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t02",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0317
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t01",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p057:t01",
+            "page": 57,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t05",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p039:t00",
+            "page": 39,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t01",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"North-South\" \"high-speed\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t01",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p015:t00",
+            "page": 15,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p031:t01",
+            "page": 31,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p078:t02",
+            "page": 78,
+            "element_type": "text",
+            "score": 0.0294
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p009:t01",
+            "page": 9,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p094:t00",
+            "page": 94,
+            "element_type": "text",
+            "score": 0.0262
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"rail\" \"VND\" \"trillion\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t01",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p058:t02",
+            "page": 58,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p057:t01",
+            "page": 57,
+            "element_type": "text",
+            "score": 0.0295
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p035:t05",
+            "page": 35,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t04",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p070:t00",
+            "page": 70,
+            "element_type": "text",
+            "score": 0.0156
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "tool_calls": 8,
+    "input_tokens": 26486,
+    "output_tokens": 268,
+    "llm_cost_usd": 0.004134,
+    "elapsed_ms": 50212.61,
+    "group": "unanswerable",
+    "answerable": false
+  },
+  {
+    "query_id": "au02",
+    "question": "What annual green hydrogen production target (in million tonnes per year by 2035) does the Vietnam CCDR project?",
+    "status": "abstain",
+    "answer": "The Vietnam Country Climate and Development Report (2022) does not provide an annual green hydrogen production target in million tonnes per year by 2035.",
+    "citations": [],
+    "valid_pages_seen": [
+      2,
+      5,
+      8,
+      11,
+      16,
+      17,
+      24,
+      28,
+      31,
+      36,
+      38,
+      44,
+      45,
+      50,
+      51,
+      54,
+      56,
+      59,
+      60,
+      62,
+      65,
+      79,
+      85,
+      96
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"green hydrogen\" production target 2035 million tonnes",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t03",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0274
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p096:t01",
+            "page": 96,
+            "element_type": "text",
+            "score": 0.0269
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p085:t02",
+            "page": 85,
+            "element_type": "text",
+            "score": 0.0269
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p062:t04",
+            "page": 62,
+            "element_type": "text",
+            "score": 0.0258
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p038:t02",
+            "page": 38,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p054:t03",
+            "page": 54,
+            "element_type": "text",
+            "score": 0.0164
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"green hydrogen\" 2035",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p016:t05",
+            "page": 16,
+            "element_type": "text",
+            "score": 0.028
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p031:t05",
+            "page": 31,
+            "element_type": "text",
+            "score": 0.0274
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t03",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t03",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p016:t02",
+            "page": 16,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p054:t03",
+            "page": 54,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" production target",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p096:t01",
+            "page": 96,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t00",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0318
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p062:t04",
+            "page": 62,
+            "element_type": "text",
+            "score": 0.0293
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p011:t01",
+            "page": 11,
+            "element_type": "text",
+            "score": 0.0282
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p045:t01",
+            "page": 45,
+            "element_type": "text",
+            "score": 0.0262
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t00",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p002:t01",
+            "page": 2,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p008:t01",
+            "page": 8,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p002:t00",
+            "page": 2,
+            "element_type": "text",
+            "score": 0.0159
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t01",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0156
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p005:t00",
+            "page": 5,
+            "element_type": "text",
+            "score": 0.0154
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p079:t03",
+            "page": 79,
+            "element_type": "text",
+            "score": 0.0152
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" \"million tonnes\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t03",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0295
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0291
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p024:t00",
+            "page": 24,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t03",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p044:t00",
+            "page": 44,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t03",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" \"2035\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p028:t03",
+            "page": 28,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t03",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p016:t02",
+            "page": 16,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t03",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p065:t00",
+            "page": 65,
+            "element_type": "text",
+            "score": 0.0159
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p079:t03",
+            "page": 79,
+            "element_type": "text",
+            "score": 0.0159
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" \"million tonnes\"",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t03",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0295
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t02",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0291
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p024:t00",
+            "page": 24,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t03",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p044:t00",
+            "page": 44,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t03",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" production",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t02",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.029
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p059:t00",
+            "page": 59,
+            "element_type": "text",
+            "score": 0.0278
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p002:t02",
+            "page": 2,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p060:t02",
+            "page": 60,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p002:t00",
+            "page": 2,
+            "element_type": "text",
+            "score": 0.0161
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p036:t04",
+            "page": 36,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"hydrogen\" \"million tonnes\" 2035",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t02",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0296
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t03",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0293
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p017:t03",
+            "page": 17,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p024:t00",
+            "page": 24,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t03",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p002:t00",
+            "page": 2,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "tool_calls": 9,
+    "input_tokens": 41383,
+    "output_tokens": 271,
+    "llm_cost_usd": 0.00637,
+    "elapsed_ms": 26289.75,
+    "group": "unanswerable",
+    "answerable": false
+  },
+  {
+    "query_id": "au03",
+    "question": "What installed capacity of Small Modular Reactors (SMRs) in GW is modeled for Vietnam's power system in 2040 in this report?",
+    "status": "abstain",
+    "answer": "The provided report does not contain information regarding a modeled installed capacity for Small Modular Reactors (SMRs) in Vietnam's power system for 2040. The report notes that Vietnam has not identified specific plans for the development of nuclear power plants [PAGE:56].",
+    "citations": [],
+    "valid_pages_seen": [
+      33,
+      49,
+      50,
+      51,
+      55,
+      56
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "Small Modular Reactors SMRs installed capacity 2040 GW",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t02",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.032
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t03",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0311
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p049:t02",
+            "page": 49,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t01",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t00",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0305
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p049:t01",
+            "page": 49,
+            "element_type": "text",
+            "score": 0.0302
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"Small Modular Reactors\" OR SMRs installed capacity 2040",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t03",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0325
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t02",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0323
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t01",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0306
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p049:t02",
+            "page": 49,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t04",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p049:t01",
+            "page": 49,
+            "element_type": "text",
+            "score": 0.0297
+          }
+        ]
+      },
+      {
+        "event": "search",
+        "tool": "search_multimodal",
+        "query": "\"SMR\" OR \"Small Modular Reactor\" Vietnam power system",
+        "element_type": null,
+        "results": [
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p056:t00",
+            "page": 56,
+            "element_type": "text",
+            "score": 0.0315
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p049:t02",
+            "page": 49,
+            "element_type": "text",
+            "score": 0.0299
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p055:t01",
+            "page": 55,
+            "element_type": "text",
+            "score": 0.0289
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p051:t00",
+            "page": 51,
+            "element_type": "text",
+            "score": 0.0278
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p050:t04",
+            "page": 50,
+            "element_type": "text",
+            "score": 0.0164
+          },
+          {
+            "id": "ADV:wb-vietnam-ccdr-2022:p033:t01",
+            "page": 33,
+            "element_type": "text",
+            "score": 0.0161
+          }
+        ]
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "tool_calls": 3,
+    "input_tokens": 5626,
+    "output_tokens": 184,
+    "llm_cost_usd": 0.000954,
+    "elapsed_ms": 22118.2,
+    "group": "unanswerable",
+    "answerable": false
+  }
+]

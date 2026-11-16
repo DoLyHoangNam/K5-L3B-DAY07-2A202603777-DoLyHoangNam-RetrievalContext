@@ -1,0 +1,14 @@
+{
+  "config": "adv_text_baseline",
+  "use_visual_tool": false,
+  "use_rerank": false,
+  "budget": 2500,
+  "total": 18,
+  "errors": 0,
+  "answered": 13,
+  "abstained": 5,
+  "avg_tool_calls": 4.06,
+  "median_ms": 8651.5,
+  "agent_llm_cost_usd": 0.033743,
+  "retriever_cost_usd": 0.000107
+}
